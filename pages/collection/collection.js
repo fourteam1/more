@@ -1,4 +1,4 @@
-// pages/mine/mine.js
+// pages/collection/collection.js
 Page({
 
   /**
@@ -12,41 +12,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: '我的',
-    })
+
   },
 
-  //点击跳转我的订单页
-  goIndent(){
-    wx.navigateTo({
-      url: '../indent/indent'
-    })
-  },
-  //点击优惠券跳转
-  goOffer(){
-    wx.navigateTo({
-      url: '../offer/offer',
-    })
-  },
-  //点击商品收藏跳转
-  goCollection(){
-    wx.navigateTo({
-      url: '../collection/collection',
-    })
-  },
-  //点击历史浏览跳转
-  goBrowsing() {
-    wx.navigateTo({
-      url: '../browsing/browsing'
-    })
-  },
-  //点击退款售后跳转
-  goRefund(){
-    wx.navigateTo({
-      url: '../refund/refund',
-    })
-  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
