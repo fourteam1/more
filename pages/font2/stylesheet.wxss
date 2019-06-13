@@ -19,6 +19,14 @@
   content: "\e602";
 }
 
+.icon-guanbi:before {
+  content: "\e650";
+}
+
+.icon-shanchu:before {
+  content: "\e61b";
+}
+
 .icon-xuanzhongyuandian:before {
   content: "\e600";
 }

@@ -13,7 +13,7 @@
     <view class='shop-Valued'>
       <view class='shop-item' wx:for="{{data}}" wx:key="{{index}}" data-index="{{index}}">
           <!-- 是否选中 -->
-          <text class='iconfont ' class="check ? icon-xuanzhongyuandian : icon-xuanzhong-copy"></text>
+          <text class="{{!check ? 'iconfont icon-xuanzhongyuandian' : 'iconfont icon-xuanzhong-copy'}}" bindtap='check' data-index="{{index}}"></text>
           <!-- 图片 -->
           <image src='{{item.image_url}}'></image>
           <!-- 详细信息 -->
@@ -22,7 +22,41 @@
             <text class='short_name'>{{item.short_name}}</text>
             <text class='market_price'>￥{{item.market_price}}</text>
           </view>
+          <!-- 商品数量 -->
+          <view class='Products' wx:if="{{!check}}">
+            <view class='number'>
+              <view class='add'>+</view>
+              <input  bindinput="bindKeyInput" placeholder="1"/>
+              <view class='remove'>-</view>
+            </view>
+          </view>
+          <!-- 删除商品 -->
+          <view class='delete' wx:if="{{check}}">
+            <text class="iconfont icon-shanchu"></text>
+            <text class='text'>删除</text>
+          </view>
       </view>
     </view>
   </view>
+  <view class='shopping'>
+    <view class='shoppingBottom'>
+      <view class='shoppingLeft'>
+        <text class='selectAll' class="{{!check ? 'iconfont icon-xuanzhongyuandian' : 'iconfont icon-xuanzhong-copy'}}" bindtap='check' data-index="{{index}}"></text>
+        <text class='text'>全选</text>
+      </view>
+      <view class='shoppingRight'>
+        <text class='TotalCost'>￥{{TotalCost}}</text>
+        <button class='Settlement' bindtap="Settlement">去结算</button>
+      </view>
+    </view>
+  
+  </view>
+  <!-- 模态框 -->
+  <van-popup 
+    show="{{ show }}" 
+    bind:close="onClose">
+      <view class='header'>
+        <text class='iconfont icon-guanbi'></text>
+      </view>
+  </van-popup>
 </view>
