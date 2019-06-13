@@ -24,10 +24,14 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"appid": "wxd1d8968ddc6d7ed7",
 =======
 	"appid": "wx688a5d2aef280660",
 >>>>>>> 0e14430f8e8ca9913a9f123b4954fe35cd22638f
+=======
+	"appid": "wxc176dcbbc21c8865",
+>>>>>>> 965b35dfa1ac318fd7742a1c4a0a8fed58bf2848
 	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
 	"debugOptions": {
 		"hidedInDevtools": []
