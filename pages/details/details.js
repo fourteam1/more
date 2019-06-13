@@ -1,29 +1,25 @@
-// pages/mine/mine.js
+// pages/details/details.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    iconSize: [20],
+    iconColor: [
+      'red'
+    ],
+    iconType: [
+      'success'
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: '我的',
-    })
-  },
 
-  //点击跳转我的订单页
-  goIndent(){
-    wx.navigateTo({
-      url: '../indent/indent'
-    })
   },
-
 
   /**
    * 生命周期函数--监听页面初次渲染完成

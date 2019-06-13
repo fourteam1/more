@@ -12,14 +12,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    //设置导航条的标题
     wx.setNavigationBarTitle({
       title: '我的订单'
-    }),
-    //改变导航条的背景颜色
-    wx.setNavigationBarColor({
-      frontColor: '#000000',
-      backgroundColor: '#ffffff',
     })
   },
 
