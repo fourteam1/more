@@ -1,4 +1,5 @@
 <!--pages/browsing/browsing.wxml-->
+<<<<<<< HEAD
 <view class='browsing'>
   <view class='content'>
     <view class='list'>
@@ -18,3 +19,6 @@
     <image src='../image/empty.gif'></image>
   </view>
 </view>
+=======
+<text>pages/browsing/browsing.wxml</text>
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470

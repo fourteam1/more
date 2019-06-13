@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* pages/collection/collection.wxss */
 .collection{
   padding: 20rpx 30rpx 0;
@@ -51,3 +52,6 @@
   font-size: 22rpx;
   margin-top: 26rpx;
 }
+=======
+/* pages/collection/collection.wxss */
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470

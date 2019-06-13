@@ -12,9 +12,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+<<<<<<< HEAD
     wx.setNavigationBarTitle({
       title: '商品收藏',
     })
+=======
+
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
   },
 
   /**

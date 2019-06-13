@@ -4,13 +4,16 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
+<<<<<<< HEAD
 		"nodeModules": true,
+=======
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
 		"autoAudits": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
@@ -19,11 +22,16 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
+<<<<<<< HEAD
 		}
+=======
+		},
+		"nodeModules": true
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
-	"appid": "wx0cab5303c04aec4a",
+	"appid": "wx688a5d2aef280660",
 	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
 	"cloudfunctionTemplateRoot": "",
 	"debugOptions": {
@@ -47,7 +55,11 @@
 			"list": []
 		},
 		"miniprogram": {
+<<<<<<< HEAD
 			"current": 4,
+=======
+			"current": 6,
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
 			"list": [
 				{
 					"id": -1,
@@ -58,8 +70,15 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/details/details",
-					"pathName": "pages/index/index",
+					"name": "indent",
+					"pathName": "pages/indent/indent",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "购物车",
+					"pathName": "pages/shop/shop",
 					"query": "",
 					"scene": null
 				},
@@ -72,15 +91,32 @@
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 					"name": "pages/user/user",
 					"pathName": "pages/user/user",
+=======
+					"name": "new",
+					"pathName": "pages/new/new",
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 					"name": "111",
 					"pathName": "pages/details/details",
+=======
+					"name": "new",
+					"pathName": "pages/new/new",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
 					"scene": null
 				}
 			]

@@ -1,4 +1,5 @@
 <!--pages/collection/collection.wxml-->
+<<<<<<< HEAD
 <view class='collection'>
   <view class='list'>
     <image src='../image/2.png'/>
@@ -12,3 +13,6 @@
     </view>
   </view>
 </view>
+=======
+<text>pages/collection/collection.wxml</text>
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470

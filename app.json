@@ -6,7 +6,14 @@
     "pages/shop/shop",
     "pages/mine/mine",
     "pages/indent/indent",
+<<<<<<< HEAD
     "pages/details/details"
+=======
+    "pages/offer/offer", 
+    "pages/browsing/browsing",
+    "pages/collection/collection",
+    "pages/refund/refund"
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -43,11 +50,5 @@
       }
     ]
   },
-  "sitemapLocation": "sitemap.json",
-  "permission": {
-    "scope.userLocation": {
-      "desc": "你的位置信息将用于小程序位置接口的效果展示"
-    }
-  }
-  
+  "sitemapLocation": "sitemap.json"
 }
