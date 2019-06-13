@@ -1,4 +1,8 @@
 /* pages/mine/mine.wxss */
+page{
+  background:#fff;
+  width:100%;
+}
 .mine{
   width: 100%;
 }
@@ -91,22 +95,27 @@
   box-sizing: border-box;
   border-bottom: 2rpx solid #ccc;
 }
-.mine .content .indent .list .list_item icon{
-  font-size: 40rpx;
-}
 .mine .content .indent .list .list_item icon:nth-of-type(2){
   float: right;
 }
 .mine .content .indent .list .list_item icon.icon-youhuiquan{
+  font-size: 28rpx;
   color: #ec3127;
 }
+<<<<<<< HEAD
 .mine .content .indent .indentCon .list .list_item icon.icon-shangpinshoucang{
+=======
+.mine .content .indent .list .list_item icon.icon-shangpinshoucang{
+  font-size: 36rpx;
+>>>>>>> 18b31e70e2437713cc5e4473103904aa1fa664e7
   color: #ff81ba;
 }
 .mine .content .indent .list .list_item icon.icon-lishiliulan{
+  font-size: 36rpx;
   color: #1dd9b8;
 }
 .mine .content .indent .list .list_item icon.icon-tuikuan{
+  font-size: 36rpx;
   color: #5aa0ff;
 }
 .mine .content .indent .list .list_item text{

@@ -1,17 +1,11 @@
-// pages/details/details.js
+// pages/collection/collection.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    iconSize: [20],
-    iconColor: [
-      'red'
-    ],
-    iconType: [
-      'success'
-    ]
+
   },
 
   /**
@@ -19,7 +13,7 @@ Page({
    */
   onLoad: function (options) {
     wx.setNavigationBarTitle({
-      title: '浏览记录',
+      title: '商品收藏',
     })
   },
 

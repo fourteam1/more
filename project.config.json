@@ -14,8 +14,13 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
+<<<<<<< HEAD
 	"appid": "wx0cab5303c04aec4a",
 	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
+=======
+	"appid": "wxc176dcbbc21c8865",
+	"projectname": "demo",
+>>>>>>> 18b31e70e2437713cc5e4473103904aa1fa664e7
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -51,22 +56,38 @@
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 					"name": "pages/details/details",
 					"pathName": "pages/index/index",
+=======
+					"name": "offer",
+					"pathName": "pages/offer/offer",
+>>>>>>> 18b31e70e2437713cc5e4473103904aa1fa664e7
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 					"name": "pages/details/details",
 					"pathName": "pages/details/details",
+=======
+					"name": "collect",
+					"pathName": "pages/collection/collection",
+>>>>>>> 18b31e70e2437713cc5e4473103904aa1fa664e7
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 					"name": "pages/user/user",
 					"pathName": "pages/user/user",
+=======
+					"name": "brow",
+					"pathName": "pages/browsing/browsing",
+					"query": "",
+>>>>>>> 18b31e70e2437713cc5e4473103904aa1fa664e7
 					"scene": null
 				}
 			]

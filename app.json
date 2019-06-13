@@ -11,9 +11,14 @@
   ],
   "window": {
     "backgroundTextStyle": "dark",
+<<<<<<< HEAD
     "navigationBarBackgroundColor": "#1ca95e",
     "navigationBarTitleText": "拼多多",
     "navigationBarTextStyle": "white",
+=======
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+>>>>>>> 18b31e70e2437713cc5e4473103904aa1fa664e7
     "enablePullDownRefresh": true
   },
   "tabBar": {
