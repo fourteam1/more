@@ -100,10 +100,11 @@
 .footer text{
   color: #bacdc3;
   font-size: 30rpx;
-  line-height: 130rpx;
+  line-height: 42rpx;
 }
 .footer image{
-  width: 180rpx;
-  height: 110rpx;
+  width: 152rpx;
+  height: 84rpx;
   opacity: 0.3;
+	background: #397755;
 }

@@ -24,7 +24,6 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
 	"appid": "wxc176dcbbc21c8865",
-	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
 	"projectname": "demo",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -50,7 +49,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -70,6 +69,13 @@
 					"id": -1,
 					"name": "collect",
 					"pathName": "pages/collection/collection",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "brow",
+					"pathName": "pages/browsing/browsing",
 					"query": "",
 					"scene": null
 				}
