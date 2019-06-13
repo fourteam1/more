@@ -1,4 +1,9 @@
 <!--pages/offer/offer.wxml-->
 <view class='offer'>
-  
+  <view class='content'>
+    <view class='five'>
+      <view class='border'></view>
+      <text>可用红包五ge</text>
+    </view>
+  </view>
 </view>
