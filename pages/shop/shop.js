@@ -8,7 +8,8 @@ Page({
     data: [],
     check: false,
     show: false,
-    TotalCost: 0
+    TotalCost: 0,
+    check: false
   },
 
   /**

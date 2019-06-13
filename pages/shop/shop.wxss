@@ -15,7 +15,6 @@
   height: 100%;
   text-align: center;
 }
-
   /* 图片 */
 image {
   width: 284rpx;
@@ -210,3 +209,4 @@ image {
   box-shadow: 1rpx 4rpx 12rpx 1rpx rgba(164,215,139,.29);
   font-size: 30rpx;
 }
+/* 有值购物车 */

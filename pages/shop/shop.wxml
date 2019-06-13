@@ -49,7 +49,6 @@
         <button class='Settlement' bindtap="Settlement">去结算</button>
       </view>
     </view>
-  
   </view>
   <!-- 模态框 -->
   <van-popup 

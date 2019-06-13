@@ -23,7 +23,11 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
+<<<<<<< HEAD
 	"appid": "wxd1d8968ddc6d7ed7",
+=======
+	"appid": "wx688a5d2aef280660",
+>>>>>>> 0e14430f8e8ca9913a9f123b4954fe35cd22638f
 	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -49,7 +53,11 @@
 			"list": []
 		},
 		"miniprogram": {
+<<<<<<< HEAD
 			"current": 2,
+=======
+			"current": 3,
+>>>>>>> 0e14430f8e8ca9913a9f123b4954fe35cd22638f
 			"list": [
 				{
 					"id": -1,
@@ -69,6 +77,16 @@
 					"id": -1,
 					"name": "购物车",
 					"pathName": "pages/shop/shop",
+<<<<<<< HEAD
+=======
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "offer",
+					"pathName": "pages/offer/offer",
+>>>>>>> 0e14430f8e8ca9913a9f123b4954fe35cd22638f
 					"scene": null
 				}
 			]
