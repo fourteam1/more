@@ -30,8 +30,10 @@ Page({
       },
       success: res => {
         console.log(res.data.goods_list);
+        let list = res.data.goods_list;
+        list = list.splice(0,3);
         this.setData({
-          data: res.data.goods_list
+          data: list
         })
       },
       fail: err => {
