@@ -1,4 +1,4 @@
-@import "../font2/stylesheet.wxss";
+@import "../font2/stylesheet.wxss"
 /* 购物车 */
 .shop {
   width: 20rem;
@@ -50,7 +50,6 @@ image {
 }
   /* 每一个商品 */
 .shop-item {
-  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -63,7 +62,6 @@ image {
   /* 商品是否选中 */
 .iconfont {
   font-size: 48rpx;
-  color: #278c58;
 }
   /* 商品图片 */
 image {
@@ -87,7 +85,7 @@ image {
   /* 商品名称和颜色共同样式 */
 .goods_name,.short_name {
   display: block;
-  width: 200rpx;
+  width: 410rpx;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -108,105 +106,4 @@ image {
   font-size: 26rpx;
   color: #df0000;
 }
-  /* 商品数量 */
-.Products {
-  position: absolute;
-  right: 24rpx;
-  bottom: 46rpx;
-  width: 160rpx;
-  height: 32rpx;
-  background: #fdd;
-}
-.number {
-  display: flex;
-  height: 100%;
-  font-size: 24rpx;
-  align-items: center;
-  text-align: center;
-}
-.number .add,.number .remove{
-  width: 46rpx;
-  height: 32rpx;
-  background: #fffdfe;
-  border-radius: 4rpx 1rpx 1rpx 4rpx;
-  border: 1rpx solid #e7e7e7;
-}
-.number input{
-  flex:1;
-  height: 32rpx;
-  border: 1rpx solid #e7e7e7;
-  min-height: 32rpx;
-  border-left: 0;
-  border-right: 0;
-  background: #fffdfe;
-}
-  /* 删除商品 */
-.delete {
-  position: absolute;
-  right: 24rpx;
-  top: 67rpx;
-  display: flex;
-  flex-direction: column;
-  width: 100rpx;
-  height: 180rpx;
-  background: #f7f7f7;
-  border-radius: 10rpx;
-}
-.delete .iconfont {
-  font-size: 43rpx;
-  color: #ddd;
-  padding: 48rpx 25rpx 0 31rpx;
-}
-.delete .text {
-  font-size: 28rpx;
-  text-align: center;
-  margin-top: 21rpx;
-}
 /* 有值购物车 */
-/* 求总数量和总价格 */
-.shopping {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 117rpx;
-  background: #fff;
-  box-shadow: 1rpx 2rpx 2rpx 1rpx #ddd;
-  z-index: 100;
-}
-.shopping .shoppingBottom {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  line-height: 117rpx;
-}
-/* 全选按钮 */
-.shoppingLeft .iconfont {
-  margin-left: 24rpx;
-  margin-right: 32rpx;
-}
-.shoppingLeft .text {
-  font-size: 30rpx;
-}
-.shoppingRight {
-  display: flex;
-  align-content: center;
-}
-.shoppingRight .TotalCost {
-  font-size: 36rpx;
-  color: #e01616;
-  margin-right: 23rpx;
-}
-.shoppingRight .Settlement {
-  width: 150rpx;
-  height: 70rpx;
-  line-height: 70rpx;
-  background: #dc3025;
-  color: #fff;
-  margin-right: 27rpx;
-  margin-top: 20rpx;
-  border-radius: 12rpx;
-  box-shadow: 1rpx 4rpx 12rpx 1rpx rgba(164,215,139,.29);
-  font-size: 30rpx;
-}

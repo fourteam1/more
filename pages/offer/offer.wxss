@@ -1,0 +1,118 @@
+/* pages/offer/offer.wxss */
+.offer{
+  width: 100%;
+  background: #f4f4f4;
+}
+.offer .content{
+  padding: 20rpx 24rpx;
+  box-sizing: border-box;
+}
+.offer .content .center{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  padding: 0rpx 16rpx;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  background: #fff;
+}
+.offer .content .center text{
+  margin-left: 20rpx;
+}
+.offer .content .center icon{
+  font-size: 36rpx;
+}
+.offer .content .center icon:nth-of-type(1){
+  color: rgb(241, 12, 12);
+}
+.offer .content .center icon:nth-of-type(2){
+  float: right;
+}
+.offer .content .list{
+  background: #ededed;
+}
+.offer .content .list .item{
+  display: flex;
+  height: 180rpx;
+  border-radius: 10rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.offer .content .list .item .price{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150rpx;
+  font-size: 30rpx;
+  color: orange;
+}
+.offer .content .list .item .price .priceNew{
+  font-size: 50rpx;
+  font-weight: bold;
+}
+.offer .content .list .item .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 360rpx;
+  font-size: 30rpx;
+}
+.offer .content .list .item .text text:nth-of-type(2){
+  color: #ccc;
+  margin-top: 10rpx;
+}
+.offer .content .list .item .button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 155rpx;
+}
+.offer .content .list .item .button text{
+  font-size: 24rpx;
+  color: #fff;
+  padding: 10rpx;
+  margin-top: 50rpx;
+  box-sizing: border-box;
+  border-radius: 8rpx;
+  background: orange;
+}
+.offer .content .list .item .button icon{
+  font-size: 40rpx;
+  margin-top: 10rpx;
+  transform: rotate(90deg);
+}
+.offer .content .list .bottom{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.offer .content .list .bottom image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.offer .content .list .bottom text{
+  width: 88%;
+  font-size: 24rpx;
+  color: rgb(180, 178, 178);
+  margin-left: 30rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.offer .content .caption{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #a4a4a4;
+  padding: 110rpx 0;
+  box-sizing: border-box;
+}

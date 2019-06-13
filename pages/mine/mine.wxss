@@ -100,7 +100,7 @@
 .mine .content .indent .list .list_item icon.icon-youhuiquan{
   color: #ec3127;
 }
-.mine .content .indent .indentCon .list .list_item icon.icon-shangpinshoucang{
+.mine .content .indent .list .list_item icon.icon-shangpinshoucang{
   color: #ff81ba;
 }
 .mine .content .indent .list .list_item icon.icon-lishiliulan{

@@ -23,11 +23,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
-<<<<<<< HEAD
-	"appid": "wxd1d8968ddc6d7ed7",
-=======
-	"appid": "wx0cab5303c04aec4a",
->>>>>>> 51807f95fec164332021afcdc02974b73885898f
+	"appid": "wx688a5d2aef280660",
 	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -53,11 +49,7 @@
 			"list": []
 		},
 		"miniprogram": {
-<<<<<<< HEAD
-			"current": 2,
-=======
-			"current": 3,
->>>>>>> 51807f95fec164332021afcdc02974b73885898f
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
@@ -68,22 +60,20 @@
 				},
 				{
 					"id": -1,
-<<<<<<< HEAD
 					"name": "indent",
 					"pathName": "pages/indent/indent",
-=======
-					"name": "pages/details/details",
-					"pathName": "pages/index/index",
->>>>>>> 51807f95fec164332021afcdc02974b73885898f
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-<<<<<<< HEAD
 					"name": "购物车",
 					"pathName": "pages/shop/shop",
-=======
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
 					"name": "pages/details/details",
 					"pathName": "pages/details/details",
 					"query": "",
@@ -91,9 +81,16 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/user/user",
-					"pathName": "pages/user/user",
->>>>>>> 51807f95fec164332021afcdc02974b73885898f
+					"name": "new",
+					"pathName": "pages/new/new",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "new",
+					"pathName": "pages/new/new",
+					"query": "",
 					"scene": null
 				}
 			]

@@ -1,4 +1,28 @@
 <!--index.wxml-->
-<view class="container">
-  pages/index/indwx
+<!-- 轮播图 -->
+<swiper indicator-dots="true" 
+  autoplay="true" interval="2000" circular="true" duration="1000">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block> 
+</swiper>
+<!-- 拼团 -->
+<view class="assemble">
+</view>
+<!-- 商品列表 -->
+<view class="list">
+  <view class="lis"  wx:for="{{dataList}}">
+    <image src="{{item.hd_thumb_url}}" class="lis_img_1"></image>
+    <view class="lis_text">{{item.goods_name}}</view>
+    <view class="price_box">
+      <view class="price_1">
+        <text class="price_text1">￥</text> 
+        <text class="price_text2">{{group.price}}</text> 
+        <text class="price_text3"> {{item.sales_tip}}</text> 
+      </view>
+      <!-- <view class="price_2"></view> -->
+    </view>
+  </view>
 </view>
