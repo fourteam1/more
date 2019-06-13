@@ -1,18 +1,4 @@
 <!--pages/offer/offer.wxml-->
 <view class='offer'>
-  <view class='content'>
-    <view class='list'>
-      <image src='../image/1.png'/>
-      <view class='text'>
-        <text>充话费立减2元，拼多多充值中心专用</text>
-        <text class='limited'>限时限量</text>
-        <text class='purpose'>移动联通电信通用</text>
-      </view>
-      <view class='button'>
-        <text class='price'>￥<text>2</text></text>
-        <text class='charge'>充48可用</text>
-        <text class='receive'>立即领取</text>
-      </view>
-    </view>
-  </view>
+  
 </view>
