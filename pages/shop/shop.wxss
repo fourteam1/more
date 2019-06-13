@@ -7,6 +7,7 @@
 /* 购物车包裹 */
 .shop-box {
   width: 100%;
+  padding-bottom: 117rpx;
   overflow: hidden;
 }
 /* 空购物车 */
@@ -46,6 +47,7 @@ image {
 .shop-Valued {
   width: 100%;
   height: 100%;
+  padding-bottom: 40rpx;
   background: #f7f7f7;
 }
   /* 每一个商品 */
@@ -105,6 +107,7 @@ image {
   /* 商品价格 */
 .market_price {
   display: block;
+  width: 200rpx;
   font-size: 26rpx;
   color: #df0000;
 }
@@ -136,9 +139,11 @@ image {
   height: 32rpx;
   border: 1rpx solid #e7e7e7;
   min-height: 32rpx;
+  line-height: 32rpx;
   border-left: 0;
   border-right: 0;
   background: #fffdfe;
+  font-size: 28rpx;
 }
   /* 删除商品 */
 .delete {

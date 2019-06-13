@@ -8,7 +8,8 @@ Page({
     data: [],
     check: false,
     show: false,
-    TotalCost: 0
+    TotalCost: 0,
+    count: 1,
   },
 
   /**
@@ -28,9 +29,15 @@ Page({
         "content-type": "application/json"
       },
       success: res => {
-        console.log(res.data.goods_list);
+        // console.log(res.data.goods_list);
+        let list = res.data.goods_list;
+        list = list.splice(0,4);
+        list.forEach(item => {
+          item.count = 1;
+        })
+      
         this.setData({
-          data: res.data.goods_list
+          data: list
         })
       },
       fail: err => {
@@ -38,72 +45,107 @@ Page({
       }
     })
   },
-  //当前选中的商品
-  check(e){
-    // console.log(e.currentTarget.dataset.index);
+  //单选框
+  SingleBox(e){
     let index = e.currentTarget.dataset.index;
-    let data = this.data.data;
-    // data.forEach((item) => {
-    // })
-  },
-  //模态框
-  onClose(){
-    this.setData({ 
-      show: false
+    let list = this.data.data;
+    list[index].check = !list[index].check;
+    this.Selected(list)
+    this.setData({
+      data: list
     })
   },
-  //去结算
+  //筛选选中的商品
+  Selected(list){
+    let newdata = list.filter((item) => {
+      return item.check == true
+    })
+    if(list.length == newdata.length){
+      list.forEach(item => {
+        item.check = true
+      })
+      this.setData({
+        check: true
+      })
+    }else{
+      this.setData({
+        check: false
+      })
+    }
+    let TotalCost = 0;
+    newdata.forEach(item => {
+      TotalCost += item.market_price * item.count
+    })
+    this.setData({
+      TotalCost: TotalCost
+    })
+  },
+//全选按钮
+  check(e){
+    let check = this.data.check;
+    check = !check
+    let list = this.data.data;
+    list.forEach(item => {
+      item.check = check
+    })
+    this.setData({
+      data: list,
+      check: check
+    })
+    this.Selected(list)
+  },
+  //商品+1
+  addtap(e){
+    let list = this.data.data;
+    let index = e.currentTarget.dataset.index;
+    list[index].count++
+    this.setData({
+      data: list
+    })
+  },
+  //商品-1
+  subtracttap(e){
+    let list = this.data.data;
+    let index = e.currentTarget.dataset.index;
+    list[index].count--;
+    if (list[index].count < 1){
+      list[index].count = 1
+    }
+    this.setData({
+      data: list
+    })
+    
+  },
+  //删除商品
+  remove(e){
+    let index = e.currentTarget.dataset.index;
+    let list = this.data.data;
+    list[index].count = 0;
+    this.setData({
+      data: list
+    })
+    list.splice(index,1)
+    this.setData({
+      data: list
+    })
+    this.Selected(list)
+    console.log(list.length)
+    if(list.length == 0){
+      this.setData({
+        check: false
+      })
+    }
+  },
+  //去结算按钮
   Settlement(){
     this.setData({
       show: true
     })
   },
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  //模态框
+  onClose() {
+    this.setData({
+      show: false
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })
