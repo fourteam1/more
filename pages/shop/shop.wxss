@@ -46,6 +46,7 @@ image {
 .shop-Valued {
   width: 100%;
   height: 100%;
+  padding-bottom: 40rpx;
   background: #f7f7f7;
 }
   /* 每一个商品 */
@@ -134,8 +135,9 @@ image {
 .number input{
   flex:1;
   height: 32rpx;
-  border: 1rpx solid #e7e7e7;
   min-height: 32rpx;
+  line-height: 32rpx;
+  border: 1rpx solid #e7e7e7;
   border-left: 0;
   border-right: 0;
   background: #fffdfe;

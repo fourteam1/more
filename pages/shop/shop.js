@@ -9,7 +9,6 @@ Page({
     check: false,
     show: false,
     TotalCost: 0,
-    check: false
   },
 
   /**
@@ -29,9 +28,13 @@ Page({
         "content-type": "application/json"
       },
       success: res => {
-        console.log(res.data.goods_list);
+        // console.log(res.data.goods_list);
         let list = res.data.goods_list;
         list = list.splice(0,3);
+        list.forEach( item => {
+          item.count = 1;
+          item.check = false;
+        })
         this.setData({
           data: list
         })
@@ -43,70 +46,109 @@ Page({
   },
   //当前选中的商品
   check(e){
-    // console.log(e.currentTarget.dataset.index);
     let index = e.currentTarget.dataset.index;
-    let data = this.data.data;
-    // data.forEach((item) => {
-    // })
+    let list = this.data.data;
+    // console.log(list)
+    list[index].check = !list[index].check;
+    this.filter(list)
+    this.setData({
+      data: list
+    })
   },
+  // All全部选中
+  All(e) {
+    let check = !this.data.check;
+    let list = this.data.data;
+    list.forEach(item => {
+      item.check = check;
+    })
+    this.filter(list)
+    this.setData({
+      data: list
+    })
+  },
+  // 过滤的方法
+  filter(list){
+    let newdata = list.filter(item => {
+      return item.check == true;
+    })
+    let TotalCost = 0;
+    newdata.forEach(item => {
+      TotalCost += item.market_price * item.count
+    })
+    this.setData({
+      TotalCost: TotalCost
+    })
+    if (list.length === newdata.length) {
+      this.setData({
+        check: true
+      })
+    }else{
+      this.setData({
+        check: false
+      })
+    }
+  },
+  //商品+1
+  add(e){
+    let index = e.currentTarget.dataset.index;
+    let list = this.data.data;
+    list[index].count++;
+    this.setData({
+      data: list
+    })
+    
+  },
+  //商品-1
+  cutBack(e){
+    let index = e.currentTarget.dataset.index;
+    let list = this.data.data;
+    list[index].count--;
+    if (list[index].count < 1){
+      list[index].count = 1;
+    }
+    this.setData({
+      data: list
+    })
+  },
+  // 删除当前商品
+  remove(e){
+    let index = e.currentTarget.dataset.index;
+    let list = this.data.data;
+    list[index].count = 0;
+    list.splice(index,1);
+    if(list.length == 0) {
+      this.setData({
+        check: false
+      })
+    }
+    this.setData({
+      data: list
+    })
+    this.filter(list)
+  },
+  
+
+
+
+
+
+
+
+
+
+
+
   //模态框
-  onClose(){
+  onClose(e){
     this.setData({ 
       show: false
     })
   },
   //去结算
-  Settlement(){
+  Settlement(e){
     this.setData({
       show: true
     })
-  },
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
   }
 })
