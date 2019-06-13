@@ -4,13 +4,22 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
+		"coverView": true,
 		"autoAudits": false,
-		"coverView": true
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"nodeModules": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
@@ -40,12 +49,40 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
 					"name": "mine",
 					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "indent",
+					"pathName": "pages/indent/indent",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "购物车",
+					"pathName": "pages/shop/shop",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "offer",
+					"pathName": "pages/offer/offer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/details/details",
+					"pathName": "pages/details/details",
 					"scene": null
 				}
 			]
