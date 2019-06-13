@@ -13,7 +13,7 @@ Page({
    */
   onLoad: function (options) {
     wx.setNavigationBarTitle({
-      title: '浏览记录',
+      title: '浏览记录'
     })
   },
 
