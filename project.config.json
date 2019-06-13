@@ -25,6 +25,7 @@
 	"libVersion": "2.7.1",
 	"appid": "wxc176dcbbc21c8865",
 	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
+	"projectname": "demo",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -49,7 +50,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -60,22 +61,16 @@
 				},
 				{
 					"id": -1,
-					"name": "indent",
-					"pathName": "pages/indent/indent",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "购物车",
-					"pathName": "pages/shop/shop",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
 					"name": "offer",
 					"pathName": "pages/offer/offer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "collect",
+					"pathName": "pages/collection/collection",
+					"query": "",
 					"scene": null
 				}
 			]

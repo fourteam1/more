@@ -1,4 +1,8 @@
 /* pages/mine/mine.wxss */
+page{
+  background:#fff;
+  width:100%;
+}
 .mine{
   width: 100%;
 }
