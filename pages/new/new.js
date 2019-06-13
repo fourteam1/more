@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    dataList:[]
   },
 
   /**
@@ -14,6 +14,21 @@ Page({
   onLoad: function (options) {
     wx.setNavigationBarTitle({
       title: '新品',
+    })
+    this.getData()
+  },
+  getData(){
+    wx.request({
+      url: 'http://mobile.yangkeduo.com/proxy/api/api/alexa/v1/goods?&page=1&size=20',
+      header: {
+        "content-type": "application/json"
+      },
+      success: res => {
+        console.log(res.data.goods_list);
+        this.setData({
+          dataList: res.data.goods_list
+        })
+      },
     })
   },
 

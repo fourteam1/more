@@ -25,6 +25,7 @@
 	"libVersion": "2.7.1",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"appid": "wxd1d8968ddc6d7ed7",
 =======
 	"appid": "wx688a5d2aef280660",
@@ -32,6 +33,9 @@
 =======
 	"appid": "wxc176dcbbc21c8865",
 >>>>>>> 965b35dfa1ac318fd7742a1c4a0a8fed58bf2848
+=======
+	"appid": "wx688a5d2aef280660",
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
 	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -58,10 +62,14 @@
 		},
 		"miniprogram": {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			"current": 2,
 =======
 			"current": 3,
 >>>>>>> 0e14430f8e8ca9913a9f123b4954fe35cd22638f
+=======
+			"current": 6,
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
 			"list": [
 				{
 					"id": -1,
@@ -82,15 +90,44 @@
 					"name": "购物车",
 					"pathName": "pages/shop/shop",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 					"name": "offer",
 					"pathName": "pages/offer/offer",
 >>>>>>> 0e14430f8e8ca9913a9f123b4954fe35cd22638f
+=======
+					"name": "pages/details/details",
+					"pathName": "pages/details/details",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "new",
+					"pathName": "pages/new/new",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "new",
+					"pathName": "pages/new/new",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
 					"scene": null
 				}
 			]

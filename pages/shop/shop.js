@@ -1,6 +1,5 @@
 // pages/shop/shop.js
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -117,28 +116,18 @@ Page({
     let list = this.data.data;
     list[index].count = 0;
     list.splice(index,1);
-    if(list.length == 0) {
+    this.filter(list)
+    this.setData({
+      data: list
+    })
+    if (list.length == 0) {
+      console.log(0)
       this.setData({
         check: false
       })
     }
-    this.setData({
-      data: list
-    })
-    this.filter(list)
+    
   },
-  
-
-
-
-
-
-
-
-
-
-
-
   //模态框
   onClose(e){
     this.setData({ 
