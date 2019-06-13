@@ -6,19 +6,13 @@
     "pages/shop/shop",
     "pages/mine/mine",
     "pages/indent/indent",
-    "pages/details/details",
-    "pages/user/user"
+    "pages/details/details"
   ],
   "window": {
     "backgroundTextStyle": "dark",
-<<<<<<< HEAD
     "navigationBarBackgroundColor": "#1ca95e",
     "navigationBarTitleText": "拼多多",
-    "navigationBarTextStyle": "white",
-=======
-    "navigationBarBackgroundColor": "#fff",
     "navigationBarTextStyle": "black",
->>>>>>> 18b31e70e2437713cc5e4473103904aa1fa664e7
     "enablePullDownRefresh": true
   },
   "tabBar": {

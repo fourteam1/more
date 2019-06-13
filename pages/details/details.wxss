@@ -453,4 +453,78 @@
   text-align: center;
   font-size: 30rpx;
 }
+
+/*添加购物车*/
+.van-popup--bottom{
+  overflow: visible!important;
+}
+.footer-shop{
+  width:100%;
+  height:765rpx;
+  background: #fff;
+}
+.footer-shop image{
+  position: absolute;
+  top:-68rpx;
+  left:48rpx;
+  width:240rpx;
+  height: 240rpx;
+  background: red;
+  border-radius: 10rpx;
+}
+.footer-shop-right{
+  display: flex;
+  flex-direction: column;
+  margin-top:15rpx;
+  width:100%;
+  height:170rpx;
+  padding-left: 320rpx;
+}
+.footer-shop-right text:nth-child(1){
+  font-size: 30rpx;
+  color:#d60e15;
+}
+.footer-shop-right text:nth-child(2),.footer-shop-right text:nth-child(3){
+  font-size: 30rpx;
+  color:#343434;
+}
+.footer-shop-right icon{
+  position: absolute;
+  top:20rpx;
+  right:20rpx;
+  font-size: 30rpx;
+}
+.footer-shop .size{
+  width: 100%;
+  height: 110rpx;
+  line-height: 110rpx;
+  font-size: 38rpx;
+  color:#343434;
+  padding-left:55rpx;
+  box-sizing: border-box;
+}
+.footer-shop .list{
+   padding-left:55rpx;
+  box-sizing: border-box;
+}
+.footer-shop .list text{
+  display: inline-block;
+  padding:10rpx 33rpx;
+  background: #dcdcdc;
+  font-size: 24rpx;
+  color:#2e2e2e; 
+  border-radius: 15rpx;
+  margin-right: 54rpx;
+}
+.footer-shop .btn{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background: #fb3609;
+  font-size: 40rpx;
+  line-height: 90rpx;
+  text-align: center;
+}
 /*底部*/

@@ -11,9 +11,10 @@ Page({
     ],
     iconType: [
       'success'
-    ]
+    ],
+    show: false
   },
-
+  
   /**
    * 生命周期函数--监听页面加载
    */
@@ -22,7 +23,19 @@ Page({
       title: '浏览记录',
     })
   },
-
+  onClose() {
+    this.setData({ show: false });
+  },
+  isShow(){
+    this.setData({
+      show:!this.data.show
+    })
+  },
+  goIsshow() {
+    this.setData({
+      show: !this.data.show
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -4,7 +4,7 @@
   <view class="details-header">
     <image></image>
     <view class="details-header-icon">
-      <text class="iconfont icon-fanhui"></text>
+      <text class="iconfont icon-qianjin"></text>
       <text class="iconfont icon-gouwuche"></text>
       <text class="iconfont icon-sangedian"></text>
       <text>0</text>
@@ -196,7 +196,32 @@
     </view>
   </view>
   <view class="footer-list-1">发起拼单</view>
-  <view class="footer-list-2">单独购买</view>
-
+  <view class="footer-list-2" bindtap='isShow'>单独购买</view>
+  <van-popup show="{{ show }}" bind:close="onClose">
+  
+  </van-popup>
+  <van-popup show="{{ show }}" position="bottom" overlay="{{ false }}" bind:close="onClose">
+    <view class="footer-shop">
+      <image></image>
+      <view class="footer-shop-right">
+        <text>￥122-133</text>
+        <text>库存2343件</text>
+        <text>请选择 尺码</text>
+        <icon class="iconfont icon-cha" bindtap='goIsshow'></icon>
+      </view> 
+      <view class="size">尺码</view>
+      <view class='list'>
+        <text>60*40cm</text>
+        <text>58*36cm</text>
+      </view>
+      <view class='size'>颜色</view>
+      <view class="list">
+        <text>白色</text>
+      </view>
+      <button class="btn">确定</button>
+      </view>
+      
+  </van-popup>
+  <!-- 添加购物车-->
 </view>
 <!-- 底部-->
