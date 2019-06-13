@@ -18,7 +18,7 @@
 }
   /* 图片 */
 image {
-  width: 284rpx;
+  width: 284rpx; 
   height: 170rpx;
   margin-top: 375rpx;
   margin-left: 203rpx;
