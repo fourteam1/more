@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <!--pages/browsing/browsing.wxml-->
+=======
+>>>>>>> e8d5b4d9f62a7028454220530ebab314f70d7fe5
 <view class='browsing'>
   <view class='content'>
     <view class='list'>
@@ -17,4 +20,8 @@
     <text>加载更多</text>
     <image src='../image/empty.gif'></image>
   </view>
+<<<<<<< HEAD
 </view>
+=======
+</view>
+>>>>>>> e8d5b4d9f62a7028454220530ebab314f70d7fe5

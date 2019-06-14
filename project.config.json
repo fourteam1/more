@@ -19,6 +19,7 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
+<<<<<<< HEAD
 		},
 	},
 	"compileType": "miniprogram",
@@ -26,10 +27,20 @@
 	"appid": "wxd1d8968ddc6d7ed7",
 	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
 	"cloudfunctionTemplateRoot": "",
+=======
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.1",
+	"appid": "wxd23e7e29d4292ddb",
+	"projectname": "more",
+>>>>>>> e8d5b4d9f62a7028454220530ebab314f70d7fe5
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-	"scripts": {},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -44,6 +55,7 @@
 			"list": []
 		},
 		"game": {
+<<<<<<< HEAD
       "current": -1,
 			"list": []
 		},
@@ -97,6 +109,18 @@
 					"name": "index",
 					"pathName": "pages/index/index",
 					"query": "",
+=======
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "details",
+					"pathName": "pages/details/details",
+>>>>>>> e8d5b4d9f62a7028454220530ebab314f70d7fe5
 					"scene": null
 				},
 				{
