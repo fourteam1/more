@@ -308,7 +308,8 @@
 }
 .price-list .price-title{
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
+  width:100%;
 }
 .price-title image{
   width:52rpx;
