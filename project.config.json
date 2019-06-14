@@ -49,7 +49,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": 8,
 			"list": [
 				{
 					"id": -1,
@@ -97,14 +97,22 @@
 					"id": -1,
 					"name": "index",
 					"pathName": "pages/index/index",
+					"query": "",
 					"scene": null
 				},
-        {
-          "id": -1,
-          "name": "offer",
-          "pathName": "pages/offer/offer",
-          "scene": null
-        }
+				{
+					"id": -1,
+					"name": "offer",
+					"pathName": "pages/offer/offer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "order订单",
+					"pathName": "pages/order/order",
+					"scene": null
+				}
 			]
 		}
 	}

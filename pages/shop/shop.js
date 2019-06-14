@@ -46,7 +46,6 @@ Page({
   check(e){
     let index = e.currentTarget.dataset.index;
     let list = this.data.data;
-    // console.log(list)
     list[index].check = !list[index].check;
     this.filter(list)
     this.setData({
@@ -129,5 +128,18 @@ Page({
   },
   //去结算
   Settlement(e){
+    let TotalCost = this.data.TotalCost;
+    let data = this.data.data;
+    let list = {
+      data,
+      TotalCost
+    }
+    wx.setStorage({
+      key: 'data',
+      data: list,
+    })
+    wx.navigateTo({
+      url: `../order/order`
+    })
   }
 })

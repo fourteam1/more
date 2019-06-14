@@ -6,10 +6,11 @@
     "pages/shop/shop",
     "pages/mine/mine",
     "pages/indent/indent",
-    "pages/offer/offer", 
+    "pages/offer/offer",
     "pages/browsing/browsing",
     "pages/collection/collection",
-    "pages/refund/refund"
+    "pages/refund/refund",
+    "pages/order/order"
   ],
   "window": {
     "backgroundTextStyle": "dark",
