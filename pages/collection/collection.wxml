@@ -1,8 +1,4 @@
 <!--pages/collection/collection.wxml-->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<text>pages/collection/collection.wxml</text>
-=======
 <view class='collection'>
   <view class='list'>
     <image src='../image/2.png'/>
@@ -16,7 +12,4 @@
     </view>
   </view>
 </view>
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
-=======
-<text>pages/collection/collection.wxml</text>
->>>>>>> origin
+

@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* pages/collection/collection.wxss */
-=======
+
 /* pages/collection/collection.wxss */
 .collection{
   padding: 20rpx 30rpx 0;
@@ -55,7 +52,3 @@
   font-size: 22rpx;
   margin-top: 26rpx;
 }
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
-=======
-/* pages/collection/collection.wxss */
->>>>>>> origin

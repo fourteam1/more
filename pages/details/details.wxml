@@ -197,7 +197,6 @@
     </view>
   </view>
   <view class="footer-list-1">发起拼单</view>
-<<<<<<< HEAD
   <!-- <view ></view> --> 
   <button class="footer-list-2" bindtap="getShow">单独购买</button>
 <!-- <van-popup ></van-popup> -->
@@ -222,7 +221,6 @@
   <view class="btn">确定</view>
 </view>
 </van-popup>
-=======
   <view class="footer-list-2" bindtap='isShow'>单独购买</view>
   <van-popup show="{{ show }}" bind:close="onClose">
 </van-popup>
@@ -252,6 +250,5 @@
 
 
 
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
 </view>
 <!-- 底部-->
