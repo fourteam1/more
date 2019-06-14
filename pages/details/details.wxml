@@ -1,14 +1,12 @@
-<!--pages/details/details.wxml-->
 <view class="del">
-
 <view class="details">
   <!-- 头部开始 -->
   <view class="details-header">
     <image></image>
     <view class="details-header-icon">
       <text class="iconfont icon-fanhui"></text>
-      <text class="iconfont icon-qianjin"></text>
       <text class="iconfont icon-gouwuche"></text>
+      <text class="iconfont icon-sangedian"></text>
       <text>0</text>
     </view>
     <view class="details-header-text">
