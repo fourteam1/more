@@ -67,6 +67,7 @@
 		},
 		"miniprogram": {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			"current": -1,
 =======
 <<<<<<< HEAD
@@ -79,6 +80,9 @@
 >>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
 >>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
 >>>>>>> f2aaf538078e8a844e1acbee06293a0361c2e5d0
+=======
+			"current": -1,
+>>>>>>> 90bd5929421a08c9688abf06b7fd569ca1ca80de
 			"list": [
 				{
 					"id": -1,
@@ -89,6 +93,16 @@
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
+=======
+					"name": "refund",
+					"pathName": "pages/refund/refund",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+>>>>>>> 90bd5929421a08c9688abf06b7fd569ca1ca80de
 					"name": "购物车",
 					"pathName": "pages/shop/shop",
 					"query": "",
@@ -128,11 +142,16 @@
 				{
 					"id": -1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 					"name": "111",
 					"pathName": "pages/details/details",
 =======
 					"name": "new",
 					"pathName": "pages/new/new",
+=======
+					"name": "offer",
+					"pathName": "pages/offer/offer",
+>>>>>>> 90bd5929421a08c9688abf06b7fd569ca1ca80de
 					"query": "",
 					"scene": null
 				},
@@ -140,6 +159,7 @@
 					"id": -1,
 					"name": "index",
 					"pathName": "pages/index/index",
+<<<<<<< HEAD
 <<<<<<< HEAD
 					"query": "",
 =======
@@ -149,6 +169,9 @@
 =======
 >>>>>>> origin
 >>>>>>> f2aaf538078e8a844e1acbee06293a0361c2e5d0
+=======
+					"query": "",
+>>>>>>> 90bd5929421a08c9688abf06b7fd569ca1ca80de
 					"scene": null
 				}
 			]
