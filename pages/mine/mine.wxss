@@ -102,15 +102,9 @@ page{
   font-size: 28rpx;
   color: #ec3127;
 }
-<<<<<<< HEAD
 
 .mine .content .indent .indentCon .list .list_item icon.icon-shangpinshoucang{
-
   font-size: 36rpx;
-
-=======
-.mine .content .indent .list .list_item icon.icon-shangpinshoucang{
->>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
   color: #ff81ba;
 }
 .mine .content .indent .list .list_item icon.icon-lishiliulan{

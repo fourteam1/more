@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* pages/browsing/browsing.wxss */
 .browsing{
   width: 100vw;
@@ -83,6 +82,3 @@
   opacity: 0.3;
 	background: #397755;
 }
-=======
-/* pages/browsing/browsing.wxss */
->>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470

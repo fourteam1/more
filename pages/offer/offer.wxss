@@ -1,5 +1,4 @@
 /* pages/offer/offer.wxss */
-<<<<<<< HEAD
 .wrap{
   width: 100%;
   height: 100%;
@@ -108,7 +107,7 @@
   height: 84rpx;
   opacity: 0.3;
 	background: #397755;
-=======
+}
 .offer{
   width: 100%;
   background: #f4f4f4;
@@ -225,5 +224,4 @@
   color: #a4a4a4;
   padding: 110rpx 0;
   box-sizing: border-box;
->>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
 }

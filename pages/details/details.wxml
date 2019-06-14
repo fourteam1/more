@@ -197,9 +197,7 @@
   </view>
   <view class="footer-list-1">发起拼单</view>
   <view class="footer-list-2" bindtap='isShow'>单独购买</view>
-  <van-popup show="{{ show }}" bind:close="onClose">
-  
-  </van-popup>
+  <van-popup show="{{ show }}" bind:close="onClose"></van-popup>
   <van-popup show="{{ show }}" position="bottom" overlay="{{ false }}" bind:close="onClose">
     <view class="footer-shop">
       <image></image>
@@ -223,5 +221,8 @@
       
   </van-popup>
   <!-- 添加购物车-->
+
+
+
 </view>
 <!-- 底部-->
