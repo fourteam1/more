@@ -10,7 +10,8 @@
     "pages/browsing/browsing",
     "pages/collection/collection",
     "pages/refund/refund",
-    "pages/details/details"
+    "pages/details/details",
+    "pages/order/order"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -48,5 +49,4 @@
     ]
   },
   "sitemapLocation": "sitemap.json"
-  
 }
