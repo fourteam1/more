@@ -6,7 +6,6 @@ Page({
   data: {
     data: [],
     check: false,
-    show: false,
     TotalCost: 0,
   },
 
@@ -128,16 +127,7 @@ Page({
     }
     
   },
-  //模态框
-  onClose(e){
-    this.setData({ 
-      show: false
-    })
-  },
   //去结算
   Settlement(e){
-    this.setData({
-      show: true
-    })
   }
 })

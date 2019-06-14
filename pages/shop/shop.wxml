@@ -53,14 +53,5 @@
       </view>
     </view>
   </view>
-  <!-- 模态框 -->
-  <van-popup 
-    show="{{show}}" 
-    bind:close="onClose">
-      <view class='header'>
-        <text class='iconfont icon-guanbi'></text>
-        <text class='iconfont '></text>
-        <text class='text'>确认支付密码</text>
-      </view>
-  </van-popup>
+
 </view>
