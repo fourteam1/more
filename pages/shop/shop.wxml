@@ -13,7 +13,11 @@
     <view class='shop-Valued'>
       <view class='shop-item' wx:for="{{data}}" wx:key="{{index}}" data-index="{{index}}">
           <!-- 是否选中 -->
+<<<<<<< HEAD
           <text class="{{!item.check ? 'iconfont icon-xuanzhongyuandian' : 'iconfont icon-xuanzhong-copy'}}" bindtap='SingleBox' data-index="{{index}}"></text>
+=======
+          <text class='iconfont ' class="check ? icon-xuanzhongyuandian : icon-xuanzhong-copy"></text>
+>>>>>>> 4a2231947d3138ea12928a8004c40e39b4c49d1f
           <!-- 图片 -->
           <image src='{{item.image_url}}'></image>
           <!-- 详细信息 -->
@@ -22,6 +26,7 @@
             <text class='short_name'>{{item.short_name}}</text>
             <text class='market_price'>￥{{item.market_price}}</text>
           </view>
+<<<<<<< HEAD
           <!-- 商品数量 -->
           <view class='Products' wx:if="{{!item.check}}">
             <view class='number'>
@@ -63,4 +68,9 @@
         <text class='iconfont icon-guanbi'></text>
       </view>
   </van-popup>
+=======
+      </view>
+    </view>
+  </view>
+>>>>>>> 4a2231947d3138ea12928a8004c40e39b4c49d1f
 </view>

@@ -52,7 +52,6 @@ image {
 }
   /* 每一个商品 */
 .shop-item {
-  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -65,7 +64,6 @@ image {
   /* 商品是否选中 */
 .iconfont {
   font-size: 48rpx;
-  color: #278c58;
 }
   /* 商品图片 */
 image {
@@ -89,7 +87,7 @@ image {
   /* 商品名称和颜色共同样式 */
 .goods_name,.short_name {
   display: block;
-  width: 200rpx;
+  width: 410rpx;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -111,6 +109,7 @@ image {
   font-size: 26rpx;
   color: #df0000;
 }
+<<<<<<< HEAD
   /* 商品数量 */
 .Products {
   position: absolute;
@@ -215,3 +214,6 @@ image {
   box-shadow: 1rpx 4rpx 12rpx 1rpx rgba(164,215,139,.29);
   font-size: 30rpx;
 }
+=======
+/* 有值购物车 */
+>>>>>>> 4a2231947d3138ea12928a8004c40e39b4c49d1f

@@ -10,6 +10,13 @@
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+		"nodeModules": true,
+=======
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
 		"autoAudits": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
@@ -18,23 +25,30 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
+<<<<<<< HEAD
 		},
 		"nodeModules": true
+=======
+<<<<<<< HEAD
+		}
+=======
+		},
+		"nodeModules": true
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
-<<<<<<< HEAD
-	"appid": "wxd1d8968ddc6d7ed7",
-=======
-	"appid": "wx0cab5303c04aec4a",
->>>>>>> 51807f95fec164332021afcdc02974b73885898f
+	"appid": "wx688a5d2aef280660",
 	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
+<<<<<<< HEAD
+	"cloudfunctionTemplateRoot": "",
+=======
+>>>>>>> origin
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-	"isGameTourist": false,
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
+	"scripts": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -49,15 +63,26 @@
 			"list": []
 		},
 		"game": {
-			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
 <<<<<<< HEAD
-			"current": 2,
+<<<<<<< HEAD
+			"current": -1,
 =======
-			"current": 3,
->>>>>>> 51807f95fec164332021afcdc02974b73885898f
+<<<<<<< HEAD
+			"current": 4,
+=======
+<<<<<<< HEAD
+			"current": 4,
+=======
+			"current": 6,
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
+>>>>>>> f2aaf538078e8a844e1acbee06293a0361c2e5d0
+=======
+			"current": -1,
+>>>>>>> 90bd5929421a08c9688abf06b7fd569ca1ca80de
 			"list": [
 				{
 					"id": -1,
@@ -69,31 +94,84 @@
 				{
 					"id": -1,
 <<<<<<< HEAD
-					"name": "indent",
-					"pathName": "pages/indent/indent",
 =======
-					"name": "pages/details/details",
-					"pathName": "pages/index/index",
->>>>>>> 51807f95fec164332021afcdc02974b73885898f
+					"name": "refund",
+					"pathName": "pages/refund/refund",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+>>>>>>> 90bd5929421a08c9688abf06b7fd569ca1ca80de
+					"name": "购物车",
+					"pathName": "pages/shop/shop",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
 <<<<<<< HEAD
-					"name": "购物车",
-					"pathName": "pages/shop/shop",
+<<<<<<< HEAD
+					"name": "offer",
+					"pathName": "pages/offer/offer",
 =======
+=======
+>>>>>>> origin
 					"name": "pages/details/details",
 					"pathName": "pages/details/details",
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
+					"name": "pages/details/details",
+					"pathName": "pages/details/details",
+=======
+<<<<<<< HEAD
 					"name": "pages/user/user",
 					"pathName": "pages/user/user",
->>>>>>> 51807f95fec164332021afcdc02974b73885898f
+=======
+					"name": "new",
+					"pathName": "pages/new/new",
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+<<<<<<< HEAD
+<<<<<<< HEAD
+					"name": "111",
+					"pathName": "pages/details/details",
+=======
+					"name": "new",
+					"pathName": "pages/new/new",
+=======
+					"name": "offer",
+					"pathName": "pages/offer/offer",
+>>>>>>> 90bd5929421a08c9688abf06b7fd569ca1ca80de
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+<<<<<<< HEAD
+<<<<<<< HEAD
+					"query": "",
+=======
+<<<<<<< HEAD
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
+=======
+>>>>>>> origin
+>>>>>>> f2aaf538078e8a844e1acbee06293a0361c2e5d0
+=======
+					"query": "",
+>>>>>>> 90bd5929421a08c9688abf06b7fd569ca1ca80de
 					"scene": null
 				}
 			]

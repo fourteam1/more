@@ -6,14 +6,17 @@
     "pages/shop/shop",
     "pages/mine/mine",
     "pages/indent/indent",
+    "pages/offer/offer",
+    "pages/browsing/browsing",
+    "pages/collection/collection",
+    "pages/refund/refund",
     "pages/details/details",
-    "pages/user/user"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#1ca95e",
     "navigationBarTitleText": "拼多多",
-    "navigationBarTextStyle": "white",
+    "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },
   "tabBar": {
@@ -43,5 +46,11 @@
         "selectedIconPath": "pages/image/mine.png"
       }
     ]
+<<<<<<< HEAD
   }
+=======
+  },
+  "sitemapLocation": "sitemap.json"
+  
+>>>>>>> 4a2231947d3138ea12928a8004c40e39b4c49d1f
 }
