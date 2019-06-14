@@ -13,7 +13,7 @@
     <view class='shop-Valued'>
       <view class='shop-item' wx:for="{{data}}" wx:key="{{index}}" data-index="{{index}}">
           <!-- 是否选中 -->
-          <text class='iconfont ' class="check ? icon-xuanzhongyuandian : icon-xuanzhong-copy"></text>
+          <icon  class="check ? 'iconfont icon-xuanzhongyuandian' : 'iconfont icon-xuanzhong-copy'"></icon>
           <!-- 图片 -->
           <image src='{{item.image_url}}'></image>
           <!-- 详细信息 -->

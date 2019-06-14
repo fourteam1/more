@@ -6,14 +6,16 @@
     "pages/shop/shop",
     "pages/mine/mine",
     "pages/indent/indent",
-    "pages/offer/offer", 
+    "pages/offer/offer",
     "pages/browsing/browsing",
     "pages/collection/collection",
-    "pages/refund/refund"
+    "pages/refund/refund",
+    "pages/details/details"
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#1ca95e",
+    "navigationBarTitleText": "拼多多",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },
@@ -46,4 +48,5 @@
     ]
   },
   "sitemapLocation": "sitemap.json"
+  
 }

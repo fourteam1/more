@@ -10,6 +10,7 @@
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
+		"nodeModules": true,
 		"autoAudits": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
@@ -18,17 +19,17 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		},
-		"nodeModules": true
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
 	"appid": "wxc176dcbbc21c8865",
-	"projectname": "demo",
+	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
+	"cloudfunctionTemplateRoot": "",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-	"isGameTourist": false,
+	"scripts": {},
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
@@ -45,7 +46,6 @@
 			"list": []
 		},
 		"game": {
-			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
@@ -67,22 +67,29 @@
 				},
 				{
 					"id": -1,
-					"name": "购物车",
+					"name": "shop",
 					"pathName": "pages/shop/shop",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "pages/details/details",
+					"name": "offer",
+					"pathName": "pages/offer/offer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "details",
 					"pathName": "pages/details/details",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "new",
-					"pathName": "pages/new/new",
+					"name": "pages/user/user",
+					"pathName": "pages/user/user",
 					"query": "",
 					"scene": null
 				},
@@ -97,6 +104,13 @@
 					"id": -1,
 					"name": "index",
 					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "new",
+					"pathName": "pages/new/new",
 					"query": "",
 					"scene": null
 				}

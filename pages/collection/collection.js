@@ -13,7 +13,7 @@ Page({
    */
   onLoad: function (options) {
     wx.setNavigationBarTitle({
-      title: '商品收藏'
+      title: '商品收藏',
     })
   },
 
