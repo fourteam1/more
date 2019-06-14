@@ -1,4 +1,3 @@
-<!--pages/offer/offer.wxml-->
 <view class='wrap'>
   <view class='top'>
     <view class="line"></view>
