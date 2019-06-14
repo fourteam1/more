@@ -247,6 +247,218 @@
   margin-right:5rpx;
 }
 
-
 /*  */
-。wave_pillow_box2
+.wave_pillow_box2{
+  display:flex;
+  width:100%;
+  height:378rpx;
+}
+.wave_pillow_box2_img1{
+  width:473rpx;
+  height:100%;
+}
+.wave_pillow_box2_1{
+  width:236rpx;
+  height:100%;
+}
+.wave_pillow_box2_img2{
+  width:236rpx;
+  height:267rpx;
+}
+.wave_pillow_box2_1 .float_box1{
+  margin-left:24rpx;
+}
+.wave_btn_1{
+   margin-left:24rpx;
+}
+
+
+/* logo */
+.logo_bg_1{
+  margin-top:56rpx;
+}
+
+.pillow_img1{
+  width:100%;
+  height:430rpx;
+}
+
+/* 列表开始 */
+.pillow_list{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  height:324rpx;
+  padding:0 15rpx;
+  box-sizing: border-box;
+  /* background:yellow; */
+}
+.pillow_lis{
+  width:343rpx;
+  height:100%
+}
+.pillow_lis .pillow_lis_text{
+  text-align:center;
+  width:100%;
+  margin-bottom:16rpx;
+}
+.pillow_lis .img{
+  width:100%;
+  height:210rpx;
+}
+.box{
+  display:flex;
+  align-items: center;
+  width:100%;
+}
+.box .float_box1{
+  width:180rpx;
+}
+.box .float_box1 .textc_re_1{
+  font-size:34rpx;
+}
+.box .wave_btn_1{
+  margin:0;
+}
+/* 列表开始 */
+
+/* footer */
+/* 排行榜开始 */
+.footer{
+  width:100%;
+  background:#f1f6f4;
+  padding:55rpx 0;
+}
+.row{
+  width: 100%;
+}
+.row .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 38rpx;
+}
+.row .header .ranking{
+  font-size: 32rpx;
+  margin-left: 45rpx;
+}
+.row .header .volume text{
+  font-size: 22rpx;
+  padding-bottom: 8rpx;
+}
+.row .header .volume text.active{
+  border-bottom: 4rpx solid #000;
+}
+.row .header .volume text:nth-of-type(2){
+  margin-left: 48rpx;
+  margin-right: 45rpx;
+}
+.row .body{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.row .body .center{
+  width: 231rpx;
+  height: 292rpx;
+  margin-right: 19rpx;
+  background: #fff;
+  border-radius: 8rpx;
+}
+.row .body .center:last-child{
+  margin-right: 0;
+}
+.row .body .center image{
+  width: 231rpx;
+  height: 150rpx;
+}
+.row .body .center .circle{
+  display: flex;
+  justify-content: center;
+  margin-top: -30rpx;
+  margin-bottom: 20rpx;
+}
+.row .body .center .circle text{
+  width: 48rpx;
+  height: 48rpx;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+  background: #0e8b4c;
+  border-radius: 50%;
+}
+.row .body .center .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.row .body .center .text text{
+  font-size: 19rpx; 
+  margin-bottom: 10rpx;
+}
+.row .body .center .text .person{
+  font-size: 24rpx;
+  color: #ccc;
+}
+
+/* 猜你喜欢开始 */
+.like_box{
+  width:100%;
+}
+.like_title{
+  padding:37rpx 0 0 47rpx;
+  font-size:40rpx;
+}
+
+.new_list{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:100%;
+  padding:0 10rpx;
+  box-sizing: border-box; 
+}
+.lis{
+  width:49%;
+  height:520rpx;
+  background:#fff;
+  margin-bottom:20rpx;
+}
+.lis:nth-child(even){
+  box-sizing: border-box;
+}
+.lis image{
+  width:100%;
+  height:75%;
+}
+.new_text1{
+  height:35rpx;
+  overflow:hidden;
+  padding:0 10rpx;
+  font-size:28rpx;
+}
+.new_text_2{
+  color:#ccc;
+}
+.new_text_3{
+  color:red;
+  margin-top:2rpx;
+}
+
+.btn{
+  width:100%;
+  display:flex;
+  height:85rpx;
+  justify-content: center;
+}
+.btn view{
+  width:696rpx;
+  height:85rpx;
+  background: #fff;
+  text-align:center;
+  line-height:85rpx;
+}
+/* footer */

@@ -97,7 +97,7 @@
     <image style="width:100%;height:195rpx;" src="../image/bg_1.gif"></image>
     <view class="wave_pillow_box2">
       <image class="wave_pillow_box2_img1" src='../image/pillow_2.gif'></image>
-      <!-- <view class="wave_pillow_box2_1">
+      <view class="wave_pillow_box2_1">
         <image class="wave_pillow_box2_img2"  src='../image/pillow_3.gif'></image>
         <view class="float_box1">
           <view >
@@ -108,7 +108,179 @@
           立即购买
           <image src="../image/z1.gif"></image>
         </view>
-      </view> -->
+      </view>
     </view>
-  <!--  -->
+
+    <!--  -->
+      <!-- logo -->
+    <view class="logo_bg_1 logo_bg_11"><image src="../image/logo1.gif"></image></view>
+    <view  class='body_wave_text1'>泰国平面波浪枕</view>
+    <!-- logo -->
+    <image class="pillow_img1" src="../image/pillow_4.gif"></image>
+    <!--  -->
+
+
+    <!-- 列表开始 -->
+    <view class="pillow_list">
+      <view  class="pillow_lis">
+        <view class='pillow_lis_text'> 波浪按摩枕</view>
+        <image class="img" src="../image/pillow_1_1.gif"></image>
+        <view class='box'>
+          <view class="float_box1">
+          <image src="../image/logo2.gif"></image>
+          <view style="margin-left:5rpx;">
+              <text  class="textc_re">￥</text><text class="textc_re textc_re_1">228.0</text>
+          </view>
+        </view>
+        <view class="wave_btn wave_btn_1" >
+          立即购买
+          <image src="../image/z1.gif"></image>
+        </view>
+        </view>
+      </view>
+      <view  class="pillow_lis">
+        <view class='pillow_lis_text'> 波浪按摩枕</view>
+        <image class="img" src="../image/pillow_1_1.gif"></image>
+        <view class='box'>
+          <view class="float_box1">
+          <image src="../image/logo2.gif"></image>
+          <view style="margin-left:5rpx;">
+              <text  class="textc_re">￥</text><text class="textc_re textc_re_1">228.0</text>
+          </view>
+        </view>
+        <view class="wave_btn wave_btn_1" >
+          立即购买
+          <image src="../image/z1.gif"></image>
+        </view>
+        </view>
+      </view>
+    </view>
+    <!-- 列表结束 -->
+
+    <!-- 镇店之宝 任君选择开始 -->
+  <view>
+    <view class="bg back_img1" style="background:url('../image/bg_11.GIF')">
+      <image class="bg_img" src="../image/logo3.gif"></image>
+    </view>
+    <!-- logo -->
+    <view class="logo_bg_1"><image src="../image/logo1.gif"></image></view>
+    <!-- logo -->
+    <!-- 标题 -->
+    <view  class='body_wave_text1'>泰国平面波浪枕</view>
+    <!-- 标题结束 -->
+       <!-- 列表开始 -->
+    <view class="pillow_list">
+      <view  class="pillow_lis">
+        <view class='pillow_lis_text'> 波浪按摩枕</view>
+        <image class="img" src="../image/pillow_1_1.gif"></image>
+        <view class='box'>
+          <view class="float_box1">
+          <image src="../image/logo2.gif"></image>
+          <view style="margin-left:5rpx;">
+              <text  class="textc_re">￥</text><text class="textc_re textc_re_1">228.0</text>
+          </view>
+        </view>
+        <view class="wave_btn wave_btn_1" >
+          立即购买
+          <image src="../image/z1.gif"></image>
+        </view>
+        </view>
+      </view>
+      <view  class="pillow_lis">
+        <view class='pillow_lis_text'> 波浪按摩枕</view>
+        <image class="img" src="../image/pillow_1_1.gif"></image>
+        <view class='box'>
+          <view class="float_box1">
+          <image src="../image/logo2.gif"></image>
+          <view style="margin-left:5rpx;">
+              <text  class="textc_re">￥</text><text class="textc_re textc_re_1">228.0</text>
+          </view>
+        </view>
+        <view class="wave_btn wave_btn_1" >
+          立即购买
+          <image src="../image/z1.gif"></image>
+        </view>
+        </view>
+      </view>
+    </view>
+    <!-- 列表结束 -->
+
+    <!--  -->
+    <image class="pillowimg_1" src="../image/pillow_5.gif"></image>
+    <!--  -->
+
+  </view>
+  <!-- 镇店之宝 任君选择结束 -->
+<!-- footer -->
+  <!-- paihangbang -->
+  <view class="footer">
+    <!--pages/row/row.wxml-->
+    <view class="row">
+      <view class='header'>
+        <text class='ranking'>排行榜</text>
+        <view class='volume'>
+          <text class='active'>销量排行</text>
+          <text>销量排行</text>
+        </view>
+      </view>
+      <view class='body'>
+        <view class='center'>
+          <image src='../image/pillow1.png'/>
+          <view class='circle'>
+            <text>1</text>
+          </view>
+          <view class='text'>
+            <text>泰国乳胶狼牙按摩枕</text>
+            <text class='person'>199人付款</text>
+          </view>
+        </view>
+        <view class='center'>
+          <image src='../image/pillow1.png'/>
+          <view class='circle'>
+            <text>2</text>
+          </view>
+          <view class='text'>
+            <text>泰国乳胶狼牙按摩枕</text>
+            <text class='person'>199人付款</text>
+          </view>
+        </view>
+        <view class='center'>
+          <image src='../image/pillow1.png'/>
+          <view class='circle'>
+            <text>3</text>
+          </view>
+          <view class='text'>
+            <text>泰国乳胶狼牙按摩枕</text>
+            <text class='person'>199人付款</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 排行榜结束 -->
+
+    <!-- 猜你喜欢开始 -->
+    <view class="like_box">
+      <view class="like_title">猜你喜欢</view>
+      <view class="new_list"> 
+        <view class="lis" wx:for="{{dataList}}" wx:key="{{index}}">
+          <image src="{{item.hd_thumb_url}}"></image>
+          <view class="new_text1">{{item.short_name}}</view>
+          <view class="new_text1 new_text_2">{{item.goods_name}}</view>
+          <view class="new_text1 new_text_3">￥2132</view>
+        </view>
+      </view>
+    </view>
+    <!-- 猜你喜欢结束 -->
+
+    <!-- 点击架子啊更多 -->
+    <view class="btn">
+      <view>
+        查看全部宝贝
+      </view>
+    </view>
+    <!-- 点击架子啊更多 -->
+  </view>
+  <!-- paihangbang -->
+
+  <!-- footer -->
 </view>  

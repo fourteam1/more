@@ -49,19 +49,12 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": -1,
 			"list": [
 				{
 					"id": -1,
 					"name": "mine",
 					"pathName": "pages/mine/mine",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "indent",
-					"pathName": "pages/indent/indent",
 					"query": "",
 					"scene": null
 				},
@@ -97,6 +90,7 @@
 					"id": -1,
 					"name": "index",
 					"pathName": "pages/index/index",
+					"query": "",
 					"scene": null
 				}
 			]
