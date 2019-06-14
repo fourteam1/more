@@ -41,7 +41,10 @@
 	"libVersion": "2.7.1",
 	"appid": "wx688a5d2aef280660",
 	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
+<<<<<<< HEAD
 	"cloudfunctionTemplateRoot": "",
+=======
+>>>>>>> origin
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -97,9 +100,12 @@
 				{
 					"id": -1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 					"name": "offer",
 					"pathName": "pages/offer/offer",
 =======
+=======
+>>>>>>> origin
 					"name": "pages/details/details",
 					"pathName": "pages/details/details",
 >>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
@@ -137,8 +143,11 @@
 					"id": -1,
 					"name": "index",
 					"pathName": "pages/index/index",
+<<<<<<< HEAD
 >>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
 >>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
+=======
+>>>>>>> origin
 					"scene": null
 				}
 			]

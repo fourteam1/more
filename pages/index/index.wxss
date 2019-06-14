@@ -4,6 +4,7 @@
 /* <!-- 轮播图 --> */
 
 
+<<<<<<< HEAD
 /* 拼团 */
 <<<<<<< HEAD
   .assemble{
@@ -97,6 +98,8 @@
 
 
 
+=======
+>>>>>>> origin
   .homePage{
     width:100%;
     height:360rpx;
@@ -131,7 +134,6 @@
   .assemble{
     width:100%;
     height:300rpx;
-    /* background:#ccc; */
     padding:45rpx 0 ;
     box-sizing: border-box;
     position:relative;
@@ -154,7 +156,6 @@
   .shopLing_img{
     width:50%;
     height:280rpx;
-    /* margin-left: */
   }
   .shopLing_text{
     height:190rpx;
@@ -268,4 +269,84 @@
   height:100%;
 }
 /*  */
+<<<<<<< HEAD
 >>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
+=======
+
+.back_img1{
+  width:100%;
+  height:148rpx;
+  position:relative;
+  margin-bottom:0;
+}
+.bg_img{
+  width:611rpx;
+  height:106rpx;
+  position: absolute;
+  bottom:0;
+  left:50%;
+  margin-left:-305rpx;
+}
+.logo_bg_1{
+  display:flex;
+  justify-content: center;
+  width:100%;
+  height:30rpx;
+}
+.logo_bg_1 image{
+  width:312rpx;
+  height:30rpx;
+}
+.body_wave_text1{
+  width:100%;
+  text-align:center;
+}
+
+/*  */
+.wave_pillow{
+  width:100%;
+  height:530rpx;
+  position: relative;
+}
+.wave_pillow image{width:100%;height:100%;}
+.wave_pillow_box1{
+  width:260rpx;
+  height:113rpx;
+  position: absolute;
+  bottom:0;
+  right:30rpx;
+}
+.float_box1{
+  width:100%;
+  height:42rpx;
+  display:flex;
+  align-items: center;
+}
+.float_box1 image{
+  width:63rpx;
+  height:22rpx;
+}
+.wave_btn{
+  display:flex;
+  margin-top:2rpx;
+  align-items: center;
+  justify-content: center;
+  width:150rpx;
+  height:46rpx;
+  border:1px solid red;
+  background:red;
+  border-radius:6rpx;
+  color:#fff;
+  font-size:24rpx;
+  margin:10rpx 0 0 70rpx;
+}
+.wave_btn image{
+  width:23rpx;
+  height:23rpx;
+  margin-right:5rpx;
+}
+
+
+/*  */
+。wave_pillow_box2
+>>>>>>> origin

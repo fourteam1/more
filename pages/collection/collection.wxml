@@ -1,5 +1,6 @@
 <!--pages/collection/collection.wxml-->
 <<<<<<< HEAD
+<<<<<<< HEAD
 <text>pages/collection/collection.wxml</text>
 =======
 <view class='collection'>
@@ -16,3 +17,6 @@
   </view>
 </view>
 >>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
+=======
+<text>pages/collection/collection.wxml</text>
+>>>>>>> origin

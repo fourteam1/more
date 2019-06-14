@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!--index.wxml-->
 <!-- 轮播图 -->
 <swiper indicator-dots="true" 
@@ -60,6 +61,8 @@
   </view>
 </view> --> 
 
+=======
+>>>>>>> origin
 <!-- 轮播开始 -->
 <view class="homePage" > 
   <image class="homePage_bg" src="../image/zhang-kaiyv-661828-unsplash.jpg"></image>
@@ -130,7 +133,54 @@
     <image src="../image/juan4.gif"></image>
     <image src="../image/juan4.gif"></image>
   </view>
+<<<<<<< HEAD
   
 <view class="bg" style="background:url('../image/bg_11.GIF')"></view>
 >>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
 </view>
+=======
+  <!-- 镇店之宝 任君选择开始 -->
+  <view class="bg back_img1" style="background:url('../image/bg_11.GIF')">
+    <image class="bg_img" src="../image/logo3.gif"></image>
+  </view> 
+  <!-- 镇店之宝 任君选择结束 -->
+  <!-- logo -->
+    <view class="logo_bg_1" style='margin:0;'><image src="../image/logo1.gif"></image></view>
+    <!-- logo -->
+    <!-- 标题 -->
+    <view  class='body_wave_text1'>泰国平面波浪枕</view>
+    <!-- 价格 -->
+    <view class="wave_pillow">
+      <image src="../image/pillow_1.gif"></image>
+      <view class="wave_pillow_box1">
+        <view class="float_box1">
+          <image src="../image/logo2.gif"></image>
+          <view>
+              <text class="textc_re">￥ </text><text class="textc_re textc_re_1">228.00</text>
+          </view>
+        </view>
+        <view class="wave_btn" >
+          立即购买
+          <image src="../image/z1.gif"></image>
+        </view>
+      </view>
+    </view>
+    <image style="width:100%;height:195rpx;" src="../image/bg_1.gif"></image>
+    <view class="wave_pillow_box2">
+      <image class="wave_pillow_box2_img1" src='../image/pillow_2.gif'></image>
+      <!-- <view class="wave_pillow_box2_1">
+        <image class="wave_pillow_box2_img2"  src='../image/pillow_3.gif'></image>
+        <view class="float_box1">
+          <view >
+              <text  class="textc_re">￥ </text><text class="textc_re textc_re_1">228.00</text>
+          </view>
+        </view>
+        <view class="wave_btn wave_btn_1" >
+          立即购买
+          <image src="../image/z1.gif"></image>
+        </view>
+      </view> -->
+    </view>
+  <!--  -->
+</view>  
+>>>>>>> origin

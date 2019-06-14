@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* pages/collection/collection.wxss */
 =======
 /* pages/collection/collection.wxss */
@@ -55,3 +56,6 @@
   margin-top: 26rpx;
 }
 >>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
+=======
+/* pages/collection/collection.wxss */
+>>>>>>> origin

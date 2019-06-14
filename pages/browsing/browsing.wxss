@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* pages/browsing/browsing.wxss */
 =======
 /* pages/browsing/browsing.wxss */
@@ -86,3 +87,6 @@
 	background: #397755;
 }
 >>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
+=======
+/* pages/browsing/browsing.wxss */
+>>>>>>> origin
