@@ -35,7 +35,7 @@
   .assemble{
     width:100%;
     height:300rpx;
-    padding:45rpx 0 ;
+    padding-top:45rpx;
     box-sizing: border-box;
     position:relative;
   }
@@ -156,7 +156,7 @@
 .body_1_ytext2{
   color:#9b9b9b;
 }
-/* 玲娟中心 */
+/* 领券中心 */
 .coupon_list{
   display:flex;
   justify-content: space-between;
