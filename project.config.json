@@ -10,6 +10,13 @@
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+		"nodeModules": true,
+=======
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
 		"autoAudits": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
@@ -18,19 +25,30 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
+<<<<<<< HEAD
 		},
 		"nodeModules": true
+=======
+<<<<<<< HEAD
+		}
+=======
+		},
+		"nodeModules": true
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
 	"appid": "wx688a5d2aef280660",
 	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
+<<<<<<< HEAD
+	"cloudfunctionTemplateRoot": "",
+=======
+>>>>>>> origin
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-	"isGameTourist": false,
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
+	"scripts": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -45,11 +63,22 @@
 			"list": []
 		},
 		"game": {
-			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
+<<<<<<< HEAD
 			"current": -1,
+=======
+<<<<<<< HEAD
+			"current": 4,
+=======
+<<<<<<< HEAD
+			"current": 4,
+=======
+			"current": 6,
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
+>>>>>>> f2aaf538078e8a844e1acbee06293a0361c2e5d0
 			"list": [
 				{
 					"id": -1,
@@ -67,20 +96,41 @@
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
+<<<<<<< HEAD
+					"name": "offer",
+					"pathName": "pages/offer/offer",
+=======
+=======
+>>>>>>> origin
 					"name": "pages/details/details",
 					"pathName": "pages/details/details",
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
+					"name": "pages/details/details",
+					"pathName": "pages/details/details",
+=======
+<<<<<<< HEAD
+					"name": "pages/user/user",
+					"pathName": "pages/user/user",
+=======
 					"name": "new",
 					"pathName": "pages/new/new",
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
+					"name": "111",
+					"pathName": "pages/details/details",
+=======
 					"name": "new",
 					"pathName": "pages/new/new",
 					"query": "",
@@ -90,7 +140,15 @@
 					"id": -1,
 					"name": "index",
 					"pathName": "pages/index/index",
+<<<<<<< HEAD
 					"query": "",
+=======
+<<<<<<< HEAD
+>>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
+=======
+>>>>>>> origin
+>>>>>>> f2aaf538078e8a844e1acbee06293a0361c2e5d0
 					"scene": null
 				}
 			]

@@ -4,6 +4,102 @@
 /* <!-- 轮播图 --> */
 
 
+<<<<<<< HEAD
+/* 拼团 */
+<<<<<<< HEAD
+  .assemble{
+=======
+  /* .assemble{ 
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
+    width:100%;
+    height:300rpx;
+    background:red;
+    margin:15rpx 0;
+<<<<<<< HEAD
+  }
+
+
+ /* 商品列表 */
+  .list{
+=======
+  } */
+
+
+ /* 商品列表 */
+  /* .list{
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    background:#f4f4f4;
+  }
+  .lis{
+    width:49%;
+    height:540rpx;
+    background:#fff;
+  }
+  .lis:nth-of-type(odd){
+<<<<<<< HEAD
+    /* background:blue; */
+=======
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
+    margin-right:2%;
+    margin-bottom:2%;
+  }
+  .lis_img_1{
+    height:372rpx;
+    width:100%;
+  }
+  .lis_text{
+    width:100%;
+    font-size:28rpx;
+    color:#393939;
+    height:70rpx;
+    overflow:hidden;
+    padding:0 10rpx;
+    box-sizing: border-box;
+  }
+  .price_box{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    padding:0 10rpx;
+    box-sizing: border-box;
+  }
+  .price_1{
+    height:80rpx;
+    line-height:80rpx;
+  }
+  .price_text1{
+    font-size:26rpx;
+    color:#db0a00;
+  }
+  .price_text2{
+    color:#db0a00;
+    font-size:37rpx;
+  }
+   .price_text3{
+    font-size:26rpx;
+    color:#adadad;
+  }
+
+  .price_2{
+    width:100rpx;
+    height:80rpx;
+    background:red;
+<<<<<<< HEAD
+  }
+=======
+  } */
+
+
+  /*  */
+
+
+
+
+=======
+>>>>>>> origin
   .homePage{
     width:100%;
     height:360rpx;
@@ -173,6 +269,9 @@
   height:100%;
 }
 /*  */
+<<<<<<< HEAD
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
+=======
 
 .back_img1{
   width:100%;
@@ -248,6 +347,7 @@
 }
 
 /*  */
+<<<<<<< HEAD
 .wave_pillow_box2{
   display:flex;
   width:100%;
@@ -462,3 +562,7 @@
   line-height:85rpx;
 }
 /* footer */
+=======
+。wave_pillow_box2
+>>>>>>> origin
+>>>>>>> f2aaf538078e8a844e1acbee06293a0361c2e5d0
