@@ -1,10 +1,5 @@
 /**index.wxss**/
 /* <!-- 轮播图 --> */
-<<<<<<< HEAD
-=======
-
-
->>>>>>> e8d5b4d9f62a7028454220530ebab314f70d7fe5
   .homePage{
     width:100%;
     height:360rpx;
