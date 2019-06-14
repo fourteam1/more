@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!--index.wxml-->
 <!-- 轮播图 -->
 <swiper indicator-dots="true" 
@@ -29,4 +30,107 @@
     </view>
   
   </view>
+=======
+<!-- index.wxml -->
+<!-- 轮播图
+<swiper indicator-dots="true" 
+  autoplay="true" interval="2000" circular="true" duration="1000">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item> 
+      <image src="{{item}}" class="slide-image" width="355" height="150"/> 
+    </swiper-item>
+  </block> 
+</swiper>
+拼团
+<view class="assemble">
+</view>
+商品列表
+<view class="list">
+  <view class="lis"  wx:for="{{dataList}}">
+    <image src="{{item.hd_thumb_url}}" class="lis_img_1"></image>
+    <view class="lis_text">{{item.goods_name}}</view>
+    <view class="price_box">
+      <view class="price_1">
+        <text class="price_text1">￥</text> 
+        <text class="price_text2">{{group.price}}</text> 
+        <text class="price_text3"> {{item.sales_tip}}</text> 
+      </view>
+      <view class="price_2"></view>
+    </view>
+  </view>
+</view> --> 
+
+<!-- 轮播开始 -->
+<view class="homePage" > 
+  <image class="homePage_bg" src="../image/zhang-kaiyv-661828-unsplash.jpg"></image>
+  <view class="view_list">
+    <swiper  indicator-dots="true" 
+      autoplay="true" interval="2000" circular="true" duration="1000">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item> 
+          <image src="{{item}}" class="slide-image" width="355" height="150"/> 
+        </swiper-item>
+      </block> 
+    </swiper>
+  </view>
+</view>
+<!-- 轮播结束-->
+
+<view class="bg" style="background:url('../image/bg_11.GIF')"></view>
+
+<!-- 拼团开始 -->
+<view class="assemble">
+<!--  -->
+  <view class="shopLing">
+    <image class="shopLing_img" src="../image/bg1.jpg"></image>
+    <view class="shopLing_text">
+      <view class="shopLing_text_box1">双面头颈椎设计呵护井水健康</view>
+      <view class="shopLing_text_box1" >泰国涂胶是否</view>
+      <view class="shopLing_text_box2">
+        <text class="textc_re">￥ </text><text class="textc_re textc_re_1">150 </text>
+        <text class="textc_re1 textc_re_2">￥120 </text>
+      </view>
+      <view class="order">限时订购</view>
+    </view>
+  </view>
+  <!-- 头象 -->
+  <view class="headPortrait_list">
+    <view class="headPortrait_lis"></view>
+    <view class="headPortrait_lis"></view>
+    <view class="headPortrait_lis"></view>
+    <view class="headPortrait_lis"></view>
+  </view>
+  <!-- 头像结束 -->
+  <view class="num_box" style="font-size:24rpx;text-align:center;">仅剩<text>3</text>人，快呼唤小伙伴来参加吧</view>
+  <!-- 倒计时开始 -->
+  <view class="timeBox">
+  <view class="timeBox_center">
+    <text>还剩</text>
+    <view>23</view>
+    <text>:</text>
+    <view>23</view>
+    <text>:</text>
+    <view>23</view>
+    <text>结束</text>
+  </view>
+    
+  </view>
+  <!-- 倒计时结束 -->
+</view>
+<!-- 拼团结束 -->
+
+<view class="body">
+  <view class="logo_bg_1"><image src="../image/logo1.gif"></image></view>
+  <view  class='body_1_ytext1'>玩趣加购 分享有礼</view>
+  <view  class=' body_1_ytext1 body_1_ytext2'>先领卷 在购物</view>
+  <!-- 领卷开始 -->
+  <view class="coupon_list">
+    <image src="../image/juan4.gif"></image>
+    <image src="../image/juan4.gif"></image>
+    <image src="../image/juan4.gif"></image>
+    <image src="../image/juan4.gif"></image>
+  </view>
+  
+<view class="bg" style="background:url('../image/bg_11.GIF')"></view>
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
 </view>

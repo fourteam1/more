@@ -12,6 +12,7 @@ Page({
     iconType: [
       'success'
     ],
+<<<<<<< HEAD
     show:false
   },
   onClose() {
@@ -19,10 +20,28 @@ Page({
     console.log(1)
   },
   close(){
+=======
+    show: false
+  },
+  
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    wx.setNavigationBarTitle({
+      title: '浏览记录',
+    })
+  },
+  onClose() {
+    this.setData({ show: false });
+  },
+  isShow(){
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
     this.setData({
       show:!this.data.show
     })
   },
+<<<<<<< HEAD
   /**
    * 生命周期函数--监听页面加载
    */
@@ -32,6 +51,11 @@ Page({
   getShow(){
     this.setData({
       show:!this.data.show
+=======
+  goIsshow() {
+    this.setData({
+      show: !this.data.show
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
     })
   },
   /**

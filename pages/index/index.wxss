@@ -5,16 +5,28 @@
 
 
 /* 拼团 */
+<<<<<<< HEAD
   .assemble{
+=======
+  /* .assemble{ 
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
     width:100%;
     height:300rpx;
     background:red;
     margin:15rpx 0;
+<<<<<<< HEAD
   }
 
 
  /* 商品列表 */
   .list{
+=======
+  } */
+
+
+ /* 商品列表 */
+  /* .list{
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
     width:100%;
     display:flex;
     flex-wrap: wrap;
@@ -26,7 +38,10 @@
     background:#fff;
   }
   .lis:nth-of-type(odd){
+<<<<<<< HEAD
     /* background:blue; */
+=======
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
     margin-right:2%;
     margin-bottom:2%;
   }
@@ -71,4 +86,186 @@
     width:100rpx;
     height:80rpx;
     background:red;
+<<<<<<< HEAD
   }
+=======
+  } */
+
+
+  /*  */
+
+
+
+
+  .homePage{
+    width:100%;
+    height:360rpx;
+  }
+  .homePage .homePage_bg{
+    height:300rpx;
+  }
+  .view_list{
+    width:100%;
+    height:360rpx;
+    position:absolute;
+    top:0;
+    left:0;
+  }
+  .view_list swiper swiper-item,.view_list swiper image{
+    width:80%;
+    margin:0 40rpx;
+    border-radius:20px;
+  }
+  .view_list swiper image{
+    border-radius:20px;
+  }
+  /*  */
+  .bg{
+    width:100%;
+    height:250rpx;
+    background-size:100%;
+    margin:103rpx 0;
+  }
+
+  /* 拼团开始 */
+  .assemble{
+    width:100%;
+    height:300rpx;
+    /* background:#ccc; */
+    padding:45rpx 0 ;
+    box-sizing: border-box;
+    position:relative;
+  }
+  .shopLing{
+    display:flex;
+    align-items: center;
+    width:658rpx;
+    height:303rpx;
+    background:#fff;
+    position:absolute;
+    top:-300rpx;
+    left:50%;
+    margin-left:-329rpx;
+    border-radius:20px;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, .1);  
+    padding:0 20rpx;
+    box-sizing: border-box;
+  }
+  .shopLing_img{
+    width:50%;
+    height:280rpx;
+    /* margin-left: */
+  }
+  .shopLing_text{
+    height:190rpx;
+    padding-left:20rpx;
+  }
+  .shopLing_text_box1{
+    width:90%;
+    height:45rpx;
+    overflow:hidden;
+    font-size:36rpx;
+  }
+  .shopLing_text_box2{height:60rpx;display:flex;align-items: flex-end;}
+  .textc_re{
+    color:#f53200;
+    font-size:26rpx;
+  }
+  .textc_re1{
+    color:#b9b9b9;
+    font-size:26rpx;
+  }
+  .textc_re_1{
+    font-size:45rpx;
+  }
+  .textc_re_2{
+    margin-left:50rpx;
+  }
+  .order{
+    width:115rpx;
+    border:1px solid #cf3d1e;
+    color:#cf3d1e;
+    font-size:28rpx;
+    margin-top:20rpx;
+    text-align:center;
+  }
+  /* 头像列表开始 */
+  .headPortrait_list{
+    display:flex;
+    justify-content: space-between;
+    padding:0 185rpx;
+    box-sizing: border-box;
+    width:100%;
+    height:68rpx;
+  }
+  .headPortrait_lis{
+    width:68rpx;
+    height:68rpx;
+    background:red;
+    border-radius:50%;
+  }
+  /* 头像列表结束 */
+.num_box{
+  margin-top:40rpx;
+}
+/* 倒计时开始 */
+.timeBox{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeBox_center{
+  display:flex;
+  align-items: center;
+  font-size:34rpx;
+  color:#525252;
+}
+.timeBox_center view{
+  width:32rpx;
+  height:32rpx;
+  margin:0 10rpx;
+  background:#ff8481;
+  font-size:24rpx;
+  color:#e2020a;
+  text-align:center;
+  line-height:32rpx;
+}
+
+/* 倒计时结束 */
+  /* 拼团结束 */
+/* 内容开始 */
+
+.logo_bg_1{
+  width:100%;
+  height:30rpx;
+  display:flex;
+  justify-content: center;
+}
+.logo_bg_1 image{
+  width:316rpx;
+  height:30rpx;
+}
+.body_1_ytext1{
+  font-size:35rpx;
+  margin:20rpx 0;
+  color:#2a2a2a;
+  text-align:center;
+}
+.body_1_ytext2{
+  color:#9b9b9b;
+}
+/* 玲娟中心 */
+.coupon_list{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  height:343rpx;
+  padding:0 24rpx;
+  box-sizing: border-box;
+}
+.coupon_list image{
+  width:164rpx;
+  height:100%;
+}
+/*  */
+>>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
