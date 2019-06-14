@@ -4,80 +4,6 @@
 /* <!-- 轮播图 --> */
 
 
-/* 拼团 */
-  /* .assemble{ 
-    width:100%;
-    height:300rpx;
-    background:red;
-    margin:15rpx 0;
-  } */
-
-
- /* 商品列表 */
-  /* .list{
-    width:100%;
-    display:flex;
-    flex-wrap: wrap;
-    background:#f4f4f4;
-  }
-  .lis{
-    width:49%;
-    height:540rpx;
-    background:#fff;
-  }
-  .lis:nth-of-type(odd){
-    margin-right:2%;
-    margin-bottom:2%;
-  }
-  .lis_img_1{
-    height:372rpx;
-    width:100%;
-  }
-  .lis_text{
-    width:100%;
-    font-size:28rpx;
-    color:#393939;
-    height:70rpx;
-    overflow:hidden;
-    padding:0 10rpx;
-    box-sizing: border-box;
-  }
-  .price_box{
-    display:flex;
-    width:100%;
-    justify-content: space-between;
-    padding:0 10rpx;
-    box-sizing: border-box;
-  }
-  .price_1{
-    height:80rpx;
-    line-height:80rpx;
-  }
-  .price_text1{
-    font-size:26rpx;
-    color:#db0a00;
-  }
-  .price_text2{
-    color:#db0a00;
-    font-size:37rpx;
-  }
-   .price_text3{
-    font-size:26rpx;
-    color:#adadad;
-  }
-
-  .price_2{
-    width:100rpx;
-    height:80rpx;
-    background:red;
-  } */
-
-
-  /*  */
-
-
-
-
   .homePage{
     width:100%;
     height:360rpx;
@@ -112,7 +38,6 @@
   .assemble{
     width:100%;
     height:300rpx;
-    /* background:#ccc; */
     padding:45rpx 0 ;
     box-sizing: border-box;
     position:relative;
@@ -135,7 +60,6 @@
   .shopLing_img{
     width:50%;
     height:280rpx;
-    /* margin-left: */
   }
   .shopLing_text{
     height:190rpx;
@@ -249,3 +173,77 @@
   height:100%;
 }
 /*  */
+
+.back_img1{
+  width:100%;
+  height:148rpx;
+  position:relative;
+  margin-bottom:0;
+}
+.bg_img{
+  width:611rpx;
+  height:106rpx;
+  position: absolute;
+  bottom:0;
+  left:50%;
+  margin-left:-305rpx;
+}
+.logo_bg_1{
+  display:flex;
+  justify-content: center;
+  width:100%;
+  height:30rpx;
+}
+.logo_bg_1 image{
+  width:312rpx;
+  height:30rpx;
+}
+.body_wave_text1{
+  width:100%;
+  text-align:center;
+}
+
+/*  */
+.wave_pillow{
+  width:100%;
+  height:530rpx;
+  position: relative;
+}
+.wave_pillow image{width:100%;height:100%;}
+.wave_pillow_box1{
+  width:260rpx;
+  height:113rpx;
+  position: absolute;
+  bottom:0;
+  right:30rpx;
+}
+.float_box1{
+  width:100%;
+  height:42rpx;
+  display:flex;
+  align-items: center;
+}
+.float_box1 image{
+  width:63rpx;
+  height:22rpx;
+}
+.wave_btn{
+  display:flex;
+  margin-top:2rpx;
+  align-items: center;
+  justify-content: center;
+  width:150rpx;
+  height:46rpx;
+  border:1px solid red;
+  background:red;
+  border-radius:6rpx;
+  color:#fff;
+  font-size:24rpx;
+  margin:10rpx 0 0 70rpx;
+}
+.wave_btn image{
+  width:23rpx;
+  height:23rpx;
+  margin-right:5rpx;
+}
+

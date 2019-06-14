@@ -1,32 +1,3 @@
-<!-- index.wxml -->
-<!-- 轮播图
-<swiper indicator-dots="true" 
-  autoplay="true" interval="2000" circular="true" duration="1000">
-  <block wx:for="{{imgUrls}}">
-    <swiper-item> 
-      <image src="{{item}}" class="slide-image" width="355" height="150"/> 
-    </swiper-item>
-  </block> 
-</swiper>
-拼团
-<view class="assemble">
-</view>
-商品列表
-<view class="list">
-  <view class="lis"  wx:for="{{dataList}}">
-    <image src="{{item.hd_thumb_url}}" class="lis_img_1"></image>
-    <view class="lis_text">{{item.goods_name}}</view>
-    <view class="price_box">
-      <view class="price_1">
-        <text class="price_text1">￥</text> 
-        <text class="price_text2">{{group.price}}</text> 
-        <text class="price_text3"> {{item.sales_tip}}</text> 
-      </view>
-      <view class="price_2"></view>
-    </view>
-  </view>
-</view> --> 
-
 <!-- 轮播开始 -->
 <view class="homePage" > 
   <image class="homePage_bg" src="../image/zhang-kaiyv-661828-unsplash.jpg"></image>
@@ -97,6 +68,47 @@
     <image src="../image/juan4.gif"></image>
     <image src="../image/juan4.gif"></image>
   </view>
-  
-<view class="bg" style="background:url('../image/bg_11.GIF')"></view>
-</view>
+  <!-- 镇店之宝 任君选择开始 -->
+  <view class="bg back_img1" style="background:url('../image/bg_11.GIF')">
+    <image class="bg_img" src="../image/logo3.gif"></image>
+  </view> 
+  <!-- 镇店之宝 任君选择结束 -->
+  <!-- logo -->
+    <view class="logo_bg_1" style='margin:0;'><image src="../image/logo1.gif"></image></view>
+    <!-- logo -->
+    <!-- 标题 -->
+    <view  class='body_wave_text1'>泰国平面波浪枕</view>
+    <!-- 价格 -->
+    <view class="wave_pillow">
+      <image src="../image/pillow_1.gif"></image>
+      <view class="wave_pillow_box1">
+        <view class="float_box1">
+          <image src="../image/logo2.gif"></image>
+          <view>
+              <text class="textc_re">￥ </text><text class="textc_re textc_re_1">228.00</text>
+          </view>
+        </view>
+        <view class="wave_btn" >
+          立即购买
+          <image src="../image/z1.gif"></image>
+        </view>
+      </view>
+    </view>
+    <image style="width:100%;height:195rpx;" src="../image/bg_1.gif"></image>
+    <!-- <view class="wave_pillow_box2">
+      <image class="wave_pillow_box2_img1" src='../image/pillow_2.gif'></image>
+      <view class="wave_pillow_box2_1">
+        <image class="wave_pillow_box2_img2"  src='../image/pillow_3.gif'></image>
+        <view class="float_box1">
+          <view >
+              <text  class="textc_re">￥ </text><text class="textc_re textc_re_1">228.00</text>
+          </view>
+        </view>
+        <view class="wave_btn wave_btn_1" >
+          立即购买
+          <image src="../image/z1.gif"></image>
+        </view>
+      </view>
+    </view> -->
+  <!--  -->
+</view>  

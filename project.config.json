@@ -23,8 +23,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
-	"appid": "wxc176dcbbc21c8865",
-	"projectname": "demo",
+	"appid": "wx688a5d2aef280660",
+	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -49,11 +49,7 @@
 			"list": []
 		},
 		"miniprogram": {
-<<<<<<< HEAD
-			"current": 1,
-=======
 			"current": 6,
->>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
 			"list": [
 				{
 					"id": -1,
@@ -64,12 +60,10 @@
 				},
 				{
 					"id": -1,
-					"name": "refund",
-					"pathName": "pages/refund/refund",
+					"name": "indent",
+					"pathName": "pages/indent/indent",
 					"query": "",
 					"scene": null
-<<<<<<< HEAD
-=======
 				},
 				{
 					"id": -1,
@@ -104,7 +98,6 @@
 					"name": "index",
 					"pathName": "pages/index/index",
 					"scene": null
->>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
 				}
 			]
 		}

@@ -13,7 +13,8 @@
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#1ca95e",
+    "navigationBarTitleText": "拼多多",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },
