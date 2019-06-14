@@ -1,4 +1,4 @@
-@import "../font2/stylesheet.wxss"
+/* @import "../font2/stylesheet.wxss"; */
 /* 购物车 */
 .shop {
   width: 20rem;
