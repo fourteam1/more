@@ -4,11 +4,8 @@
   <view class="details-header">
     <image></image>
     <view class="details-header-icon">
-<<<<<<< HEAD
       <text class="iconfont icon-fanhui"></text>
-=======
       <text class="iconfont icon-qianjin"></text>
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
       <text class="iconfont icon-gouwuche"></text>
       <text class="iconfont icon-sangedian"></text>
       <text>0</text>
@@ -123,11 +120,7 @@
     <text>枕着很舒服(46)</text>
   </view>
   <view class='price-list'>
-<<<<<<< HEAD
-    <view class='price-title1'>
-=======
     <view class='price-title'>
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
       <image></image>
       <text>Lorem</text>
       <text>lpsum</text>

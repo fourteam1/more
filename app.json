@@ -6,19 +6,11 @@
     "pages/shop/shop",
     "pages/mine/mine",
     "pages/indent/indent",
-<<<<<<< HEAD
     "pages/offer/offer",
     "pages/browsing/browsing",
     "pages/collection/collection",
     "pages/refund/refund",
-    "pages/details/details"
-=======
     "pages/details/details",
-    "pages/offer/offer", 
-    "pages/browsing/browsing",
-    "pages/collection/collection",
-    "pages/refund/refund"
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
   ],
   "window": {
     "backgroundTextStyle": "dark",

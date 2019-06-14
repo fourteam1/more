@@ -306,31 +306,20 @@
   background: #fff;
   margin-top:20px;
 }
-<<<<<<< HEAD
 .price-list .price-title1{
-=======
-.price-list .price-title{
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
   display: flex;
   justify-content: flex-start;
   width:100%;
 }
-<<<<<<< HEAD
+
 .price-title1 image{
-=======
-.price-title image{
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
   width:52rpx;
   height:52rpx;
   background: red;
   border-radius: 50%;
   margin-right: 10rpx;
 }
-<<<<<<< HEAD
 .price-title1 text{
-=======
-.price-title text{
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
   color:#474747;
   font-size: 24rpx;
   line-height: 66rpx;
@@ -456,34 +445,28 @@
   color:#fff;
   margin-left:20rpx;
 }
-<<<<<<< HEAD
 .footer-list-2 {
   width:260rpx;
   height:100rpx;
   background: #fb3609;
-=======
+}
 .footer-list-2{
   width:240rpx;
   height:100rpx;
   background: red;
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
   color:#fff;
   font-weight: 600;
   line-height: 100rpx;
   text-align: center;
   font-size: 30rpx;
-<<<<<<< HEAD
   border-radius: 0;
 }
-=======
-}
 
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
+
 /*添加购物车*/
 .van-popup--bottom{
   overflow: visible!important;
 }
-<<<<<<< HEAD
 .footer-details{
   width:100%;
   height:775rpx;
@@ -555,7 +538,6 @@
   
 }
 /*添加购物车*/
-=======
 .footer-shop{
   width:100%;
   height:765rpx;
@@ -625,5 +607,4 @@
   line-height: 90rpx;
   text-align: center;
 }
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
 /*底部*/
