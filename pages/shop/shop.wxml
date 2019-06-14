@@ -14,10 +14,14 @@
       <view class='shop-item' wx:for="{{data}}" wx:key="{{index}}" data-index="{{index}}">
           <!-- 是否选中 -->
 <<<<<<< HEAD
+<<<<<<< HEAD
           <text class="{{!item.check ? 'iconfont icon-xuanzhongyuandian' : 'iconfont icon-xuanzhong-copy'}}" bindtap='SingleBox' data-index="{{index}}"></text>
 =======
           <text class='iconfont ' class="check ? icon-xuanzhongyuandian : icon-xuanzhong-copy"></text>
 >>>>>>> 4a2231947d3138ea12928a8004c40e39b4c49d1f
+=======
+          <icon class="{{!item.check ? 'iconfont icon-xuanzhongyuandian' : 'iconfont icon-xuanzhong-copy'}}" bindtap='check' data-index="{{index}}"></icon>
+>>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
           <!-- 图片 -->
           <image src='{{item.image_url}}'></image>
           <!-- 详细信息 -->
@@ -27,19 +31,33 @@
             <text class='market_price'>￥{{item.market_price}}</text>
           </view>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
           <!-- 商品数量 -->
           <view class='Products' wx:if="{{!item.check}}">
             <view class='number'>
               <!-- 商品+1 -->
+<<<<<<< HEAD
               <view class='add' bindtap="addtap" data-index="{{index}}">+</view>
               <input  bindinput="bindKeyInput" disabled="true" placeholder="{{item.count}}"/>
               <!-- 商品-1 -->
               <view class='remove' bindtap="subtracttap" data-index="{{index}}">-</view>
+=======
+              <view class='add' bindtap="add" data-index="{{index}}">+</view>
+              <input  bindinput="bindKeyInput" placeholder="{{item.count}}" disabled="true"/>
+              <!-- 商品-1 -->
+              <view class='remove' bindtap="cutBack" data-index="{{index}}">-</view>
+>>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
             </view>
           </view>
           <!-- 删除商品 -->
           <view class='delete' wx:if="{{item.check}}" bindtap="remove" data-index="{{index}}">
+<<<<<<< HEAD
             <text class="iconfont icon-shanchu"></text>
+=======
+            <icon class="iconfont icon-shanchu"></icon>
+>>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
             <text class='text'>删除</text>
           </view>
       </view>
@@ -48,12 +66,18 @@
   <view class='shopping'>
     <view class='shoppingBottom'>
       <view class='shoppingLeft'>
+<<<<<<< HEAD
         <!-- 全选按钮 -->
         <text class='selectAll' class="{{!check ? 'iconfont icon-xuanzhongyuandian' : 'iconfont icon-xuanzhong-copy'}}" bindtap='check' data-index="{{index}}"></text>
+=======
+      <!-- 全选 -->
+        <icon class='selectAll' class="{{!check ? 'iconfont icon-xuanzhongyuandian' : 'iconfont icon-xuanzhong-copy'}}" bindtap='All' data-index="{{index}}"></icon>
+>>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
         <text class='text'>全选</text>
       </view>
       <view class='shoppingRight'>
         <text class='TotalCost'>￥{{TotalCost}}</text>
+<<<<<<< HEAD
         <!-- 去结算按钮 -->
         <button class='Settlement' bindtap="Settlement">去结算</button>
       </view>
@@ -73,4 +97,11 @@
     </view>
   </view>
 >>>>>>> 4a2231947d3138ea12928a8004c40e39b4c49d1f
+=======
+        <button class='Settlement' bindtap="Settlement">去结算</button>
+      </view>
+    </view>
+  </view>
+
+>>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
 </view>

@@ -39,7 +39,11 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
+<<<<<<< HEAD
 	"appid": "wx688a5d2aef280660",
+=======
+	"appid": "wxd1d8968ddc6d7ed7",
+>>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
 	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
 <<<<<<< HEAD
 	"cloudfunctionTemplateRoot": "",
@@ -68,6 +72,7 @@
 		"miniprogram": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			"current": -1,
 =======
 <<<<<<< HEAD
@@ -83,6 +88,9 @@
 =======
 			"current": -1,
 >>>>>>> 90bd5929421a08c9688abf06b7fd569ca1ca80de
+=======
+			"current": 8,
+>>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
 			"list": [
 				{
 					"id": -1,
@@ -161,6 +169,7 @@
 					"pathName": "pages/index/index",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 					"query": "",
 =======
 <<<<<<< HEAD
@@ -172,6 +181,22 @@
 =======
 					"query": "",
 >>>>>>> 90bd5929421a08c9688abf06b7fd569ca1ca80de
+=======
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "offer",
+					"pathName": "pages/offer/offer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "order订单",
+					"pathName": "pages/order/order",
+>>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
 					"scene": null
 				}
 			]

@@ -10,7 +10,11 @@
     "pages/browsing/browsing",
     "pages/collection/collection",
     "pages/refund/refund",
+<<<<<<< HEAD
     "pages/details/details",
+=======
+    "pages/order/order"
+>>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
   ],
   "window": {
     "backgroundTextStyle": "dark",

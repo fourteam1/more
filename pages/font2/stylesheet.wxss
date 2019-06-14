@@ -8,15 +8,32 @@
 }
 
 .iconfont {
-  font-family: "iconfont"!important;
+  font-family: "iconfont" !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-dayuhao:before {
+  content: "\e6b7";
+}
+
 .icon-xuanzhong-copy:before {
   content: "\e602";
+}
+
+.icon-dingwei:before {
+  content: "\e601";
+}
+
+.icon-guanbi:before {
+  content: "\e650";
+}
+
+.icon-shanchu:before {
+  content: "\e61b";
 }
 
 .icon-xuanzhongyuandian:before {
