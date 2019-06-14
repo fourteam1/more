@@ -1,68 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<!--index.wxml-->
-<!-- 轮播图 -->
-<swiper indicator-dots="true" 
-  autoplay="true" interval="2000" circular="true" duration="1000">
-  <block wx:for="{{imgUrls}}">
-    <swiper-item>
-      <image src="{{item}}" class="slide-image" width="355" height="150"/>
-    </swiper-item>
-  </block> 
-</swiper>
-<!-- 拼团 -->
-<view class="assemble">
-
-</view>
-
-
-<!-- 商品列表 -->
-<view class="list">
-  <view class="lis"  wx:for="{{15}}">
-    <image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640" class="lis_img_1"></image>
-    <view class="lis_text">选择器匹配属于其父元素的第 N 个子元素，不论元素的类型选择器匹配属于其父元素的第 N 个子元素，不论元素的类型</view>
-    <view class="price_box">
-      <view class="price_1">
-        <text class="price_text1">￥</text> 
-        <text class="price_text2">5</text> 
-        <text class="price_text3"> 已拼500件</text> 
-      </view>
-      <view class="price_2"></view>
-    </view>
-  
-  </view>
-=======
-<!-- index.wxml -->
-<!-- 轮播图
-<swiper indicator-dots="true" 
-  autoplay="true" interval="2000" circular="true" duration="1000">
-  <block wx:for="{{imgUrls}}">
-    <swiper-item> 
-      <image src="{{item}}" class="slide-image" width="355" height="150"/> 
-    </swiper-item>
-  </block> 
-</swiper>
-拼团
-<view class="assemble">
-</view>
-商品列表
-<view class="list">
-  <view class="lis"  wx:for="{{dataList}}">
-    <image src="{{item.hd_thumb_url}}" class="lis_img_1"></image>
-    <view class="lis_text">{{item.goods_name}}</view>
-    <view class="price_box">
-      <view class="price_1">
-        <text class="price_text1">￥</text> 
-        <text class="price_text2">{{group.price}}</text> 
-        <text class="price_text3"> {{item.sales_tip}}</text> 
-      </view>
-      <view class="price_2"></view>
-    </view>
-  </view>
-</view> --> 
-
-=======
->>>>>>> origin
 <!-- 轮播开始 -->
 <view class="homePage" > 
   <image class="homePage_bg" src="../image/zhang-kaiyv-661828-unsplash.jpg"></image>
@@ -133,12 +68,6 @@
     <image src="../image/juan4.gif"></image>
     <image src="../image/juan4.gif"></image>
   </view>
-<<<<<<< HEAD
-  
-<view class="bg" style="background:url('../image/bg_11.GIF')"></view>
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
-</view>
-=======
   <!-- 镇店之宝 任君选择开始 -->
   <view class="bg back_img1" style="background:url('../image/bg_11.GIF')">
     <image class="bg_img" src="../image/logo3.gif"></image>
@@ -168,7 +97,7 @@
     <image style="width:100%;height:195rpx;" src="../image/bg_1.gif"></image>
     <view class="wave_pillow_box2">
       <image class="wave_pillow_box2_img1" src='../image/pillow_2.gif'></image>
-      <!-- <view class="wave_pillow_box2_1">
+      <view class="wave_pillow_box2_1">
         <image class="wave_pillow_box2_img2"  src='../image/pillow_3.gif'></image>
         <view class="float_box1">
           <view >
@@ -179,8 +108,171 @@
           立即购买
           <image src="../image/z1.gif"></image>
         </view>
-      </view> -->
+      </view>
     </view>
-  <!--  -->
+
+    <!--  -->
+      <!-- logo -->
+    <view class="logo_bg_1 logo_bg_11"><image src="../image/logo1.gif"></image></view>
+    <view  class='body_wave_text1'>泰国平面波浪枕</view>
+    <!-- logo -->
+    <image class="pillow_img1" src="../image/pillow_4.gif"></image>
+    <!--  -->
+
+
+    <!-- 列表开始 -->
+    <view class="pillow_list">
+      <view  class="pillow_lis">
+        <view class='pillow_lis_text'> 波浪按摩枕</view>
+        <image class="img" src="../image/pillow_1_1.gif"></image>
+        <view class='box'>
+          <view class="float_box1">
+          <image src="../image/logo2.gif"></image>
+          <view style="margin-left:5rpx;">
+              <text  class="textc_re">￥</text><text class="textc_re textc_re_1">228.0</text>
+          </view>
+        </view>
+        <view class="wave_btn wave_btn_1" >
+          立即购买
+          <image src="../image/z1.gif"></image>
+        </view>
+        </view>
+      </view>
+      <view  class="pillow_lis">
+        <view class='pillow_lis_text'> 波浪按摩枕</view>
+        <image class="img" src="../image/pillow_1_1.gif"></image>
+        <view class='box'>
+          <view class="float_box1">
+          <image src="../image/logo2.gif"></image>
+          <view style="margin-left:5rpx;">
+              <text  class="textc_re">￥</text><text class="textc_re textc_re_1">228.0</text>
+          </view>
+        </view>
+        <view class="wave_btn wave_btn_1" >
+          立即购买
+          <image src="../image/z1.gif"></image>
+        </view>
+        </view>
+      </view>
+    </view>
+    <!-- 列表结束 -->
+
+    <!-- 镇店之宝 任君选择开始 -->
+  <view>
+    <view class="bg back_img1" style="background:url('../image/bg_11.GIF')">
+      <image class="bg_img" src="../image/logo3.gif"></image>
+    </view>
+    <!-- logo -->
+    <view class="logo_bg_1"><image src="../image/logo1.gif"></image></view>
+    <!-- logo -->
+    <!-- 标题 -->
+    <view  class='body_wave_text1'>泰国平面波浪枕</view>
+    <!-- 标题结束 -->
+       <!-- 列表开始 -->
+    <view class="pillow_list">
+      <view  class="pillow_lis">
+        <view class='pillow_lis_text'> 波浪按摩枕</view>
+        <image class="img" src="../image/pillow_1_1.gif"></image>
+        <view class='box'>
+          <view class="float_box1">
+          <image src="../image/logo2.gif"></image>
+          <view style="margin-left:5rpx;">
+              <text  class="textc_re">￥</text><text class="textc_re textc_re_1">228.0</text>
+          </view>
+        </view>
+        <view class="wave_btn wave_btn_1" >
+          立即购买
+          <image src="../image/z1.gif"></image>
+        </view>
+        </view>
+      </view>
+      <view  class="pillow_lis">
+        <view class='pillow_lis_text'> 波浪按摩枕</view>
+        <image class="img" src="../image/pillow_1_1.gif"></image>
+        <view class='box'>
+          <view class="float_box1">
+          <image src="../image/logo2.gif"></image>
+          <view style="margin-left:5rpx;">
+              <text  class="textc_re">￥</text><text class="textc_re textc_re_1">228.0</text>
+          </view>
+        </view>
+        <view class="wave_btn wave_btn_1" >
+          立即购买
+          <image src="../image/z1.gif"></image>
+        </view>
+        </view>
+      </view>
+    </view>
+    <!-- 列表结束 -->
+
+    <!--  -->
+    <image class="pillowimg_1" src="../image/pillow_5.gif"></image>
+    <!--  -->
+
+  </view>
+  <!-- 镇店之宝 任君选择结束 -->
+<!-- footer -->
+  <!-- paihangbang -->
+  <view class="footer">
+    <!--pages/row/row.wxml-->
+    <view class="row">
+      <view class='header'>
+        <text class='ranking'>排行榜</text>
+        <view class='volume'>
+          <text class='active'>销量排行</text>
+          <text>销量排行</text>
+        </view>
+      </view>
+      <view class='body'>
+        <view class='center'>
+          <image src='../image/pillow1.png'/>
+          <view class='circle'>
+            <text>1</text>
+          </view>
+          <view class='text'>
+            <text>泰国乳胶狼牙按摩枕</text>
+            <text class='person'>199人付款</text>
+          </view>
+        </view>
+        <view class='center'>
+          <image src='../image/pillow1.png'/>
+          <view class='circle'>
+            <text>2</text>
+          </view>
+          <view class='text'>
+            <text>泰国乳胶狼牙按摩枕</text>
+            <text class='person'>199人付款</text>
+          </view>
+        </view>
+        <view class='center'>
+          <image src='../image/pillow1.png'/>
+          <view class='circle'>
+            <text>3</text>
+          </view>
+          <view class='text'>
+            <text>泰国乳胶狼牙按摩枕</text>
+            <text class='person'>199人付款</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 排行榜结束 -->
+
+    <!-- 猜你喜欢开始 -->
+    <view class="like_box">
+      <view class="like_title">猜你喜欢</view>
+      <view class="new_list"> 
+        <view class="lis" wx:for="{{dataList}}" wx:key="{{index}}">
+          <image src="{{item.hd_thumb_url}}"></image>
+          <view class="new_text1">{{item.short_name}}</view>
+          <view class="new_text1 new_text_2">{{item.goods_name}}</view>
+          <view class="new_text1 new_text_3">￥2132</view>
+        </view>
+      </view>
+    </view>
+    <!-- 猜你喜欢结束 -->
+  </view>
+  <!-- paihangbang -->
+
+  <!-- footer -->
 </view>  
->>>>>>> origin

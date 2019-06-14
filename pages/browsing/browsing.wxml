@@ -1,8 +1,3 @@
-<!--pages/browsing/browsing.wxml-->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<text>pages/browsing/browsing.wxml</text>
-=======
 <view class='browsing'>
   <view class='content'>
     <view class='list'>
@@ -22,7 +17,3 @@
     <image src='../image/empty.gif'></image>
   </view>
 </view>
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
-=======
-<text>pages/browsing/browsing.wxml</text>
->>>>>>> origin

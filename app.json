@@ -10,7 +10,7 @@
     "pages/browsing/browsing",
     "pages/collection/collection",
     "pages/refund/refund",
-    "pages/details/details",
+    "pages/details/details"
   ],
   "window": {
     "backgroundTextStyle": "dark",

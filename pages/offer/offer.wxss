@@ -1,11 +1,6 @@
 /* pages/offer/offer.wxss */
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 .wrap{
-=======
-.offer{
->>>>>>> origin
   width: 100%;
   background: #f4f4f4;
 }
@@ -118,7 +113,6 @@
   justify-content: center;
   align-items: center;
   font-size: 30rpx;
-<<<<<<< HEAD
   line-height: 42rpx;
 }
 .footer image{
@@ -127,7 +121,6 @@
   opacity: 0.3;
 	background: #397755;
 }
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
 .offer{
   width: 100%;
   background: #f4f4f4;
@@ -241,8 +234,6 @@
   justify-content: center;
   align-items: center;
   font-size: 30rpx;
-=======
->>>>>>> origin
   color: #a4a4a4;
   padding: 110rpx 0;
   box-sizing: border-box;
