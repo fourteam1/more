@@ -89,7 +89,6 @@
 .icon-biaozhundaifenxiang:before {
   content: "\e638";
 }
-<<<<<<< HEAD
 
 .icon-xinxi:before {
   content: "\e62d";
@@ -217,8 +216,6 @@
 .icon-fanhui:before {
   content: "\e602";
 }
-=======
->>>>>>> 90bd5929421a08c9688abf06b7fd569ca1ca80de
 
 .icon-shouye:before {
   content: "\e605";

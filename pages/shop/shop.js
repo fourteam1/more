@@ -5,19 +5,8 @@ Page({
    */
   data: {
     data: [],
-<<<<<<< HEAD
-<<<<<<< HEAD
-    check: false,
-    show: false,
-    TotalCost: 0,
-    count: 1,
-=======
-    check: false
->>>>>>> 4a2231947d3138ea12928a8004c40e39b4c49d1f
-=======
     check: false,
     TotalCost: 0,
->>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
   },
 
   /**
@@ -39,19 +28,11 @@ Page({
       success: res => {
         // console.log(res.data.goods_list);
         let list = res.data.goods_list;
-<<<<<<< HEAD
-        list = list.splice(0,4);
-        list.forEach(item => {
-          item.count = 1;
-        })
-      
-=======
         list = list.splice(0,3);
         list.forEach( item => {
           item.count = 1;
           item.check = false;
         })
->>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
         this.setData({
           data: list
         })
@@ -61,70 +42,6 @@ Page({
       }
     })
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
-  //单选框
-  SingleBox(e){
-    let index = e.currentTarget.dataset.index;
-    let list = this.data.data;
-    list[index].check = !list[index].check;
-    this.Selected(list)
-    this.setData({
-      data: list
-    })
-  },
-  //筛选选中的商品
-  Selected(list){
-    let newdata = list.filter((item) => {
-      return item.check == true
-    })
-    if(list.length == newdata.length){
-      list.forEach(item => {
-        item.check = true
-      })
-      this.setData({
-        check: true
-      })
-    }else{
-      this.setData({
-        check: false
-      })
-    }
-    let TotalCost = 0;
-    newdata.forEach(item => {
-      TotalCost += item.market_price * item.count
-    })
-    this.setData({
-      TotalCost: TotalCost
-    })
-  },
-//全选按钮
-  check(e){
-    let check = this.data.check;
-    check = !check
-    let list = this.data.data;
-    list.forEach(item => {
-      item.check = check
-    })
-    this.setData({
-      data: list,
-      check: check
-    })
-    this.Selected(list)
-=======
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
->>>>>>> 4a2231947d3138ea12928a8004c40e39b4c49d1f
-  },
-  //商品+1
-  addtap(e){
-    let list = this.data.data;
-    let index = e.currentTarget.dataset.index;
-    list[index].count++
-=======
   //当前选中的商品
   check(e){
     let index = e.currentTarget.dataset.index;
@@ -143,58 +60,10 @@ Page({
       item.check = check;
     })
     this.filter(list)
->>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
     this.setData({
       data: list
     })
   },
-<<<<<<< HEAD
-  //商品-1
-  subtracttap(e){
-    let list = this.data.data;
-    let index = e.currentTarget.dataset.index;
-    list[index].count--;
-    if (list[index].count < 1){
-      list[index].count = 1
-    }
-    this.setData({
-      data: list
-    })
-    
-  },
-  //删除商品
-  remove(e){
-    let index = e.currentTarget.dataset.index;
-    let list = this.data.data;
-    list[index].count = 0;
-    this.setData({
-      data: list
-    })
-    list.splice(index,1)
-    this.setData({
-      data: list
-    })
-    this.Selected(list)
-    console.log(list.length)
-    if(list.length == 0){
-      this.setData({
-        check: false
-      })
-    }
-  },
-  //去结算按钮
-  Settlement(){
-    this.setData({
-      show: true
-    })
-  },
-  //模态框
-  onClose() {
-    this.setData({
-      show: false
-    })
-  },
-=======
   // 过滤的方法
   filter(list){
     let newdata = list.filter(item => {
@@ -273,5 +142,4 @@ Page({
       url: `../order/order`
     })
   }
->>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
 })

@@ -10,13 +10,7 @@
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 		"nodeModules": true,
-=======
->>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
 		"autoAudits": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
@@ -25,30 +19,13 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-<<<<<<< HEAD
 		},
-		"nodeModules": true
-=======
-<<<<<<< HEAD
-		}
-=======
-		},
-		"nodeModules": true
->>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
-<<<<<<< HEAD
-	"appid": "wx688a5d2aef280660",
-=======
 	"appid": "wxd1d8968ddc6d7ed7",
->>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
 	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
-<<<<<<< HEAD
 	"cloudfunctionTemplateRoot": "",
-=======
->>>>>>> origin
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -67,30 +44,11 @@
 			"list": []
 		},
 		"game": {
+      "current": -1,
 			"list": []
 		},
 		"miniprogram": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 			"current": -1,
-=======
-<<<<<<< HEAD
-			"current": 4,
-=======
-<<<<<<< HEAD
-			"current": 4,
-=======
-			"current": 6,
->>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
->>>>>>> f2aaf538078e8a844e1acbee06293a0361c2e5d0
-=======
-			"current": -1,
->>>>>>> 90bd5929421a08c9688abf06b7fd569ca1ca80de
-=======
-			"current": 8,
->>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
 			"list": [
 				{
 					"id": -1,
@@ -101,8 +59,6 @@
 				},
 				{
 					"id": -1,
-<<<<<<< HEAD
-=======
 					"name": "refund",
 					"pathName": "pages/refund/refund",
 					"query": "",
@@ -110,7 +66,6 @@
 				},
 				{
 					"id": -1,
->>>>>>> 90bd5929421a08c9688abf06b7fd569ca1ca80de
 					"name": "购物车",
 					"pathName": "pages/shop/shop",
 					"query": "",
@@ -118,48 +73,22 @@
 				},
 				{
 					"id": -1,
-<<<<<<< HEAD
-<<<<<<< HEAD
 					"name": "offer",
 					"pathName": "pages/offer/offer",
-=======
-=======
->>>>>>> origin
-					"name": "pages/details/details",
-					"pathName": "pages/details/details",
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-<<<<<<< HEAD
-					"name": "pages/details/details",
-					"pathName": "pages/details/details",
-=======
-<<<<<<< HEAD
 					"name": "pages/user/user",
 					"pathName": "pages/user/user",
-=======
-					"name": "new",
-					"pathName": "pages/new/new",
->>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-<<<<<<< HEAD
-<<<<<<< HEAD
-					"name": "111",
-					"pathName": "pages/details/details",
-=======
 					"name": "new",
 					"pathName": "pages/new/new",
-=======
-					"name": "offer",
-					"pathName": "pages/offer/offer",
->>>>>>> 90bd5929421a08c9688abf06b7fd569ca1ca80de
 					"query": "",
 					"scene": null
 				},
@@ -167,28 +96,6 @@
 					"id": -1,
 					"name": "index",
 					"pathName": "pages/index/index",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-					"query": "",
-=======
-<<<<<<< HEAD
->>>>>>> 0c5961fca42469fcb997a1eba7a869be9acbd470
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
-=======
->>>>>>> origin
->>>>>>> f2aaf538078e8a844e1acbee06293a0361c2e5d0
-=======
-					"query": "",
->>>>>>> 90bd5929421a08c9688abf06b7fd569ca1ca80de
-=======
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "offer",
-					"pathName": "pages/offer/offer",
 					"query": "",
 					"scene": null
 				},
@@ -196,9 +103,15 @@
 					"id": -1,
 					"name": "order订单",
 					"pathName": "pages/order/order",
->>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
 					"scene": null
-				}
+				},
+        {
+          "id": -1,
+          "name": "pages/details/details",
+          "pathName": "pages/details/details",
+          "scene": null
+        },
+       
 			]
 		}
 	}

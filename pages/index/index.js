@@ -5,12 +5,6 @@ Page({
    */
   data: {
     imgUrls: [
-<<<<<<< HEAD
-      'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
-      'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
-      'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
-    ]
-=======
       '../image/bg1.jpg',
       '../image/bg2.jpg',
       '../image/bg3.jpg',
@@ -20,7 +14,6 @@ Page({
       // 'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
     ],
     dataList: []
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
   },
 
   /**
@@ -37,7 +30,7 @@ Page({
       url: 'http://mobile.yangkeduo.com/proxy/api/api/alexa/v1/goods?&page=1&size=20',
       header: {
         "content-type": "application/json"
-      }, 
+      },
       success: res => {
         console.log(res.data.goods_list);
         this.setData({
@@ -46,6 +39,7 @@ Page({
       },
     })
   },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

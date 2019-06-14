@@ -1,68 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<!--index.wxml-->
-<!-- 轮播图 -->
-<swiper indicator-dots="true" 
-  autoplay="true" interval="2000" circular="true" duration="1000">
-  <block wx:for="{{imgUrls}}">
-    <swiper-item>
-      <image src="{{item}}" class="slide-image" width="355" height="150"/>
-    </swiper-item>
-  </block> 
-</swiper>
-<!-- 拼团 -->
-<view class="assemble">
-
-</view>
-
-
-<!-- 商品列表 -->
-<view class="list">
-  <view class="lis"  wx:for="{{15}}">
-    <image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640" class="lis_img_1"></image>
-    <view class="lis_text">选择器匹配属于其父元素的第 N 个子元素，不论元素的类型选择器匹配属于其父元素的第 N 个子元素，不论元素的类型</view>
-    <view class="price_box">
-      <view class="price_1">
-        <text class="price_text1">￥</text> 
-        <text class="price_text2">5</text> 
-        <text class="price_text3"> 已拼500件</text> 
-      </view>
-      <view class="price_2"></view>
-    </view>
-  
-  </view>
-=======
-<!-- index.wxml -->
-<!-- 轮播图
-<swiper indicator-dots="true" 
-  autoplay="true" interval="2000" circular="true" duration="1000">
-  <block wx:for="{{imgUrls}}">
-    <swiper-item> 
-      <image src="{{item}}" class="slide-image" width="355" height="150"/> 
-    </swiper-item>
-  </block> 
-</swiper>
-拼团
-<view class="assemble">
-</view>
-商品列表
-<view class="list">
-  <view class="lis"  wx:for="{{dataList}}">
-    <image src="{{item.hd_thumb_url}}" class="lis_img_1"></image>
-    <view class="lis_text">{{item.goods_name}}</view>
-    <view class="price_box">
-      <view class="price_1">
-        <text class="price_text1">￥</text> 
-        <text class="price_text2">{{group.price}}</text> 
-        <text class="price_text3"> {{item.sales_tip}}</text> 
-      </view>
-      <view class="price_2"></view>
-    </view>
-  </view>
-</view> --> 
-
-=======
->>>>>>> origin
 <!-- 轮播开始 -->
 <view class="homePage" > 
   <image class="homePage_bg" src="../image/zhang-kaiyv-661828-unsplash.jpg"></image>
@@ -133,12 +68,6 @@
     <image src="../image/juan4.gif"></image>
     <image src="../image/juan4.gif"></image>
   </view>
-<<<<<<< HEAD
-  
-<view class="bg" style="background:url('../image/bg_11.GIF')"></view>
->>>>>>> d756bb4ffe1e3837ac2cbb5cafe443089aca5190
-</view>
-=======
   <!-- 镇店之宝 任君选择开始 -->
   <view class="bg back_img1" style="background:url('../image/bg_11.GIF')">
     <image class="bg_img" src="../image/logo3.gif"></image>
@@ -327,7 +256,6 @@
         </view>
       </view>
     </view>
-<<<<<<< HEAD
     <!-- 排行榜结束 -->
 
     <!-- 猜你喜欢开始 -->
@@ -343,21 +271,8 @@
       </view>
     </view>
     <!-- 猜你喜欢结束 -->
-
-    <!-- 点击架子啊更多 -->
-    <view class="btn">
-      <view>
-        查看全部宝贝
-      </view>
-    </view>
-    <!-- 点击架子啊更多 -->
   </view>
   <!-- paihangbang -->
 
   <!-- footer -->
 </view>  
-=======
-  <!--  -->
-</view>  
->>>>>>> origin
->>>>>>> f2aaf538078e8a844e1acbee06293a0361c2e5d0

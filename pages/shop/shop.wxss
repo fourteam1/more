@@ -106,14 +106,9 @@ image {
   /* 商品价格 */
 .market_price {
   display: block;
-  width: 200rpx;
   font-size: 26rpx;
   color: #df0000;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
   /* 商品数量 */
 .Products {
   position: absolute;
@@ -140,22 +135,12 @@ image {
 .number input{
   flex:1;
   height: 32rpx;
-<<<<<<< HEAD
-  border: 1rpx solid #e7e7e7;
-  min-height: 32rpx;
-  line-height: 32rpx;
-  border-left: 0;
-  border-right: 0;
-  background: #fffdfe;
-  font-size: 28rpx;
-=======
   min-height: 32rpx;
   line-height: 32rpx;
   border: 1rpx solid #e7e7e7;
   border-left: 0;
   border-right: 0;
   background: #fffdfe;
->>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
 }
   /* 删除商品 */
 .delete {
@@ -227,11 +212,5 @@ image {
   box-shadow: 1rpx 4rpx 12rpx 1rpx rgba(164,215,139,.29);
   font-size: 30rpx;
 }
-<<<<<<< HEAD
-=======
-/* 有值购物车 */
->>>>>>> 4a2231947d3138ea12928a8004c40e39b4c49d1f
-=======
 /* 有值购物车 */
    
->>>>>>> 06aa773287423e1e300cfc1d68407f0632e8b79f
