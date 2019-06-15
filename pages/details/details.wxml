@@ -4,10 +4,9 @@
   <view class="details-header">
     <image></image>
     <view class="details-header-icon">
-      <text class="iconfont icon-fanhui"></text>
-      <text class="iconfont icon-qianjin"></text>
-      <text class="iconfont icon-gouwuche"></text>
-      <text class="iconfont icon-sangedian"></text>
+      <icon class="iconfont icon-fanhui"></icon>
+      <icon class="iconfont icon-gouwuche"></icon>
+      <icon class="iconfont icon-sangedian"></icon>
       <text>0</text>
     </view>
     <view class="details-header-text">
@@ -110,7 +109,7 @@
 <view class="price">
   <view class="price-title">
     <view>商品评价(8823)</view>
-    <view>查看更多<icon class='iconfont icon-qianjin'></icon></view>
+    <view>查看更多<icon class='iconfont icon-icon'></icon></view>
   </view>
   <view class="price-evaluate">
     <text>便宜(126)</text>
@@ -132,7 +131,7 @@
 <!--查看更多 -->
 <view class="more">
     <text>查看更多</text>
-    <icon class="iconfont icon-qianjin"></icon>
+    <icon class="iconfont icon-icon"></icon>
 </view>
 <!-- 查看更多-->
 <!-- 商品详情-->
@@ -201,28 +200,7 @@
   <button class="footer-list-2" bindtap="getShow">单独购买</button>
 <!-- <van-popup ></van-popup> -->
 <van-popup show="{{ show }}" position="bottom" overlay="{{ false }}" bind:close="onClose">
-<view class="footer-details">
-  <image class="image"></image>
-  <view class='right'>
-    <text>￥122-133</text>
-    <text>库存2343件</text>
-    <text>请选择 尺码</text>
-    <icon class='iconfont icon-cha' bindtap='close'></icon>
-  </view>
-  <view class='size'>尺码</view>
-  <view class="list">
-    <text>60*40cm</text>
-    <text>58*36cm</text>
-  </view>
-  <view class='color'>颜色</view>
-  <view class="list">
-    <text>白色</text>
-  </view>
-  <view class="btn">确定</view>
-</view>
-</van-popup>
-  <view class="footer-list-2" bindtap='isShow'>单独购买</view>
-  <van-popup show="{{ show }}" bind:close="onClose">
+
 </van-popup>
   <van-popup show="{{ show }}" position="bottom" overlay="{{ false }}" bind:close="onClose">
     <view class="footer-shop">
@@ -231,7 +209,7 @@
         <text>￥122-133</text>
         <text>库存2343件</text>
         <text>请选择 尺码</text>
-        <icon class="iconfont icon-cha" bindtap='goIsshow'></icon>
+        <icon class="iconfont icon-guanbi1" bindtap='goIsshow'></icon>
       </view> 
       <view class="size">尺码</view>
       <view class='list'>
@@ -247,8 +225,5 @@
       
   </van-popup>
   <!-- 添加购物车-->
-
-
-
 </view>
 <!-- 底部-->
