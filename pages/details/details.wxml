@@ -4,15 +4,9 @@
   <view class="details-header">
     <image></image>
     <view class="details-header-icon">
-<<<<<<< HEAD
-      <text class="iconfont icon-fanhui"></text>
-      <text class="iconfont icon-gouwuche"></text>
-      <text class="iconfont icon-sangedian"></text>
-=======
       <icon class="iconfont icon-fanhui"></icon>
       <icon class="iconfont icon-gouwuche"></icon>
       <icon class="iconfont icon-sangedian"></icon>
->>>>>>> 355c44f4a20fe2b73e77c1e1b2b0c39b5d8d077b
       <text>0</text>
     </view>
     <view class="details-header-text">
@@ -58,7 +52,7 @@
       </view>
     </view>
     <view class='discounts-right'>
-      <icon class="iconfont icon-qianjin"></icon>
+      <icon class="iconfont icon-icon"></icon>
     </view>
   </view>
 
@@ -80,7 +74,7 @@
     <text>全场包邮</text>
   </view>
   <view class="discounts-right">
-    <icon class="iconfont icon-qianjin"></icon>
+    <icon class="iconfont icon-icon"></icon>
   </view>
 </view>
 <!-- 7天无理由退货-->
