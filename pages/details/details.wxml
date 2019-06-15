@@ -1,11 +1,10 @@
-<!--pages/details/details.wxml-->
+<view class="del">
 <view class="details">
   <!-- 头部开始 -->
   <view class="details-header">
     <image></image>
     <view class="details-header-icon">
       <text class="iconfont icon-fanhui"></text>
-      <text class="iconfont icon-qianjin"></text>
       <text class="iconfont icon-gouwuche"></text>
       <text class="iconfont icon-sangedian"></text>
       <text>0</text>
@@ -197,30 +196,6 @@
     </view>
   </view>
   <view class="footer-list-1">发起拼单</view>
-  <!-- <view ></view> --> 
-  <button class="footer-list-2" bindtap="getShow">单独购买</button>
-<!-- <van-popup ></van-popup> -->
-<van-popup show="{{ show }}" position="bottom" overlay="{{ false }}" bind:close="onClose">
-<view class="footer-details">
-  <image class="image"></image>
-  <view class='right'>
-    <text>￥122-133</text>
-    <text>库存2343件</text>
-    <text>请选择 尺码</text>
-    <icon class='iconfont icon-cha' bindtap='close'></icon>
-  </view>
-  <view class='size'>尺码</view>
-  <view class="list">
-    <text>60*40cm</text>
-    <text>58*36cm</text>
-  </view>
-  <view class='color'>颜色</view>
-  <view class="list">
-    <text>白色</text>
-  </view>
-  <view class="btn">确定</view>
-</view>
-</van-popup>
   <view class="footer-list-2" bindtap='isShow'>单独购买</view>
   <van-popup show="{{ show }}" bind:close="onClose">
 </van-popup>
@@ -252,3 +227,6 @@
 
 </view>
 <!-- 底部-->
+
+<!-- 最外成盒子 -->
+</view>

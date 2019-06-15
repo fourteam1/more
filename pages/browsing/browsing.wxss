@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 74b23109262fbeb0ec182945fae46f546228c767
 /* pages/browsing/browsing.wxss */
 .browsing{
   width: 100vw;
