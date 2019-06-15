@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 <!--pages/browsing/browsing.wxml-->
-=======
->>>>>>> 74b23109262fbeb0ec182945fae46f546228c767
 <view class='browsing'>
   <view class='content'>
     <view class='list'>

@@ -1,8 +1,3 @@
-/* pages/offer/offer.wxss */
-<<<<<<< HEAD
-=======
-
->>>>>>> 74b23109262fbeb0ec182945fae46f546228c767
 .wrap{
   width: 100%;
   height: 100%;
@@ -45,7 +40,7 @@
   background: -webkit-gradient(linear,left top,right bottom,from(#ff4091), to(#ff9e29));
 }
 .left .price{
-  font-szie: 32rpx;
+  font-size: 32rpx;
   color: #fff;
   line-height: 48rpx; 
   text-align: center;
@@ -111,8 +106,6 @@
   height: 84rpx;
   opacity: 0.3;
 	background: #397755;
-<<<<<<< HEAD
-=======
 }
 .offer{
   width: 100%;
@@ -230,5 +223,4 @@
   color: #a4a4a4;
   padding: 110rpx 0;
   box-sizing: border-box;
->>>>>>> 74b23109262fbeb0ec182945fae46f546228c767
 }

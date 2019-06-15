@@ -45,8 +45,6 @@
     <image src='../image/empty.gif'></image>
   </view>
 </view>
-<<<<<<< HEAD
-=======
 <view class='offer'>
   <view class='content'>
       <text>领券中心</text>
@@ -108,4 +106,3 @@
     </view>
   </view>
 </view>
->>>>>>> 74b23109262fbeb0ec182945fae46f546228c767
