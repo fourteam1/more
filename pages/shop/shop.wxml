@@ -12,7 +12,6 @@
     <!-- 购物车有东西的时候 -->
     <view class='shop-Valued'>
       <view class='shop-item' wx:for="{{data}}" wx:key="{{index}}" data-index="{{index}}">
-<<<<<<< HEAD
           <!-- 是否选中 -->
           <icon class='iconfont' class="{{!item.check ? 'iconfont icon-xuanzhongyuandian' : 'iconfont icon-xuanzhong-copy'}}" bindtap='check' data-index="{{index}}"></icon>
           <!-- 图片 -->
@@ -56,7 +55,9 @@
   </view>
 
 </view>
-=======
+  <view>
+    <view>
+      <view>
         <!-- 是否选中 -->
         <icon class="{{!item.check ? 'iconfont icon-xuanzhongyuandian' : 'iconfont icon-xuanzhong-copy'}}" bindtap='check' data-index="{{index}}"></icon>
         <!-- 图片 -->
@@ -98,6 +99,4 @@
       </view>
     </view>
   </view>
-
 </view>
->>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9
