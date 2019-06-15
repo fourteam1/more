@@ -1,21 +1,36 @@
 /* 购物车 */
+
 .shop {
   width: 20rem;
   height: 100vh;
 }
+<<<<<<< HEAD
 /* 购物车包裹 */  
+=======
+
+/* 购物车包裹 */
+
+>>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9
 .shop-box {
   width: 100%;
   padding-bottom: 117rpx;
   overflow: hidden;
 }
+
 /* 空购物车 */
+
 .shop-empty {
   width: 100%;
   height: 100%;
   text-align: center;
 }
+<<<<<<< HEAD
   /* 图片 */
+=======
+
+/* 图片 */
+
+>>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9
 image {
   width: 284rpx; 
   height: 170rpx;
@@ -24,13 +39,17 @@ image {
   margin-right: 256rpx;
   margin-bottom: 49rpx;
 }
-  /* 提示文本*/
+
+/* 提示文本*/
+
 .empty {
   width: 100%;
   font-size: 30rpx;
   color: #999;
 }
-  /* 去逛逛按钮 */
+
+/* 去逛逛按钮 */
+
 .btn {
   width: 202rpx;
   height: 78rpx;
@@ -41,14 +60,18 @@ image {
   font-size: 26rpx;
   color: #fff;
 }
+
 /* 有值购物车 */
+
 .shop-Valued {
   width: 100%;
   height: 100%;
   padding-bottom: 40rpx;
   background: #f7f7f7;
 }
-  /* 每一个商品 */
+
+/* 每一个商品 */
+
 .shop-item {
   position: relative;
   display: flex;
@@ -56,16 +79,20 @@ image {
   width: 100%;
   margin-bottom: 20rpx;
   padding: 57rpx 24rpx 52rpx 24rpx;
-  box-shadow: 0 1rpx 2rpx 0 raba(0,0,0,.06) inset rgba(225,228,228,0.35);
+  box-shadow: 0 1rpx 2rpx 0 raba(0, 0, 0, 0.06) inset rgba(225, 228, 228, 0.35);
   box-sizing: border-box;
   background: #fff;
 }
-  /* 商品是否选中 */
+
+/* 商品是否选中 */
+
 .iconfont {
   font-size: 48rpx;
   color: #278c58;
 }
-  /* 商品图片 */
+
+/* 商品图片 */
+
 image {
   display: inline-block;
   width: 180rpx;
@@ -76,7 +103,9 @@ image {
   margin-top: 0;
   margin-bottom: 0;
 }
-  /* 商品详细信息 */
+
+/* 商品详细信息 */
+
 .item-content {
   flex: 1;
   height: 180rpx;
@@ -84,31 +113,45 @@ image {
   color: #333;
   overflow: hidden;
 }
-  /* 商品名称和颜色共同样式 */
-.goods_name,.short_name {
+
+/* 商品名称和颜色共同样式 */
+
+.goods_name, .short_name {
   display: block;
   width: 200rpx;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-  /* 商品名称 */
+
+/* 商品名称 */
+
 .goods_name {
   margin-bottom: 21rpx;
 }
-  /* 商品颜色 */
+
+/* 商品颜色 */
+
 .short_name {
   margin-bottom: 48rpx;
   font-size: 28rpx;
   color: #afafaf;
 }
-  /* 商品价格 */
+
+/* 商品价格 */
+
 .market_price {
   display: block;
   font-size: 26rpx;
   color: #df0000;
 }
+<<<<<<< HEAD
   /* 商品数量 */
+=======
+
+/* 商品数量 */
+
+>>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9
 .Products {
   position: absolute;
   right: 24rpx;
@@ -117,6 +160,10 @@ image {
   height: 32rpx;
   background: #fdd;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9
 .number {
   display: flex;
   height: 100%;
@@ -124,15 +171,26 @@ image {
   align-items: center;
   text-align: center;
 }
+<<<<<<< HEAD
 .number .add,.number .remove{
+=======
+
+.number .add, .number .remove {
+>>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9
   width: 46rpx;
   height: 32rpx;
   background: #fffdfe;
   border-radius: 4rpx 1rpx 1rpx 4rpx;
   border: 1rpx solid #e7e7e7;
 }
+<<<<<<< HEAD
 .number input{
   flex:1;
+=======
+
+.number input {
+  flex: 1;
+>>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9
   height: 32rpx;
   min-height: 32rpx;
   line-height: 32rpx;
@@ -141,7 +199,13 @@ image {
   border-right: 0;
   background: #fffdfe;
 }
+<<<<<<< HEAD
   /* 删除商品 */
+=======
+
+/* 删除商品 */
+
+>>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9
 .delete {
   position: absolute;
   right: 24rpx;
@@ -153,18 +217,34 @@ image {
   background: #f7f7f7;
   border-radius: 10rpx;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9
 .delete .iconfont {
   font-size: 43rpx;
   color: #ddd;
   padding: 48rpx 25rpx 0 31rpx;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9
 .delete .text {
   font-size: 28rpx;
   text-align: center;
   margin-top: 21rpx;
 }
+<<<<<<< HEAD
 /* 有值购物车 */
 /* 求总数量和总价格 */
+=======
+
+/* 有值购物车 */
+
+/* 求总数量和总价格 */
+
+>>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9
 .shopping {
   position: fixed;
   bottom: 0;
@@ -175,6 +255,10 @@ image {
   box-shadow: 1rpx 2rpx 2rpx 1rpx #ddd;
   z-index: 100;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9
 .shopping .shoppingBottom {
   display: flex;
   justify-content: space-between;
@@ -182,23 +266,45 @@ image {
   height: 100%;
   line-height: 117rpx;
 }
+<<<<<<< HEAD
 /* 全选按钮 */
+=======
+
+/* 全选按钮 */
+
+>>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9
 .shoppingLeft .iconfont {
   margin-left: 24rpx;
   margin-right: 32rpx;
 }
+<<<<<<< HEAD
 .shoppingLeft .text {
   font-size: 30rpx;
 }
+=======
+
+.shoppingLeft .text {
+  font-size: 30rpx;
+}
+
+>>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9
 .shoppingRight {
   display: flex;
   align-content: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9
 .shoppingRight .TotalCost {
   font-size: 36rpx;
   color: #e01616;
   margin-right: 23rpx;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9
 .shoppingRight .Settlement {
   width: 150rpx;
   height: 70rpx;
@@ -208,8 +314,16 @@ image {
   margin-right: 27rpx;
   margin-top: 20rpx;
   border-radius: 12rpx;
+<<<<<<< HEAD
   box-shadow: 1rpx 4rpx 12rpx 1rpx rgba(164,215,139,.29);
   font-size: 30rpx;
 }
 /* 有值购物车 */
    
+=======
+  box-shadow: 1rpx 4rpx 12rpx 1rpx rgba(164, 215, 139, 0.29);
+  font-size: 30rpx;
+}
+
+/* 有值购物车 */
+>>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9

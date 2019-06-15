@@ -1,4 +1,12 @@
 /* pages/new/new.wxss */ 
+.new .new_bg{
+  width: 100%;
+  height: 480rpx;
+}
+.new .new_bg image{
+  width: 100%;
+  height: 100%;
+}
 .new_list{
   display:flex;
   flex-wrap: wrap;

@@ -23,7 +23,7 @@
   height:752rpx;
   background: #ff0;
 }
-.details-header-icon text{
+.details-header-icon icon,.details-header-icon text{
   position: absolute;
   top:44rpx;
   width:76rpx;
@@ -34,13 +34,13 @@
   text-align: center;
   border-radius: 50%;
 }
-.details-header-icon text:nth-child(1){
+.details-header-icon icon:nth-child(1){
   left:30rpx;
 }
-.details-header-icon text:nth-child(2){
+.details-header-icon icon:nth-child(2){
   right:140rpx;
 }
-.details-header-icon text:nth-child(3){
+.details-header-icon icon:nth-child(3){
   right:30rpx;
 }
 .details-header-icon text:nth-child(4){
@@ -358,6 +358,10 @@
     background: #fff;
   }
   .more icon{
+    position: relative;
+    top: -10rpx;
+    left: 0;
+    font-size: 40rpx;
     transform:rotate(90deg);
   }
 /*查看更多*/

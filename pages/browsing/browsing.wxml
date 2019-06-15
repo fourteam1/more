@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> b033ac3b477e918b5ebc9d1ff4848ef145c8eaf9
 <!--pages/browsing/browsing.wxml-->
 <view class='browsing'>
   <view class='content'>
