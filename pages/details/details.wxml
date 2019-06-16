@@ -205,7 +205,7 @@
         <text>￥122-133</text>
         <text>库存2343件</text>
         <text>请选择 尺码</text>
-        <icon class="iconfont icon-cha" bindtap='goIsshow'></icon>
+        <icon class="iconfont icon-guanbi1" bindtap='goIsshow'></icon>
       </view> 
       <view class="size">尺码</view>
       <view class='list'>
