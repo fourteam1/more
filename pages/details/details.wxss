@@ -1,6 +1,12 @@
 /* pages/details/details.wxss */
+.del{
+  width:100%;
+  
+  background:#f8f8f8;
+}
 .details{
   width:750rpx;
+  /* background:#f8f8f8; */
 }
 /*头部开始*/
 .details-header{
@@ -17,7 +23,7 @@
   height:752rpx;
   background: #ff0;
 }
-.details-header-icon text{
+.details-header-icon icon,.details-header-icon text{
   position: absolute;
   top:44rpx;
   width:76rpx;
@@ -28,13 +34,13 @@
   text-align: center;
   border-radius: 50%;
 }
-.details-header-icon text:nth-child(1){
+.details-header-icon icon:nth-child(1){
   left:30rpx;
 }
-.details-header-icon text:nth-child(2){
+.details-header-icon icon:nth-child(2){
   right:140rpx;
 }
-.details-header-icon text:nth-child(3){
+.details-header-icon icon:nth-child(3){
   right:30rpx;
 }
 .details-header-icon text:nth-child(4){
@@ -133,7 +139,7 @@
   justify-content: space-between;
   margin-top:20rpx;
   height:115rpx;
-  background:#ff0;
+  background:#fff;
   box-sizing: border-box;
   padding:3rpx 47rpx 0 27rpx;
   font-size: 22rpx;
@@ -173,7 +179,7 @@
   background:#fff;
   box-sizing: border-box;
   padding:0 47rpx 0 27rpx;
-  background: #00f;
+  background: #fff;
 }
 
 .back text{
@@ -190,7 +196,7 @@
   box-sizing: border-box;
   padding:0 47rpx 0 27rpx;
   position: relative;
-  background: #ff0;
+  background: #fff;
 }
 .share-title{
   font-size: 24rpx;
@@ -283,11 +289,18 @@
 }
 .price-title{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  width:100%;
+}
+.price-title image{
+  width:55rpx;
+  height:55rpx;
+  background: red;
 }
 .price-title view:nth-child(1){
   color:#3c3c3c;
   font-size: 34rpx;
+  padding-right:10rpx;
 }
 .price-title view:nth-child(2){
   color:#b1b1b1;
@@ -306,20 +319,20 @@
   background: #fff;
   margin-top:20px;
 }
-.price-list .price-title1{
+.price-list .price-title{
   display: flex;
   justify-content: flex-start;
   width:100%;
 }
 
-.price-title1 image{
+.price-title image{
   width:52rpx;
   height:52rpx;
   background: red;
   border-radius: 50%;
   margin-right: 10rpx;
 }
-.price-title1 text{
+.price-title text{
   color:#474747;
   font-size: 24rpx;
   line-height: 66rpx;
@@ -335,16 +348,20 @@
 /*商品评价结束*/
 /*查看更多*/
   .more{
-    margin-top:30rpx;
+    margin-top:20rpx;
     background: #fff;
     height: 80rpx;
     text-align: center;
     line-height: 80rpx;
     font-size: 28rpx;
     color:#b1b1b1;
-    background: red;
+    background: #fff;
   }
   .more icon{
+    position: relative;
+    top: -10rpx;
+    left: 0;
+    font-size: 40rpx;
     transform:rotate(90deg);
   }
 /*查看更多*/
@@ -356,6 +373,7 @@
   font-size: 34rpx;
   background: #fff;
   padding-left:20rpx; 
+  margin-top:10rpx;
 }
 .price-list{
   display: flex;
@@ -606,5 +624,7 @@
   font-size: 40rpx;
   line-height: 90rpx;
   text-align: center;
+  border-radius: 0;
+  color:#fff;
 }
 /*底部*/

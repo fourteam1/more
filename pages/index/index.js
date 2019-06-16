@@ -27,7 +27,7 @@ Page({
       url: 'http://mobile.yangkeduo.com/proxy/api/api/alexa/v1/goods?&page=1&size=20',
       header: {
         "content-type": "application/json"
-      }, 
+      },
       success: res => {
         console.log(res.data.goods_list);
         this.setData({

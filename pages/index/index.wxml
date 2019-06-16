@@ -31,7 +31,7 @@
       <view class="order">限时订购</view>
     </view>
   </view>
-  <!-- 头象 -->
+  <!-- 头像开始 -->
   <view class="headPortrait_list">
     <view class="headPortrait_lis"></view>
     <view class="headPortrait_lis"></view>
