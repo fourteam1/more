@@ -4,7 +4,7 @@
   <view class="details-header">
     <image></image>
     <view class="details-header-icon">
-      <icon class="iconfont icon-fanhui"></icon>
+      <icon class="iconfont icon-fanhui" bindtap='goblack'></icon>
       <icon class="iconfont icon-gouwuche"></icon>
       <icon class="iconfont icon-sangedian"></icon>
       <text>0</text>

@@ -104,7 +104,7 @@
               <text  class="textc_re">￥ </text><text class="textc_re textc_re_1">228.00</text>
           </view>
         </view>
-        <view class="wave_btn wave_btn_1" >
+        <view class="wave_btn wave_btn_1" bindtap='goto' >
           立即购买
           <image src="../image/z1.gif"></image>
         </view>
@@ -132,7 +132,7 @@
               <text  class="textc_re">￥</text><text class="textc_re textc_re_1">228.0</text>
           </view>
         </view>
-        <view class="wave_btn wave_btn_1" >
+        <view class="wave_btn wave_btn_1" bindtap='goto' >
           立即购买
           <image src="../image/z1.gif"></image>
         </view>
@@ -180,7 +180,7 @@
               <text  class="textc_re">￥</text><text class="textc_re textc_re_1">228.0</text>
           </view>
         </view>
-        <view class="wave_btn wave_btn_1" >
+        <view class="wave_btn wave_btn_1" bindtap='goto' >
           立即购买
           <image src="../image/z1.gif"></image>
         </view>
@@ -196,7 +196,7 @@
               <text  class="textc_re">￥</text><text class="textc_re textc_re_1">228.0</text>
           </view>
         </view>
-        <view class="wave_btn wave_btn_1" >
+        <view class="wave_btn wave_btn_1" bindtap='goto' >
           立即购买
           <image src="../image/z1.gif"></image>
         </view>
