@@ -1,4 +1,4 @@
-<!--pages/details/details.wxml-->
+<view class="del">
 <view class="details">
   <!-- 头部开始 -->
   <view class="details-header">
@@ -52,7 +52,7 @@
       </view>
     </view>
     <view class='discounts-right'>
-      <icon class="iconfont icon-qianjin"></icon>
+      <icon class="iconfont icon-icon"></icon>
     </view>
   </view>
 
@@ -74,7 +74,7 @@
     <text>全场包邮</text>
   </view>
   <view class="discounts-right">
-    <icon class="iconfont icon-qianjin"></icon>
+    <icon class="iconfont icon-icon"></icon>
   </view>
 </view>
 <!-- 7天无理由退货-->
@@ -196,12 +196,8 @@
     </view>
   </view>
   <view class="footer-list-1">发起拼单</view>
-  <!-- <view ></view> --> 
-  <button class="footer-list-2" bindtap="getShow">单独购买</button>
-<!-- <van-popup ></van-popup> -->
-<van-popup show="{{ show }}" position="bottom" overlay="{{ false }}" bind:close="onClose">
-
-</van-popup>
+  <view class="footer-list-2" bindtap='isShow'>单独购买</view>
+  <van-popup show="{{ show }}" bind:close="onClose"></van-popup>
   <van-popup show="{{ show }}" position="bottom" overlay="{{ false }}" bind:close="onClose">
     <view class="footer-shop">
       <image></image>
@@ -209,7 +205,7 @@
         <text>￥122-133</text>
         <text>库存2343件</text>
         <text>请选择 尺码</text>
-        <icon class="iconfont icon-guanbi1" bindtap='goIsshow'></icon>
+        <icon class="iconfont icon-cha" bindtap='goIsshow'></icon>
       </view> 
       <view class="size">尺码</view>
       <view class='list'>
@@ -225,5 +221,12 @@
       
   </van-popup>
   <!-- 添加购物车-->
+
+
+
 </view>
 <!-- 底部-->
+
+
+<!-- 最外成盒子 -->
+</view>

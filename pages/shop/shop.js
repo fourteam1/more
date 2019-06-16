@@ -6,7 +6,7 @@ Page({
   data: {
     data: [],
     check: false,
-    TotalCost: 0,
+    TotalCost: 0
   },
 
   /**
@@ -16,7 +16,23 @@ Page({
     wx.setNavigationBarTitle({
       title: '购物车',
     })
-    this.getData();
+    wx.getStorage({
+      key: 'data',
+      success: res => {
+        console.log(res.data);
+        this.data.data = res.data;
+        this.setData({
+          data: this.data.data
+        })
+      }
+    })
+  },
+  //设置缓存
+  setCookie(){
+    wx.setStorage({
+      key: 'data',
+      data: this.data.data
+    })
   },
   //获取数据
   getData(){
@@ -28,7 +44,7 @@ Page({
       success: res => {
         // console.log(res.data.goods_list);
         let list = res.data.goods_list;
-        list = list.splice(0,3);
+        // list = list.splice(0,3);
         list.forEach( item => {
           item.count = 1;
           item.check = false;
@@ -110,21 +126,37 @@ Page({
   },
   // 删除当前商品
   remove(e){
-    let index = e.currentTarget.dataset.index;
-    let list = this.data.data;
-    list[index].count = 0;
-    list.splice(index,1);
-    this.filter(list)
-    this.setData({
-      data: list
+    wx.showModal({
+      title: '提示',
+      content: "确定删除吗？",
+      success: res => {
+        if(res.confirm){
+          console.log(res.confirm)
+          let index = e.currentTarget.dataset.index;
+          let list = this.data.data;
+          list[index].count = 0;
+          list.splice(index, 1);
+          this.filter(list)
+          this.setData({
+            data: list
+          })
+          wx.showToast({
+            title: '删除成功',
+            icon: 'success',
+            duration: 2000
+          })
+          if (list.length == 0) {
+            console.log(0)
+            this.setData({
+              check: false
+            })
+          }
+          this.setCookie();
+        }else if(res.cancel){
+          console.log("取消")
+        }
+      }
     })
-    if (list.length == 0) {
-      console.log(0)
-      this.setData({
-        check: false
-      })
-    }
-    
   },
   //去结算
   Settlement(e){
