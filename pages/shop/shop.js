@@ -16,23 +16,7 @@ Page({
     wx.setNavigationBarTitle({
       title: '购物车',
     })
-    wx.getStorage({
-      key: 'data',
-      success: res => {
-        console.log(res.data);
-        this.data.data = res.data;
-        this.setData({
-          data: this.data.data
-        })
-      }
-    })
-  },
-  //设置缓存
-  setCookie(){
-    wx.setStorage({
-      key: 'data',
-      data: this.data.data
-    })
+    this.getData()
   },
   //获取数据
   getData(){
@@ -43,15 +27,22 @@ Page({
       },
       success: res => {
         // console.log(res.data.goods_list);
-        let list = res.data.goods_list;
-        // list = list.splice(0,3);
-        list.forEach( item => {
-          item.count = 1;
-          item.check = false;
-        })
-        this.setData({
-          data: list
-        })
+        if(wx.getStorageSync("data")){
+          let data1 = wx.getStorageSync("data")
+          this.setData({
+            data: data1
+          })
+        }else{
+          let list = res.data.goods_list;
+          // list = list.splice(0,3);
+          list.forEach(item => {
+            item.count = 1;
+            item.check = false;
+          })
+          this.setData({
+            data: list
+          })
+        }
       },
       fail: err => {
         console.log("错误内容 " + err);
@@ -145,13 +136,17 @@ Page({
             icon: 'success',
             duration: 2000
           })
+          //删除后重新保存数据
+          wx.setStorage({
+            key: 'data',
+            data: list
+          })
           if (list.length == 0) {
             console.log(0)
             this.setData({
               check: false
             })
           }
-          this.setCookie();
         }else if(res.cancel){
           console.log("取消")
         }
