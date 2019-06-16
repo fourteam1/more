@@ -9,9 +9,6 @@ Page({
       '../image/bg2.jpg',
       '../image/bg3.jpg',
       '../image/bg4.jpg',
-      // 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
-      // 'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
-      // 'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
     ],
     dataList: []
   },
@@ -39,7 +36,11 @@ Page({
       },
     })
   },
-
+  goto(){
+    wx.navigateTo({
+      url: '../details/details'
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
