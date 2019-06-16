@@ -30,6 +30,7 @@
   height: 130rpx;
   border-radius: 50%;
   border: 4rpx solid #fff;
+  background-size: cover;
 }
 .mine .content .portrait .img .name{
   color: #fff;
@@ -87,6 +88,7 @@
 .mine .content .indent .list .list_item{
   width: 100%;
   height: 72rpx;
+  line-height: 72rpx;
   padding: 0 52rpx;
   box-sizing: border-box;
   border-bottom: 2rpx solid #ccc;
@@ -97,7 +99,7 @@
 .mine .content .indent .list .list_item icon:nth-of-type(2){
   float: right;
 }
-.mine .content .indent .list .list_item icon.icon-youhuiquan{
+.mine .content .indent .list .list_item icon.icon-youhuiquan1{
   color: #ec3127;
 }
 .mine .content .indent .list .list_item icon.icon-shangpinshoucang{

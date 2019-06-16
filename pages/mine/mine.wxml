@@ -47,7 +47,7 @@
       </view>
       <view class='list'>
         <view class='list_item' bindtap='goOffer'>
-          <icon class='iconfont icon-youhuiquan'></icon>
+          <icon class='iconfont icon-youhuiquan1'></icon>
           <text>优惠券</text>
           <icon class='iconfont icon-icon'></icon>
         </view>
