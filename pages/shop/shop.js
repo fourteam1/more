@@ -16,7 +16,14 @@ Page({
     wx.setNavigationBarTitle({
       title: '购物车',
     })
-    this.getData()
+    if (wx.getStorageSync("data")) {
+      let data1 = wx.getStorageSync("data")
+      this.setData({
+        data: data1
+      })
+    } else {
+      this.getData()
+    }
   },
   //获取数据
   getData(){
@@ -27,22 +34,15 @@ Page({
       },
       success: res => {
         // console.log(res.data.goods_list);
-        if(wx.getStorageSync("data")){
-          let data1 = wx.getStorageSync("data")
-          this.setData({
-            data: data1
-          })
-        }else{
-          let list = res.data.goods_list;
-          // list = list.splice(0,3);
-          list.forEach(item => {
-            item.count = 1;
-            item.check = false;
-          })
-          this.setData({
-            data: list
-          })
-        }
+        let list = res.data.goods_list;
+        // list = list.splice(0,3);
+        list.forEach(item => {
+          item.count = 1;
+          item.check = false;
+        })
+        this.setData({
+          data: list
+        })
       },
       fail: err => {
         console.log("错误内容 " + err);
