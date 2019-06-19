@@ -36,14 +36,11 @@ Page({
       },
     })
   },
-<<<<<<< HEAD
   goto(){
     wx.navigateTo({
       url: '../details/details'
     })
   },
-=======
->>>>>>> e8dbb91f3aef92fe6444e518591ebbfde9c80ee8
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

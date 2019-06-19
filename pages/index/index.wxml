@@ -7,7 +7,7 @@
       <block wx:for="{{imgUrls}}">
         <swiper-item> 
           <image src="{{item}}" class="slide-image" width="355" height="150"/> 
-        </swiper-item>
+        </swiper-item> 
       </block> 
     </swiper>
   </view>
@@ -51,7 +51,6 @@
     <view>23</view>
     <text>结束</text>
   </view>
-    
   </view>
   <!-- 倒计时结束 -->
 </view>
@@ -89,7 +88,7 @@
           </view>
         </view>
         <view class="wave_btn" bindtap='goto' >
-          立即购买
+        <view>立即购买</view>
           <image src="../image/z1.gif"></image>
         </view>
       </view>
@@ -110,7 +109,6 @@
         </view>
       </view>
     </view>
-
     <!--  -->
       <!-- logo -->
     <view class="logo_bg_1 logo_bg_11"><image src="../image/logo1.gif"></image></view>
@@ -118,8 +116,6 @@
     <!-- logo -->
     <image class="pillow_img1" src="../image/pillow_4.gif"></image>
     <!--  -->
-
-
     <!-- 列表开始 -->
     <view class="pillow_list">
       <view  class="pillow_lis">
@@ -156,7 +152,6 @@
       </view>
     </view>
     <!-- 列表结束 -->
-
     <!-- 镇店之宝 任君选择开始 -->
   <view>
     <view class="bg back_img1" style="background:url('../image/bg_11.GIF')">
@@ -204,7 +199,6 @@
       </view>
     </view>
     <!-- 列表结束 -->
-
     <!--  -->
     <image class="pillowimg_1" src="../image/pillow_5.gif"></image>
     <!--  -->
@@ -271,6 +265,11 @@
       </view>
     </view>
     <!-- 猜你喜欢结束 -->
+    <!-- 点击加载更多开始 -->
+    <view class="load_box">
+      <view> 点击显示更多</view>
+    </view>
+    <!-- 点击加载更多结束 -->
   </view>
   <!-- paihangbang -->
 
