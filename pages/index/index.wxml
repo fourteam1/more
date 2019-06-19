@@ -50,15 +50,6 @@
       <view>23</view>
       <text>结束</text>
     </view>
-    <view class="timeBox_center">
-      <text>还剩</text>
-      <view>23</view>
-      <text>:</text>
-      <view>23</view>
-      <text>:</text>
-      <view>23</view>
-      <text>结束</text>
-    </view>
   </view>
   <!-- 倒计时结束 -->
 </view>
