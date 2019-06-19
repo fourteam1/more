@@ -30,6 +30,8 @@
 		"hidedInDevtools": []
 	},
 	"scripts": {},
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -48,6 +50,7 @@
 		},
 		"miniprogram": {
 			"current": -1,
+			"current": 9,
 			"list": [
 				{
 					"id": -1,
@@ -103,6 +106,12 @@
 					"name": "new",
 					"pathName": "pages/new/new",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "order",
+					"pathName": "pages/order/order",
 					"scene": null
 				}
 			]
