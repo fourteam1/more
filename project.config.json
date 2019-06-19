@@ -10,7 +10,6 @@
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
-		"nodeModules": true,
 		"autoAudits": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
@@ -19,26 +18,17 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		}
+		},
+		"nodeModules": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
-<<<<<<< HEAD
-	"appid": "wxc176dcbbc21c8865",
-	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
-	"cloudfunctionTemplateRoot": "",
-	"debugOptions": {
-		"hidedInDevtools": []
-	},
-	"scripts": {},
-=======
-	"appid": "wxd23e7e29d4292ddb",
-	"projectname": "more",
+	"appid": "wx0cab5303c04aec4a",
+	"projectname": "wlf",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
->>>>>>> 74b23109262fbeb0ec182945fae46f546228c767
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
@@ -50,90 +40,13 @@
 			"current": -1,
 			"list": []
 		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-<<<<<<< HEAD
 			"current": -1,
-			"list": [
-				{
-					"id": -1,
-					"name": "mine",
-					"pathName": "pages/mine/mine",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "refund",
-					"pathName": "pages/refund/refund",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "shop",
-					"pathName": "pages/shop/shop",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "offer",
-					"pathName": "pages/offer/offer",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "details",
-					"pathName": "pages/details/details",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/user/user",
-					"pathName": "pages/user/user",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "offer",
-					"pathName": "pages/offer/offer",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "index",
-					"pathName": "pages/index/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "new",
-					"pathName": "pages/new/new",
-					"query": "",
-=======
-			"current": 0,
-			"list": [
-				{
-					"id": -1,
-					"name": "details",
-					"pathName": "pages/details/details",
->>>>>>> 74b23109262fbeb0ec182945fae46f546228c767
-					"scene": null
-				}
-			]
+			"list": []
 		}
 	}
 }
