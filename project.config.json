@@ -23,7 +23,6 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
-<<<<<<< HEAD
 	"appid": "wxc176dcbbc21c8865",
 	"projectname": "%E6%8B%BC%E5%A4%9A%E5%A4%9A",
 	"cloudfunctionTemplateRoot": "",
@@ -31,14 +30,12 @@
 		"hidedInDevtools": []
 	},
 	"scripts": {},
-=======
 	"appid": "wxd23e7e29d4292ddb",
 	"projectname": "more",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
->>>>>>> 74b23109262fbeb0ec182945fae46f546228c767
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
@@ -59,7 +56,6 @@
 			"list": []
 		},
 		"miniprogram": {
-<<<<<<< HEAD
 			"current": -1,
 			"list": [
 				{
@@ -122,18 +118,9 @@
 					"id": -1,
 					"name": "new",
 					"pathName": "pages/new/new",
-					"query": "",
-=======
-			"current": 0,
-			"list": [
-				{
-					"id": -1,
-					"name": "details",
-					"pathName": "pages/details/details",
->>>>>>> 74b23109262fbeb0ec182945fae46f546228c767
-					"scene": null
-				}
-			]
+					"query": ""
+        }
+      ]
 		}
 	}
 }

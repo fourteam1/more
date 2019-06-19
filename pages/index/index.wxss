@@ -17,10 +17,7 @@
   .view_list swiper swiper-item,.view_list swiper image{
     width:80%;
     margin:0 40rpx;
-    border-radius:20px;
-  }
-  .view_list swiper image{
-    border-radius:20px;
+    border-radius:40rpx;
   }
   /*  */
   .bg{
@@ -48,7 +45,7 @@
     top:-300rpx;
     left:50%;
     margin-left:-329rpx;
-    border-radius:20px;
+    border-radius:20rpx;
     box-shadow: 0 4px 0 rgba(0, 0, 0, .1);  
     padding:0 20rpx;
     box-sizing: border-box;
@@ -316,7 +313,12 @@
 .box .wave_btn_1{
   margin:0;
 }
-/* 列表开始 */
+.pillowimg_1{
+  width: 100%;
+  height: 490rpx;
+  margin-top: 20rpx;
+}
+/* 列表结束 */
 
 /* footer */
 /* 排行榜开始 */
