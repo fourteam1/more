@@ -16,6 +16,10 @@ Page({
     wx.setNavigationBarTitle({
       title: '购物车',
     })
+<<<<<<< HEAD
+=======
+    this.getData()
+>>>>>>> fa27877e2454d55270816075446e0edc5f541393
     if (wx.getStorageSync("data")) {
       let data1 = wx.getStorageSync("data")
       this.setData({
@@ -34,6 +38,25 @@ Page({
       },
       success: res => {
         // console.log(res.data.goods_list);
+<<<<<<< HEAD
+=======
+        if(wx.getStorageSync("data")){
+          let data1 = wx.getStorageSync("data")
+          this.setData({
+            data: data1
+          })
+        }else{
+          let list = res.data.goods_list;
+          // list = list.splice(0,3);
+          list.forEach(item => {
+            item.count = 1;
+            item.check = false;
+          })
+          this.setData({
+            data: list
+          })
+        }
+>>>>>>> fa27877e2454d55270816075446e0edc5f541393
         let list = res.data.goods_list;
         // list = list.splice(0,3);
         list.forEach(item => {

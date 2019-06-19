@@ -48,5 +48,8 @@
       }
     ]
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-icon": "miniprogram_npm/vant-weapp/icon/index"
+  }
 }
