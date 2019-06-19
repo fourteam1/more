@@ -4,9 +4,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    data: {}
+    data: [],
+    TotalCost: 0
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -15,6 +15,13 @@ Page({
   },
   getdata() {
     let data = wx.getStorageSync("data");
-    console.log(data)
+    let list =  data.data.filter(item => {
+      return item.check == true
+    });
+    console.log(list)
+    this.setData({
+      data: list,
+      TotalCost: data.TotalCost
+    })
   }
 })

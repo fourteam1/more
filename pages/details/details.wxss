@@ -337,7 +337,6 @@
   font-size: 24rpx;
   line-height: 66rpx;
   margin-right: 15rpx;
-
 }
 .price-centent{
   font-size: 28rpx;
