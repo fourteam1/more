@@ -265,7 +265,6 @@
     margin-left:24rpx;
   }
 
-<<<<<<< HEAD
 /* 列表开始 */
 .pillow_list{
   display:flex;
@@ -309,9 +308,6 @@
   margin-top: 20rpx;
 }
 /* 列表结束 */
-=======
->>>>>>> fa27877e2454d55270816075446e0edc5f541393
-
   /* logo */
   .logo_bg_1{
     margin-top:56rpx;
@@ -322,43 +318,6 @@
     height:430rpx;
   }
 
-  /* 列表开始 */
-  .pillow_list{
-    display:flex;
-    justify-content: space-between;
-    width:100%;
-    height:324rpx;
-    padding:0 15rpx;
-    box-sizing: border-box;
-    /* background:yellow; */
-  }
-  .pillow_lis{
-    width:343rpx;
-    height:100%
-  }
-  .pillow_lis .pillow_lis_text{
-    text-align:center;
-    width:100%;
-    margin-bottom:16rpx;
-  }
-  .pillow_lis .img{
-    width:100%;
-    height:210rpx;
-  }
-  .box{
-    display:flex;
-    align-items: center;
-    width:100%;
-  }
-  .box .float_box1{
-    width:180rpx;
-  }
-  .box .float_box1 .textc_re_1{
-    font-size:34rpx;
-  }
-  .box .wave_btn_1{
-    margin:0;
-  }
   /* 列表开始 */
   .pillowimg_1{
     width:100%;

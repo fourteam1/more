@@ -41,7 +41,6 @@
   <view class="num_box" style="font-size:24rpx;text-align:center;">仅剩<text>3</text>人，快呼唤小伙伴来参加吧</view>
   <!-- 倒计时开始 -->
   <view class="timeBox">
-<<<<<<< HEAD
     <view class="timeBox_center">
       <text>还剩</text>
       <view>23</view>
@@ -51,17 +50,15 @@
       <view>23</view>
       <text>结束</text>
     </view>
-=======
-  <view class="timeBox_center">
-    <text>还剩</text>
-    <view>23</view>
-    <text>:</text>
-    <view>23</view>
-    <text>:</text>
-    <view>23</view>
-    <text>结束</text>
-  </view>
->>>>>>> fa27877e2454d55270816075446e0edc5f541393
+    <view class="timeBox_center">
+      <text>还剩</text>
+      <view>23</view>
+      <text>:</text>
+      <view>23</view>
+      <text>:</text>
+      <view>23</view>
+      <text>结束</text>
+    </view>
   </view>
   <!-- 倒计时结束 -->
 </view>
@@ -274,15 +271,12 @@
         <view class="new_text1 new_text_3">￥2132</view>
       </view>
     </view>
-<<<<<<< HEAD
-=======
     <!-- 猜你喜欢结束 -->
     <!-- 点击加载更多开始 -->
     <view class="load_box">
       <view> 点击显示更多</view>
     </view>
     <!-- 点击加载更多结束 -->
->>>>>>> fa27877e2454d55270816075446e0edc5f541393
   </view>
   <!-- 猜你喜欢结束 -->
 </view>
