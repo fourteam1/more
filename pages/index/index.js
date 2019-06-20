@@ -7,13 +7,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls: [ 
-      '../image/bg1.jpg',
-      '../image/bg2.jpg',
-      '../image/bg3.jpg',
-      '../image/bg4.jpg',
-    ],
-    dataList: [],
     carousel:[],//首页轮播
     recommend:[],//推荐商品
     ranking:[],//排行榜
@@ -30,17 +23,8 @@ Page({
     this.getData()
   },
   getData() {
-    wx.request({
-      url: 'http://mobile.yangkeduo.com/proxy/api/api/alexa/v1/goods?&page=1&size=20',
-      header: {
-        "content-type": "application/json"
-      },
-      success: res => {
-        this.setData({
-          dataList: res.data.goods_list
-        })
-      },
-    })
+    // http://mobile.yangkeduo.com/proxy/api/api/alexa/v1/goods?&page=1&size=20
+    // 获取接口的函数
     home.getIndex(72,res=>{
       // 轮播数据
       this.setData({carousel: res.data.carousel})
@@ -57,7 +41,7 @@ Page({
     })
   },
   goto(){
-    wx.navigateTo({
+    wx.navigateTo({//跳转到详情页
       url: '../details/details'
     })
   },
