@@ -1,5 +1,6 @@
 
   .homePage{
+    position:relative;
     width:100%;
     height:360rpx;
   }
@@ -10,18 +11,55 @@
   .view_list{
     position:absolute;
     top:0;
-    left:0;
-    width:100%;
+    left:50%;
+    width:629rpx;
     height:360rpx;
+    margin-left:-314rpx;
+  }
+  .div1{
+    position:absolute;
+    top:0;
+    left:50%;
+    width:629rpx;
+    height:360rpx;
+    margin-left:-315rpx;
+    z-index:1000;
   }
   .view_list swiper swiper-item,.view_list swiper image{
-    width:80%;
-    margin:0 40rpx;
+    width:100%;
+    /* margin:0 40rpx; */
     border-radius:20px;
   }
   .view_list swiper image{
+    height:360rpx;
     border-radius:20px;
   }
+  .homePage_icon{
+    position:absolute;
+    top:50%;
+    font-size:56rpx;
+    color:#fff;
+    margin-top:-10rpx;
+    font-weight: bold;
+  }
+  .homePage_icon_1{
+    left:0;
+  }
+  .homePage_icon_2{
+    right:0;
+    font-size:76rpx;
+  }
+  .btn_title{
+    position:absolute;
+    top:0;
+    width:40rpx;
+    height:100%;
+    border-radius:0 20rpx 20rpx 0;
+    background:#bfbfbf;
+  }
+  .btn_title_1{left:0;}
+  .btn_title_2{right:0;
+    border-radius: 20rpx 0 0 20rpx;}
   /* pillowimg_1 */
   .bg{
     width:100%;
@@ -29,7 +67,6 @@
     background-size:100%;
     margin:103rpx 0;
   }
-
   /* 拼团开始 */
   .assemble{
     width:100%;
