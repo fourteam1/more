@@ -1,11 +1,14 @@
 // pages/new/new.js
+import {Config} from "../../utils/config.js"
+import {Home} from "../index/index-model.js"
+let home =new Home()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    dataList:[]
+    guessgoods:[]
   },
 
   /**
@@ -18,17 +21,17 @@ Page({
     this.getData()
   },
   getData(){
-    wx.request({
-      url: 'http://mobile.yangkeduo.com/proxy/api/api/alexa/v1/goods?&page=1&size=20',
-      header: {
-        "content-type": "application/json"
-      },
-      success: res => {
-        console.log(res.data.goods_list);
-        this.setData({
-          dataList: res.data.goods_list
-        })
-      },
+    // 
+    home.getIndex(72, res => {
+      // 猜你喜欢数据
+      this.setData({ guessgoods: res.data.guessgoods })
+      console.log(this.data.guessgoods);
+    })
+  },
+  gotoDetails(e){
+    console.log(e.currentTarget.dataset.id)
+    wx.navigateTo({//跳转到详情页
+      url: `/pages/details/details?id=${e.currentTarget.dataset.id}`
     })
   },
 

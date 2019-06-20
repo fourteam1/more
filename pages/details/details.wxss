@@ -21,7 +21,7 @@
 .details-header image{
   width:750rpx;
   height:752rpx;
-  background: #ff0;
+  background: #fff;
 }
 .details-header-icon icon,.details-header-icon text{
   position: absolute;
