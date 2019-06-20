@@ -1,16 +1,23 @@
 //index.js
+import {Config} from '../../utils/config.js';
+import {Home} from "./index-model.js"
+let home =new Home();
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
+    imgUrls: [ 
       '../image/bg1.jpg',
       '../image/bg2.jpg',
       '../image/bg3.jpg',
       '../image/bg4.jpg',
     ],
-    dataList: []
+    dataList: [],
+    carousel:[],//首页轮播
+    recommend:[],//推荐商品
+    ranking:[],//排行榜
+    guessgoods:[],//猜你喜欢
   },
 
   /**
@@ -29,11 +36,24 @@ Page({
         "content-type": "application/json"
       },
       success: res => {
-        console.log(res.data.goods_list);
         this.setData({
           dataList: res.data.goods_list
         })
       },
+    })
+    home.getIndex(72,res=>{
+      // 轮播数据
+      this.setData({carousel: res.data.carousel})
+      // 推荐数据
+      this.setData({recommend: res.data.recommend})
+      // 排行榜数据
+      this.setData({ranking: res.data.ranking})
+      // 猜你喜欢数据
+      this.setData({guessgoods: res.data.guessgoods})
+
+      console.log(this.data.ranking);
+      console.log(this.data.guessgoods);
+      console.log(this.data.carousel);
     })
   },
   goto(){

@@ -1,21 +1,19 @@
 <!-- 轮播开始 -->
 <view class="homePage" > 
   <image class="homePage_bg" src="../image/zhang-kaiyv-661828-unsplash.jpg"></image>
-  <view class="view_list">
+  <view class="view_list"> 
     <swiper  indicator-dots="true" 
       autoplay="true" interval="2000" circular="true" duration="1000">
-      <block wx:for="{{imgUrls}}">
+      <block wx:for="{{carousel}}">
         <swiper-item> 
-          <image src="{{item}}" class="slide-image" width="355" height="150"/> 
+          <image src="{{item.src}}" class="slide-image" width="355" height="150"/>
         </swiper-item> 
       </block> 
     </swiper>
   </view>
 </view>
 <!-- 轮播结束-->
-
 <view class="bg" style="background:url('../image/bg_11.GIF')"></view>
-
 <!-- 拼团开始 -->
 <view class="assemble">
 <!--  -->
@@ -33,6 +31,7 @@
   </view>
   <!-- 头像开始 -->
   <view class="headPortrait_list">
+    <view class="headPortrait_lis"></view>
     <view class="headPortrait_lis"></view>
     <view class="headPortrait_lis"></view>
     <view class="headPortrait_lis"></view>
@@ -218,17 +217,17 @@
         </view>
       </view>
       <view class='body'>
-        <view class='center'>
-          <image src='../image/pillow1.png'/>
+        <view class='center' wx:for="{{ranking}}">
+          <image src='{{item.goods_thumb}}'/>
           <view class='circle'>
-            <text>1</text>
+            <text>{{index+1}}</text>
           </view>
           <view class='text'>
-            <text>泰国乳胶狼牙按摩枕</text>
+            <text>{{item.goods_name}}</text>
             <text class='person'>199人付款</text>
           </view>
         </view>
-        <view class='center'>
+        <!-- <view class='center'>
           <image src='../image/pillow1.png'/>
           <view class='circle'>
             <text>2</text>
@@ -237,8 +236,8 @@
             <text>泰国乳胶狼牙按摩枕</text>
             <text class='person'>199人付款</text>
           </view>
-        </view>
-        <view class='center'>
+        </view> -->
+        <!-- <view class='center'>
           <image src='../image/pillow1.png'/>
           <view class='circle'>
             <text>3</text>
@@ -247,7 +246,7 @@
             <text>泰国乳胶狼牙按摩枕</text>
             <text class='person'>199人付款</text>
           </view>
-        </view>
+        </view> -->
       </view>
     </view>
     <!-- 排行榜结束 -->
@@ -256,11 +255,11 @@
     <view class="like_box">
       <view class="like_title">猜你喜欢</view>
       <view class="new_list"> 
-        <view class="lis" wx:for="{{dataList}}" wx:key="{{index}}">
-          <image src="{{item.hd_thumb_url}}"></image>
-          <view class="new_text1">{{item.short_name}}</view>
+        <view class="lis" wx:for="{{guessgoods}}" wx:key="{{index}}">
+          <image src="{{item.goods_thumb}}"></image>
+          <view class="new_text1">{{item.goods_name}}</view>
           <view class="new_text1 new_text_2">{{item.goods_name}}</view>
-          <view class="new_text1 new_text_3">￥2132</view>
+          <view class="new_text1 new_text_3">￥{{item.shop_price}}</view>
         </view>
       </view>
     </view>
