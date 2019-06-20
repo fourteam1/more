@@ -2,14 +2,14 @@
 <view class="details">
   <!-- 头部开始 -->
   <view class="details-header">
-    <image></image>
+    <image src="{{goods.goods_thumb}}"></image>
     <view class="details-header-icon">
       <icon class="iconfont icon-fanhui" bindtap='goblack'></icon>
       <icon class="iconfont icon-gouwuche"></icon>
       <icon class="iconfont icon-sangedian"></icon>
       <text>0</text>
     </view>
-    <view class="details-header-text">
+    <view class="details-header-text"> 
       <text>外观</text>
       <text>图片</text>
     </view>
@@ -20,8 +20,8 @@
   <view class='details-share'>
     <view class="details-share-title">
         <view class="details-share-left">
-          <text>王龙阿萨德</text>
-          <text>挖到阿萨德吧</text>
+          <text>{{goods.goods_name}}</text>
+          <text>{{goods.goods_name}}</text>
         </view>
         <view class="details-share-right">
           <icon class="iconfont icon-fenxiang"></icon>
@@ -30,7 +30,7 @@
     </view>
     <view class="details-price">
       <text>￥</text>
-      <text>118-159</text>
+      <text>{{goods.market_price}}</text>
     </view>
     <view class="details-express">
       <text>快递：</text>
@@ -55,14 +55,12 @@
       <icon class="iconfont icon-icon"></icon>
     </view>
   </view>
-
-
   <!-- 优惠卷结束-->
 </view>
 <!-- 7天无理由退货-->
 <view class="back">
  <view class="group">
-    <block wx:for="{{iconColor}}">
+    <block wx:for="{{iconColor}}" wx:key='{{index}}'>
       <icon type="success" size="20" color="{{item}}" style='position:relative;top:10rpx;margin-right:10rpx;'/>
     </block>
     <text>7天无理由退货</text>

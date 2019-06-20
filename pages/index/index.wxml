@@ -217,7 +217,7 @@
         </view>
       </view>
       <view class='body'>
-        <view class='center' wx:for="{{ranking}}">
+        <view class='center' wx:for="{{ranking}}" bindtap="gotoDetails" data-id="{{item.goods_id}}">
           <image src='{{item.goods_thumb}}'/>
           <view class='circle'>
             <text>{{index+1}}</text>
@@ -256,7 +256,7 @@
       <view class="like_title">猜你喜欢</view>
       <view class="new_list"> 
         <view class="lis" wx:for="{{guessgoods}}" wx:key="{{index}}">
-          <image src="{{item.goods_thumb}}"></image>
+          <image src="{{item.goods_thumb}}" bindtap="gotoDetails" data-id="{{item.goods_id}}"></image>
           <view class="new_text1">{{item.goods_name}}</view>
           <view class="new_text1 new_text_2">{{item.goods_name}}</view>
           <view class="new_text1 new_text_3">￥{{item.shop_price}}</view>

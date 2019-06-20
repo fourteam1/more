@@ -45,6 +45,12 @@ Page({
       url: '../details/details'
     })
   },
+  gotoDetails(e){
+    console.log(e.currentTarget.dataset.id)
+    wx.navigateTo({//跳转到详情页
+      url: `/pages/details/details?id=${e.currentTarget.dataset.id}`
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
