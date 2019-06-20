@@ -1,19 +1,16 @@
 //index.js
+import { Config } from '../../utils/config.js';
+import { Home } from "./index-model.js";
+let home = new Home();
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      '../image/bg1.jpg',
-      '../image/bg2.jpg',
-      '../image/bg3.jpg',
-      '../image/bg4.jpg',
-      // 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
-      // 'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
-      // 'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
-    ],
-    dataList: []
+    carousel: [],//首页轮播
+    recommend: [],//推荐商品
+    ranking: [],//排行榜
+    guessgoods: []//猜你喜欢
   },
 
   /**
@@ -23,23 +20,40 @@ Page({
     wx.setNavigationBarTitle({
       title: '首页',
     })
-    this.getData()
+    // this.getData()
+    this.getList()
   },
-  getData() {
-    wx.request({
-      url: 'http://mobile.yangkeduo.com/proxy/api/api/alexa/v1/goods?&page=1&size=20',
-      header: {
-        "content-type": "application/json"
-      }, 
-      success: res => {
-        console.log(res.data.goods_list);
-        this.setData({
-          dataList: res.data.goods_list
-        })
-      },
-    })
-  },
-
+  // getData() {
+  //   wx.request({
+  //     url: 'http://mobile.yangkeduo.com/proxy/api/api/alexa/v1/goods?&page=1&size=20',
+  //     header: {
+  //       "content-type": "application/json"
+  //     }, 
+  //     success: res => { 
+  //       console.log(res.data.goods_list);
+  //       this.setData({
+  //         dataList: res.data.goods_list
+  //       })
+  //     },
+  //   })
+    
+  // },
+ getList(){
+   home.getIndex(72, res => {
+     // 轮播数据
+     this.setData({ carousel: res.data.carousel })
+     // 推荐数据
+     this.setData({ recommend: res.data.recommend })
+     // 排行榜数据
+     this.setData({ ranking: res.data.ranking })
+     // 猜你喜欢数据
+     this.setData({ guessgoods: res.data.guessgoods })
+     console.log(this.data.ranking);
+     console.log(this.data.guessgoods);
+     console.log(this.data.carousel);
+   })
+   console.log(1);
+ },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
