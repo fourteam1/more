@@ -90,9 +90,6 @@
       </view>
     </view>
   </view>
-<<<<<<< HEAD
-</view>
-=======
   <!-- 模态框 -->
   <van-popup show="{{ show }}" bind:close="onClose"></van-popup>
   <van-popup
@@ -121,4 +118,3 @@
   </van-popup>
 </view>
 <van-dialog id="van-dialog" />
->>>>>>> 20421fafbb9d733d6f0257ca92d56c700d51bfae
