@@ -11,6 +11,7 @@ Page({
     recommend:[],//推荐商品
     ranking:[],//排行榜
     guessgoods:[],//猜你喜欢
+    col:""
   },
 
   /**
@@ -21,6 +22,14 @@ Page({
       title: '首页',
     })
     this.getData()
+  },
+  onPageScroll: function (e) {
+    console.log(e.scrollTop);
+    if (e.scrollTop>=100){
+      this.setData({
+        col:'red'
+      })
+    }
   },
   getData() {
     // http://mobile.yangkeduo.com/proxy/api/api/alexa/v1/goods?&page=1&size=20
@@ -34,10 +43,6 @@ Page({
       this.setData({ranking: res.data.ranking})
       // 猜你喜欢数据
       this.setData({guessgoods: res.data.guessgoods})
-
-      console.log(this.data.ranking);
-      console.log(this.data.guessgoods);
-      console.log(this.data.carousel);
     })
   },
   goto(){

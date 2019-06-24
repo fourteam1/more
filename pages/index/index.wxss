@@ -1,59 +1,71 @@
-
+.nav-wrap{
+  width:100%;
+  height:100rpx;
+  position: fixed;
+  top:0;
+  left:0;
+  background:red;
+  padding: 60rpx 0 0 30rpx;
+  }
+.nav-wrap text{
+  margin-left:150rpx;
+}
+.bgimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
   .homePage{
     position:relative;
     width:100%;
-    height:360rpx;
+    height:505rpx;
   }
   .homePage .homePage_bg{
     width: 100%;
-    height:300rpx;
+    height:450rpx;
   }
   .view_list{
     position:absolute;
-    top:0;
-    left:50%;
-    width:629rpx;
-    height:360rpx;
-    margin-left:-314rpx;
-  }
-  .div1{
-    position:absolute;
-    top:0;
-    left:50%;
-    width:629rpx;
-    height:360rpx;
-    margin-left:-315rpx;
-    z-index:1000;
-  }
-  .view_list swiper swiper-item,.view_list swiper image{
+    bottom:0;
+    left:0;
     width:100%;
-    /* margin:0 40rpx; */
-    border-radius:20px;
+    height:360rpx;
+    /* margin-left:-50%; */
+  }
+  .view_list swiper swiper-item{
+    width:100%;
+    height:360rpx;
+    padding:0 40rpx;
+    box-sizing: border-box;
   }
   .view_list swiper image{
+    width:88%;
     height:360rpx;
     border-radius:20px;
+    margin:0 40rpx;
+    box-sizing: border-box;
   }
   .homePage_icon{
     position:absolute;
     top:50%;
-    font-size:56rpx;
+    font-size:100rpx;
     color:#fff;
-    margin-top:-10rpx;
     font-weight: bold;
   }
   .homePage_icon_1{
-    left:0;
+    left:60rpx;
   }
   .homePage_icon_2{
-    right:0;
-    font-size:76rpx;
+    right:60rpx;
+    transform:rotate(180deg);
   }
   .btn_title{
     position:absolute;
-    top:0;
+    bottom:0;
     width:40rpx;
-    height:100%;
+    height:360rpx;
     border-radius:0 20rpx 20rpx 0;
     background:#bfbfbf;
   }
@@ -66,6 +78,8 @@
     height:250rpx;
     background-size:100%;
     margin:103rpx 0;
+    
+    z-index:-3;
   }
   /* 拼团开始 */
   .assemble{
@@ -89,6 +103,7 @@
     box-shadow: 0 4px 0 rgba(0, 0, 0, .1);  
     padding:0 20rpx;
     box-sizing: border-box;
+    z-index:-2
   }
   .shopLing_img{
     width:50%;
@@ -145,6 +160,8 @@
   /* 头像列表结束 */
   .num_box{
     margin-top:40rpx;
+    
+    z-index:-3;
   }
   /* 倒计时开始 */
   .timeBox{
@@ -168,11 +185,9 @@
     text-align:center;
     line-height:32rpx;
   }
-
   /* 倒计时结束 */
     /* 拼团结束 */
   /* 内容开始 */
-
   .logo_bg_1{
     width:100%;
     height:30rpx;
@@ -235,12 +250,12 @@
     width:100%;
     text-align:center;
   }
-
   /*  */
   .wave_pillow{
     width:100%;
     height:530rpx;
     position: relative;
+    z-index:-3;
   }
   .wave_pillow image{width:100%;height:100%;}
   .wave_pillow_box1{
@@ -249,6 +264,7 @@
     position: absolute;
     bottom:0;
     right:30rpx;
+    z-index:-3;
   }
   .float_box1{
     width:100%;

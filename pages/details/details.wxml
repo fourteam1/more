@@ -198,7 +198,7 @@
   <van-popup show="{{ show }}" bind:close="onClose"></van-popup>
   <van-popup show="{{ show }}" position="bottom" overlay="{{ false }}" bind:close="onClose">
     <view class="footer-shop">
-      <image></image>
+      <image src="{{goods.goods_thumb}}"></image>
       <view class="footer-shop-right">
         <text>￥122-133</text>
         <text>库存2343件</text>

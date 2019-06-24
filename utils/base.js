@@ -18,8 +18,6 @@ class Base{
       },
       success:res=>{
         if (params.scallBack) {
-          
-          
           params.scallBack(res.data)
         }
       },

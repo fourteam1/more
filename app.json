@@ -18,7 +18,8 @@
     "navigationBarBackgroundColor": "#1ca95e",
     "navigationBarTitleText": "拼多多",
     "navigationBarTextStyle": "white",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": true,
+    "navigationStyle": "custom"
   },
   "tabBar": {
     "list": [
