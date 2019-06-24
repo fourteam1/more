@@ -168,9 +168,11 @@
 .left .iconfont{
   margin-left: 23rpx;
   margin-right: 24rpx;
+  color: #248756;
 }
 .right .iconfont {
   margin-right: 23rpx;
+  color: #e01616;
 }
 /* 购物车 */
 .shopping {
@@ -208,4 +210,10 @@
   background: #e01616;
   font-size: 30rpx;
   color: #fff;
+}
+/* 模态框 */
+.van-popup {
+  width: 702rpx;
+  height: 500rpx;
+  border-radius: 10rpx;
 }

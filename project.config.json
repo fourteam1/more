@@ -54,10 +54,14 @@
 			"list": []
 		},
 		"miniprogram": {
+<<<<<<< HEAD
 			"current": -1,
 <<<<<<< HEAD
 			"list": []
 =======
+=======
+			"current": 10,
+>>>>>>> 20421fafbb9d733d6f0257ca92d56c700d51bfae
 			"list": [
 				{
 					"id": -1,
@@ -112,6 +116,13 @@
 					"id": -1,
 					"name": "new",
 					"pathName": "pages/new/new",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "order",
+					"pathName": "pages/order/order",
 					"query": "",
 					"scene": null
 				},

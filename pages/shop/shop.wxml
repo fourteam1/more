@@ -10,7 +10,7 @@
       </view>
     </view>
     <!-- 购物车有东西的时候 -->
-    <view class='shop-Valued'>
+    <view class='shop-Valued' wx:if="{{data}}">
       <view class='shop-item' wx:for="{{data}}" wx:key="{{index}}" data-index="{{index}}">
         <!-- 是否选中 -->
         <icon class="{{!item.check ? 'iconfont icon-xuanzhongyuandian' : 'iconfont icon-xuanzhong-copy'}}" bindtap='check' data-index="{{index}}"></icon>
