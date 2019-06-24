@@ -168,5 +168,16 @@ Page({
     wx.navigateTo({
       url: `../order/order`
     })
-  }
+  },
+  onShow: function () {
+    console.log(11111)
+    if (wx.getStorageSync("data")) {
+      let data1 = wx.getStorageSync("data")
+      this.setData({
+        data: data1
+      })
+    } else {
+      this.getData()
+    }
+  },
 })
