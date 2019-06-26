@@ -1,4 +1,3 @@
-/* pages/offer/offer.wxss */
 .wrap{
   width: 100%;
   height: 100%;
@@ -41,7 +40,7 @@
   background: -webkit-gradient(linear,left top,right bottom,from(#ff4091), to(#ff9e29));
 }
 .left .price{
-  font-szie: 32rpx;
+  font-size: 32rpx;
   color: #fff;
   line-height: 48rpx; 
   text-align: center;

@@ -15,7 +15,6 @@ Page({
     wx.setNavigationBarTitle({
       title: '商品收藏',
     })
-
   },
 
   /**

@@ -10,7 +10,8 @@ Page({
     carousel: [],//首页轮播
     recommend: [],//推荐商品
     ranking: [],//排行榜
-    guessgoods: []//猜你喜欢
+    guessgoods: [],//猜你喜欢
+    col:""
   },
 
   /**
@@ -54,6 +55,39 @@ Page({
    })
    console.log(1);
  },
+  onPageScroll: function (e) {
+    console.log(e.scrollTop);
+    if (e.scrollTop>=100){
+      this.setData({
+        col:'red'
+      })
+    }
+  },
+  getData() {
+    // http://mobile.yangkeduo.com/proxy/api/api/alexa/v1/goods?&page=1&size=20
+    // 获取接口的函数
+    home.getIndex(72,res=>{
+      // 轮播数据
+      this.setData({carousel: res.data.carousel})
+      // 推荐数据
+      this.setData({recommend: res.data.recommend})
+      // 排行榜数据
+      this.setData({ranking: res.data.ranking})
+      // 猜你喜欢数据
+      this.setData({guessgoods: res.data.guessgoods})
+    })
+  },
+  goto(){
+    wx.navigateTo({//跳转到详情页
+      url: '../details/details'
+    })
+  },
+  gotoDetails(e){
+    console.log(e.currentTarget.dataset.id)
+    wx.navigateTo({//跳转到详情页
+      url: `/pages/details/details?id=${e.currentTarget.dataset.id}`
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

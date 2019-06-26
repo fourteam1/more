@@ -1,4 +1,8 @@
 // pages/details/details.js
+
+import { Config } from '../../utils/config.js';
+import { Home } from "../index/index-model.js"
+let home = new Home();
 Page({
 
   /**
@@ -10,23 +14,54 @@ Page({
       'red'
     ],
     iconType: [
-      'success'
+      'success' 
     ],
-    show: false
+    show:false,
+    id:'',
+    goods:[],//获取详情数据
   },
-  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(options);
+    this.setData({
+      id: options.id
+    })
     wx.setNavigationBarTitle({
       title: '浏览记录',
+    })
+    this.getData()
+  },
+  getData() {
+    home.getDetails(this.data.id, res => {
+      console.log(res.data);
+      this.setData({
+        goods:res.data.goods
+      });
+      console.log(this.data.goods);
+    })
+  },
+  onClose() {
+    this.setData({ show: false });
+  },
+  close(){
+    show: false
+  },
+  goblack(){
+    wx.navigateBack({
+      delta: 1
     })
   },
   onClose() {
     this.setData({ show: false });
   },
   isShow(){
+    this.setData({
+      show:!this.data.show
+    })
+  },
+  getShow(){
     this.setData({
       show:!this.data.show
     })

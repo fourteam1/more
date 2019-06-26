@@ -6,18 +6,20 @@
     "pages/shop/shop",
     "pages/mine/mine",
     "pages/indent/indent",
-    "pages/details/details",
-    "pages/offer/offer", 
+    "pages/offer/offer",
     "pages/browsing/browsing",
     "pages/collection/collection",
-    "pages/refund/refund"
+    "pages/refund/refund",
+    "pages/details/details",
+    "pages/order/order"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#1ca95e",
     "navigationBarTitleText": "拼多多",
-    "navigationBarTextStyle": "black",
-    "enablePullDownRefresh": true
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "navigationStyle": "custom"
   },
   "tabBar": {
     "list": [
@@ -47,5 +49,8 @@
       }
     ]
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-icon": "miniprogram_npm/vant-weapp/icon/index"
+  }
 }

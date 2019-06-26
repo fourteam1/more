@@ -1,4 +1,8 @@
 <!-- 轮播开始 -->
+<view class='nav-wrap' style="background-color:{{col}};">
+  <icon class="iconfont icon-fanhui"></icon>
+  <text>智能家居生态观</text>
+</view>
 <view class="homePage" > 
   <image class="homePage_bg" src="../image/zhang-kaiyv-661828-unsplash.jpg"></image>
   <view class="view_list"> 
@@ -9,8 +13,21 @@
           <image src="{{item.src}}" class="slide-image" width="355" height="150"/>
         </swiper-item> 
       </block> 
-    </swiper>
-  </view>
+  <!-- <view class="view_list">
+    <!-- <view class="div1">
+    </view> -->
+   <!-- <swiper  indicator-dots="true" 
+      autoplay="true" interval="2000" duration="1000" circular="true" >
+      <block wx:for="{{carousel}}">
+        <swiper-item>
+        <image src="{{item.src}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>  -->
+  <!-- <view class="btn_title btn_title_1"></view>
+  <view class="btn_title btn_title_2"></view>
+  <icon class="homePage_icon homePage_icon_1  iconfont icon-fanhui"></icon>
+  <icon class="homePage_icon homePage_icon_2  iconfont icon-fanhui"></icon> -->
 </view>
 <!-- 轮播结束-->
 <view class="bg" style="background:url('../image/bg_11.GIF')"></view>
@@ -218,6 +235,11 @@
       </view>
       <view class='body'>
         <view class='center' wx:for="{{ranking}}">
+          <!-- <text>销量排行</text> -->
+        </view>
+      </view>
+      <view class='body'>
+        <view class='center' wx:for="{{ranking}}" bindtap="gotoDetails" data-id="{{item.goods_id}}">
           <image src='{{item.goods_thumb}}'/>
           <view class='circle'>
             <text>{{index+1}}</text>
@@ -251,12 +273,14 @@
     </view>
     <!-- 排行榜结束 -->
 
+<!-- assemble  -->
     <!-- 猜你喜欢开始 -->
     <view class="like_box">
       <view class="like_title">猜你喜欢</view>
       <view class="new_list"> 
         <view class="lis" wx:for="{{guessgoods}}" wx:key="{{index}}">
           <image src="{{item.goods_thumb}}"></image>
+          <image src="{{item.goods_thumb}}" bindtap="gotoDetails" data-id="{{item.goods_id}}"></image>
           <view class="new_text1">{{item.goods_name}}</view>
           <view class="new_text1 new_text_2">{{item.goods_name}}</view>
           <view class="new_text1 new_text_3">￥{{item.shop_price}}</view>
