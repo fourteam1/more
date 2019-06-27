@@ -7,7 +7,7 @@
         <image src='../../image/shop.jpg'></image>
         <text class='empty'>购物车是空的~</text>
       </view>
-      <button class='btn'>去逛逛</button>
+      <button class='btn' bindtap="goAround">去逛逛</button>
     </view>
     <!-- 购物车有东西的时候 -->
     <view class='shop-Valued' wx:if="{{data.length !== 0}}">
@@ -15,7 +15,7 @@
         <!-- 是否选中 -->
         <icon class="{{!item.check ? 'iconfont icon-xuanzhongyuandian' : 'iconfont icon-xuanzhong-copy'}}" bindtap='check' data-index="{{index}}"></icon>
         <!-- 图片 -->
-        <image src='{{item.goods_thumb}}'></image>
+        <image src='{{item.goods_thumb}}' data-id="{{item.goods_id}}" bindtap="goDeatil"></image>
         <!-- 详细信息 -->
         <view class='item-content'>
           <text class='goods_name'>{{item.goods_name}}</text>

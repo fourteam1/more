@@ -1,8 +1,8 @@
 /* 购物车 */
 
 .shop {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 /* 购物车包裹 */
@@ -22,8 +22,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .shop-empty view{
@@ -67,7 +67,8 @@
 .shop-Valued {
   width: 100%;
   height: 100%;
-  padding-bottom: 40rpx;
+  padding-bottom: 8rpx;
+  margin-bottom: 120rpx; 
   background: #f7f7f7;
 }
 

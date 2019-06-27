@@ -107,8 +107,11 @@ Page({
               wx.showToast({
                 title: '加入购物车成功',
                 icon: 'success',
-                duration: 2000
+                duration: 3000
               });
+              wx.switchTab({
+                url: '../shop/shop'
+              })
               return;
             }
           }
@@ -121,23 +124,29 @@ Page({
           wx.showToast({
             title: '加入购物车成功',
             icon: 'success',
-            duration: 2000
+            duration: 3000
           });
+          wx.switchTab({
+            url: '../shop/shop'
+          })
           return;
         }catch(err){
           console.log(err)
         }
       }
     }else{
+      this.setData({
+        dataList: []
+      })
       if (curs && curc) {
-        this.setData({
-          dataList: []
-        })
         this.data.dataList.push(this.data.detail)
-        console.log(this.data.detail)
+        this.data.dataList.forEach(item=>{
+          item.count = 1;
+        })
         wx.navigateTo({
           url: '../order/order?dataList='+JSON.stringify(this.data.dataList)
         })
+        console.log(this.data.dataList)
       }
     }
   }
