@@ -159,25 +159,6 @@
   width: 100%;
   background: #fff;
 }
-<<<<<<< HEAD
-=======
-.wx,.wxFriend{
-  display: flex;
-  justify-content: space-between;
-  height: 30rpx;
-  font-size: 26rpx;
-  padding: 24rpx 0;
-}
-.left .iconfont{
-  margin-left: 23rpx;
-  margin-right: 24rpx;
-  color: #248756;
-}
-.right .iconfont {
-  margin-right: 23rpx;
-  color: #e01616;
-}
->>>>>>> 440496419296b2d3dd3e72dfd54cf3b306fccdec
 /* 购物车 */
 .shopping {
   position: fixed;
@@ -227,14 +208,6 @@
   width: 702rpx;
   height: 340rpx;
 }
-<<<<<<< HEAD
 .value-class {
   flex: none !important;
-=======
-/* 模态框 */
-.van-popup {
-  width: 702rpx;
-  height: 500rpx;
-  border-radius: 10rpx;
->>>>>>> 440496419296b2d3dd3e72dfd54cf3b306fccdec
 }

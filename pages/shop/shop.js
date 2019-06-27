@@ -156,16 +156,5 @@ Page({
     wx.navigateTo({
       url: '../order/order?dataList='+JSON.stringify(this.data.newData)
     })
-  },
-  onShow: function () {
-    console.log(11111)
-    if (wx.getStorageSync("data")) {
-      let data1 = wx.getStorageSync("data")
-      this.setData({
-        data: data1
-      })
-    } else {
-      this.getData()
-    }
-  },
+  }
 })
