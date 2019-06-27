@@ -10,11 +10,7 @@ Page({
     show: false,
     name: '',
     radio: '1',
-<<<<<<< HEAD
     list: [],
-=======
-    list: []
->>>>>>> e37328bec59facf578387b5b4c89411a3d05de8e
   },
   /**
    * 生命周期函数--监听页面加载
