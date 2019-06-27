@@ -84,19 +84,14 @@
         <text class='red'>￥{{TotalCost}}</text>
       </view>
       <view class='right'>
-        <button class='Settlement' bindtap="Settlement" open-type="getUserInfo" 
-  lang="zh_CN" 
+        <button class='Settlement' bindtap="Settlement" open-type="getUserInfo" lang="zh_CN" 
   bindgetuserinfo="onGotUserInfo">提交订单</button>
       </view>
     </view>
   </view>
   <!-- 模态框 -->
   <van-popup show="{{ show }}" bind:close="onClose"></van-popup>
-  <van-popup
-    show="{{ show }}"
-    overlay="{{ false }}"
-    bind:close="onClose"
-  >
+  <van-popup show="{{ show }}" overlay="{{ false }}" bind:close="onClose">
     <view class='top' style="display: flex; align-items: center; height: 102rpx; border-bottom: 2rpx solid #ddd;">
       <van-icon name="cross" style="margin-left: 31rpx; color: #ddd;" />
       <image src='../image/Avatar.png' style="width: 55rpx; height: 55rpx; margin-left: 19rpx;"></image>

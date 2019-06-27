@@ -8,7 +8,6 @@ Page({
     check: false,
     TotalCost: 0
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -43,6 +42,7 @@ Page({
         this.setData({
           data: list
         })
+        console.log(this.data.data)
       },
       fail: err => {
         console.log("错误内容 " + err);
