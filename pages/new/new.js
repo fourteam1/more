@@ -1,37 +1,48 @@
 // pages/new/new.js
+import { Config } from '../../utils/config.js'
+import { Home } from './new-model.js'
+var home = new Home();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    dataList:[]
+    list: [],
+    loading: true
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.getList();
     wx.setNavigationBarTitle({
-      title: '新品',
+      title: '新品'
     })
-    this.getData()
+    setTimeout(() => {
+      this.setData({
+        loading: false
+      })
+    }, 2000)
   },
-  getData(){
-    wx.request({
-      url: 'http://mobile.yangkeduo.com/proxy/api/api/alexa/v1/goods?&page=1&size=20',
-      header: {
-        "content-type": "application/json"
-      },
-      success: res => {
-        console.log(res.data.goods_list);
-        this.setData({
-          dataList: res.data.goods_list
-        })
-      },
+  //获取数据
+  getList(){
+    let id = 1;
+    var data = home.getGoods(id,res => {
+      this.setData({
+        list: res.data.guessgoods
+      })
     })
   },
-
+  //跳到详情
+  goDetail(e) {
+    let id = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: `../detail/detail?id=${id}`
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

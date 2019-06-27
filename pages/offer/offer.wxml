@@ -42,6 +42,6 @@
   </view>
   <view class='footer'>
     <text>没有更多了</text>
-    <image src='../image/empty.gif'></image>
+    <image src='../../image/empty.gif'></image>
   </view>
 </view>

@@ -7,7 +7,7 @@
         <icon class='iconfont icon-xinxi'></icon>
       </view>
       <view class='img'>
-        <image src='../image/1.jpg'/>
+        <image src='../../image/1.jpg'/>
         <text class='name'>JZR9700</text>
       </view>
     </view>
