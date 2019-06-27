@@ -1,5 +1,4 @@
 // pages/order/order.js
-import Dialog from 'vant-weapp/dialog/dialog';
 Page({
 
   /**
@@ -9,18 +8,13 @@ Page({
     data: [],
     TotalCost: 0,
     show: false,
-<<<<<<< HEAD
     name: '',
     radio: '1',
     list: []
-=======
-    name: ""
->>>>>>> 440496419296b2d3dd3e72dfd54cf3b306fccdec
   },
   /**
    * 生命周期函数--监听页面加载
    */
-<<<<<<< HEAD
   onLoad: function (options) {
     let order = JSON.parse(options.dataList)
     this.setData({
@@ -33,8 +27,8 @@ Page({
     this.total();
   },
   //计算总价
-  total(){
-    this.data.list.forEach( item => {
+  total() {
+    this.data.list.forEach(item => {
       this.data.TotalCost += item.shop_price * item.count
     })
     this.setData({
@@ -51,22 +45,10 @@ Page({
     const { name } = event.currentTarget.dataset;
     this.setData({
       radio: name
-=======
-  onLoad: function(options) {
-    this.getdata();
-    
-  },
-  // 获取数据
-  getdata() {
-    let data = wx.getStorageSync("data");
-    console.log(data.data)
-    let list = data.data.filter(item => {
-      return item.check == true
->>>>>>> 440496419296b2d3dd3e72dfd54cf3b306fccdec
     });
   },
   //提交订单
-  popup(){
+  popup() {
     this.setData({
       show: !this.data.show
     })
@@ -77,20 +59,6 @@ Page({
       show: false
     })
   },
-<<<<<<< HEAD
-=======
-  Settlement(){
-    this.setData({
-      show: !this.data.show
-    })
-  },
-  // 模态框
-  onClose(){
-    this.setData({
-      show: false
-    })
-  },
->>>>>>> 440496419296b2d3dd3e72dfd54cf3b306fccdec
   // 获取用户信息
   onGotUserInfo: function (e) {
     // console.log(e.detail.errMsg)
@@ -100,7 +68,6 @@ Page({
     })
     // console.log(e.detail.rawData)
   },
-<<<<<<< HEAD
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -149,21 +116,4 @@ Page({
   onShareAppMessage: function () {
 
   }
-=======
-  // 确认支付
-  confirm(){
-    Dialog.confirm({
-      title: '确认支付',
-      message: '是否确认支付'
-    }).then(() => {
-      console.log(1)
-      // wx.navigateTo({
-      //   url: ""
-      // })
-    }).catch(() => {
-      // on cancel
-      console.log(2)
-    });
-  },
->>>>>>> 440496419296b2d3dd3e72dfd54cf3b306fccdec
 })

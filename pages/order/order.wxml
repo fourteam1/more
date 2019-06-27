@@ -57,7 +57,6 @@
     </view>
     <!-- 支付 -->
     <view class='Pay'>
-<<<<<<< HEAD
       <van-radio-group value="{{ radio }}" bind:change="onChange">
         <van-cell-group>
           <van-cell
@@ -80,26 +79,6 @@
           </van-cell>
         </van-cell-group>
       </van-radio-group>
-=======
-      <view class='wx'>
-        <view class='left'>
-          <icon class='iconfont icon-umidd16'></icon>
-          <text>微信支付</text>
-        </view>
-        <view class='right'>
-          <icon class='iconfont icon-duihao'></icon>
-        </view>
-      </view>
-      <view class='wxFriend'>
-        <view class='left'>
-          <icon class='iconfont icon-haoyouzhifu'></icon>
-          <text>找微信好友支付</text>
-        </view>
-        <view class='right'>
-          <icon class='iconfont'></icon>
-        </view>
-      </view>
->>>>>>> 440496419296b2d3dd3e72dfd54cf3b306fccdec
     </view>
   </view>
   <!-- 结算 -->
@@ -110,44 +89,12 @@
         <text class='red'>￥{{TotalCost}}</text>
       </view>
       <view class='right'>
-<<<<<<< HEAD
         <button class='Settlement' bindtap="popup" open-type="getUserInfo" lang="zh_CN" 
-=======
-        <button class='Settlement' bindtap="Settlement" open-type="getUserInfo" 
-  lang="zh_CN" 
->>>>>>> 440496419296b2d3dd3e72dfd54cf3b306fccdec
   bindgetuserinfo="onGotUserInfo">提交订单</button>
       </view>
     </view>
   </view>
-  <!-- 模态框 -->
-  <van-popup show="{{ show }}" bind:close="onClose"></van-popup>
-  <van-popup
-    show="{{ show }}"
-    overlay="{{ false }}"
-    bind:close="onClose"
-  >
-    <view class='top' style="display: flex; align-items: center; height: 102rpx; border-bottom: 2rpx solid #ddd;">
-      <van-icon name="cross" style="margin-left: 31rpx; color: #ddd;" />
-      <image src='../image/Avatar.png' style="width: 55rpx; height: 55rpx; margin-left: 19rpx;"></image>
-      <text style="margin-left: 11rpx; font-size: 34rpx;">确认支付密码</text>
-    </view>
-    <view class='bottom'>
-      <text style="display: block; text-align: center; font-size: 26rpx; margin-top: 28rpx;">{{name}}</text>
-      <view style="text-align: center;">
-        <text style="font-size: 34rpx; text-align: top;">￥</text>
-        <text style="font-size: 54rpx;">{{TotalCost}}</text>
-      </view>
-      <view class='card' style="display: flex; align-items: center;">
-        <image src='../image/card.png' style="width: 50rpx; height: 50rpx; margin-left: 60rpx;"></image>
-        <text style="flex: 1; font-size: 24rpx; margin-left: 30rpx;">工商银行储蓄卡 （****）</text>
-        <van-icon name="arrow" style="float: right; margin-right: 14rpx; font-szie: 24rpx; color: #ddd;"/>
-      </view>
-      <button bindtap="confirm" style="width: 300rpx; height: 90rpx; background: #e01616; border-radius: 10rpx; font-size: 34rpx; color: #fff; margin-top: 50rpx;">确认支付</button>
-    </view>
-  </van-popup>
 </view>
-<<<<<<< HEAD
 <!-- 模态框开始 -->
 <van-popup show="{{ show }}" bind:close="onClose"></van-popup>
 <van-popup show="{{ show }}" overlay="{{ false }}" bind:close="onClose">
@@ -173,6 +120,3 @@
 <!-- 模态框结束 -->
 <van-dialog id="van-dialog" class="dialog"/>
 
-=======
-<van-dialog id="van-dialog" />
->>>>>>> 440496419296b2d3dd3e72dfd54cf3b306fccdec

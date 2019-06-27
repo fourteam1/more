@@ -1,19 +1,9 @@
 {
   "usingComponents": {
-<<<<<<< HEAD
     "van-popup": "../../miniprogram_npm/vant-weapp/popup/index",
     "van-radio": "../../miniprogram_npm/vant-weapp/radio/index",
     "van-radio-group": "../../miniprogram_npm/vant-weapp/radio-group/index",
     "van-cell": "../../miniprogram_npm/vant-weapp/cell/index",
     "van-cell-group": "../../miniprogram_npm/vant-weapp/cell-group/index"
   }
-=======
-    "van-popup": "vant-weapp/popup/index"
-  },
-  "navigationBarBackgroundColor": "#ffffff",
-  "navigationBarTextStyle": "black",
-  "navigationBarTitleText": "确认订单",
-  "backgroundColor": "#eeeeee",
-  "backgroundTextStyle": "light"
->>>>>>> 440496419296b2d3dd3e72dfd54cf3b306fccdec
 }
