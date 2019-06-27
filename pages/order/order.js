@@ -10,7 +10,7 @@ Page({
     show: false,
     name: '',
     radio: '1',
-    list: []
+    list: [],
   },
   /**
    * 生命周期函数--监听页面加载
@@ -20,7 +20,6 @@ Page({
     this.setData({
       list: order
     })
-    console.log(this.data.list)
     wx.setNavigationBarTitle({
       title: '确认订单'
     })
@@ -34,7 +33,6 @@ Page({
     this.setData({
       TotalCost: this.data.TotalCost
     })
-    console.log(this.data.TotalCost)
   },
   onChange(event) {
     this.setData({

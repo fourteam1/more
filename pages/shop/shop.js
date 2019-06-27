@@ -17,24 +17,46 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.getgoods()
     wx.setNavigationBarTitle({
       title: '购物车'
     })
-    this.getgoods()
+  },
+  //去逛逛
+  goAround(){
+    wx.switchTab({
+      url: '../index/index'
+    })
+  },
+  //跳转详情
+  goDeatil(e){
+    let id = e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: `../detail/detail?id=${id}`
+    })
   },
   //获取数据
   getgoods() {
-    let id = 1;
-    home.getGoods(id, res => {
-      let goods = res.data.guessgoods;
-      goods.forEach( item => {
-        item.count = 1,
-        item.check = false
-      })
-      this.setData({
-        data:goods//猜你喜欢
-      })
-      console.log(this.data.data)
+    // let id = 1;
+    // home.getGoods(id, res => {
+    //   let goods = res.data.guessgoods;
+    //   goods.forEach( item => {
+    //     item.count = 1,
+    //     item.check = false
+    //   })
+    //   this.setData({
+    //     data:goods//猜你喜欢
+    //   })
+    //   console.log(this.data.data)
+    // })
+    wx.getStorage({
+      key: 'cart',
+      success: (res) => {
+        this.setData({
+          data: res.data
+        })
+        console.log(res.data)
+      },
     })
   },
   //当前选中的商品
@@ -122,6 +144,15 @@ Page({
             title: '删除成功',
             icon: 'success',
             duration: 2000
+          })
+          wx.removeStorage({
+            key: 'cart',
+            success:(res)=> {
+              this.data.data.split(index,1)
+              this.setData({
+                data: this.data.data
+              })
+            }
           })
           if (list.length == 0) {
             this.setData({

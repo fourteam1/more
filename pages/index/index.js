@@ -44,6 +44,13 @@ Page({
   //跳到详情
   goDetail(e) {
     let id = e.currentTarget.dataset.id
+    this.data.ranking.forEach(item=>{
+      item.count = 0
+    })
+    this.data.guessgoods.forEach(item => {
+      item.count = 0
+    })
+    console.log(this.data.ranking[0].count)
     wx.navigateTo({
       url: `../detail/detail?id=${id}`
     })
