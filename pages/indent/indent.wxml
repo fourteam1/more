@@ -6,7 +6,7 @@
       <text>交易完成</text>
     </view>
     <view class='news'>
-      <image src='../image/1.png'></image>
+      <image src='../../image/1.png'></image>
       <view class='news-box'>
         <text class='name'>POKLEN乳胶枕头泰国原装进口</text>
         <text class='name'>颈椎天然橡胶枕</text>

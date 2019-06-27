@@ -1,14 +1,38 @@
 <!--pages/new/new.wxml-->
- <view class="new">
-  <view class="new_bg">
-    <image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"></image>
-  </view>
-  <view class="new_list"> 
-    <view class="lis" wx:for="{{dataList}}" wx:key="{{index}}">
-      <image src="{{item.hd_thumb_url}}"></image>
-      <view class="new_text1">{{item.short_name}}</view>
-      <view class="new_text1 new_text_2">{{item.goods_name}}</view>
-      <view class="new_text1 new_text_3">￥2132</view>
+<view class="new">
+  <!-- 新品上边开始 -->
+  <view class="top">
+    <image src="../../image/bg.jpg"></image>
+    <view class="text">
+      <view class="txt1">
+        <text>RECOMMENDED</text>
+        <text>每日推荐</text>
+      </view>
+      <view class="txt2">
+        <text>每</text>
+        <text>日</text>
+        <text>推</text>
+        <text>荐</text>
+      </view>
     </view>
   </view>
- </view>
+  <!-- 新品上边结束 -->
+  <!-- 新品内容开始 -->
+  <view class="content">
+    <view class="loading">
+      <van-loading type="spinner" color="#c9c9c9" size='80rpx' wx:if="{{loading}}"/>
+    </view>
+    <view class="item" wx:for="{{list}}" wx:key="{{index}}" data-id="{{item.goods_id}}" bindtap="goDetail">
+      <view class="icon">
+        <icon class="iconfont icon-shoucang1"></icon>
+      </view>
+      <image src="{{item.goods_thumb}}"></image>
+      <view class="center">
+        <text class="title">{{item.goods_name}}</text>
+        <text class="name">{{item.goods_name}}</text>
+        <text class="price">￥{{item.shop_price}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 新品内容结束 -->
+</view>

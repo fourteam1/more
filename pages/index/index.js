@@ -1,45 +1,65 @@
-//index.js
+// pages/home/home.js
+
+import { Config } from '../../utils/config.js'
+import { Home } from './index-model.js'
+var home = new Home();
+
 Page({
+
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      '../image/bg1.jpg',
-      '../image/bg2.jpg',
-      '../image/bg3.jpg',
-      '../image/bg4.jpg',
-      // 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
-      // 'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
-      // 'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
-    ],
-    dataList: []
+    id: 0,
+    imgUrl: [],
+    guessgoods: [],
+    ranking: [],
+    recommend: [],
+    setHeight: wx.getSystemInfoSync().windowHeight,//获取视口高度
+    loading: true
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: '首页',
-    })
-    this.getData()
+    this.getgoods();
+    setTimeout(() => {
+      this.setData({
+        loading: false
+      })
+    }, 4000)
   },
-  getData() {
-    wx.request({
-      url: 'http://mobile.yangkeduo.com/proxy/api/api/alexa/v1/goods?&page=1&size=20',
-      header: {
-        "content-type": "application/json"
-      },
-      success: res => {
-        console.log(res.data.goods_list);
-        this.setData({
-          dataList: res.data.goods_list
-        })
-      },
+  scroll(e){
+    if(e.detail.scrollTop >= 300){
+      this.setData({
+        setNav: "#278c58"
+      })
+    }else{
+      this.setData({
+        setNav: ""
+      })
+    }
+  },
+  //跳到详情
+  goDetail(e) {
+    let id = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: `../detail/detail?id=${id}`
     })
   },
-
+  //获取数据
+  getgoods() {
+    let id = 1;
+    var data = home.getGoods(id, res => {
+      this.setData({
+        imgUrl: res.data.carousel,//轮播图
+        guessgoods: res.data.guessgoods,//猜你喜欢
+        ranking: res.data.ranking,//排行榜
+        recommend: res.data.recommend//公共商品
+      })
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
