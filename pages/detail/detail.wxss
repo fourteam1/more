@@ -366,11 +366,12 @@
 }
 .person{
   width: 100%;
-  height: 656rpx;
+  height: 100%;
 }
 .person image{
   width: 100%;
   height: 100%;
+  background-size: cover;
 }
 /*底部*/
 .footer{
@@ -427,36 +428,39 @@
 .footer-shop{
   width:100%;
   height:765rpx;
+  padding-left: 55rpx;
+  box-sizing: border-box;
   background: #fff;
 }
-.footer-shop image{
-  position: absolute;
-  top:-68rpx;
-  left:48rpx;
+.footer-shop .content{
+  display: flex;
+}
+.footer-shop .content image{
   width:240rpx;
   height: 240rpx;
   border-radius: 10rpx;
-  box-shadow: 8rpx 0 8rpx 2rpx #ccc;
+  box-shadow: 4rpx 0 8rpx 2rpx #ccc;
+  transform: translateY(-68rpx);
 }
-.footer-shop-right{
+.footer-shop .content .footer-shop-right{
+  flex: 1;
   display: flex;
   flex-direction: column;
-  margin-top:15rpx;
-  width:100%;
   height:170rpx;
-  padding-left: 320rpx;
+  margin-top:15rpx;
+  margin-left: 40rpx;
 }
-.footer-shop-right text:nth-child(1){
+.footer-shop .content .footer-shop-right text:nth-child(1){
   font-size: 30rpx;
   color:#d60e15;
 }
-.footer-shop-right text:nth-child(2),.footer-shop-right text:nth-child(3){
+.footer-shop .content .footer-shop-right text:nth-child(2),.footer-shop .content .footer-shop-right text:nth-child(3){
   font-size: 30rpx;
   color:#343434;
   margin-top: 14rpx;
   margin-bottom: 18rpx;
 }
-.footer-shop-right icon{
+.footer-shop .content .footer-shop-right icon{
   position: absolute;
   top:20rpx;
   right:20rpx;
@@ -468,12 +472,6 @@
   line-height: 110rpx;
   font-size: 38rpx;
   color:#343434;
-  padding-left:55rpx;
-  box-sizing: border-box;
-}
-.footer-shop .list{
-   padding-left:55rpx;
-  box-sizing: border-box;
 }
 .footer-shop .list text{
   display: inline-block;
@@ -499,5 +497,40 @@
   font-size: 40rpx;
   line-height: 90rpx;
   text-align: center;
+}
+.number{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 110rpx;
+  font-size: 38rpx;
+  color:#343434;
+  padding-right:55rpx;
+  box-sizing: border-box;
+}
+.number1 {
+  display: flex;
+  height: 100%;
+  font-size: 24rpx;
+  align-items: center;
+  text-align: center;
+}
+
+.number1 .add, .number1 .remove {
+  width: 46rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  text-align: center;
+  border: 1rpx solid #e7e7e7;
+}
+
+.number1 input {
+  width: 100rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  border: 1rpx solid #e7e7e7;
+  border-left: 0;
+  border-right: 0;
 }
 /*底部*/

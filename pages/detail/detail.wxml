@@ -231,13 +231,15 @@
     <van-popup show="{{ show }}" bind:close="onClose"></van-popup>
     <van-popup show="{{ show }}" position="bottom" overlay="{{ false }}" bind:close="onClose">
       <view class="footer-shop">
-        <image src="{{detail.goods_thumb}}"></image>
-        <view class="footer-shop-right">
-          <text>￥{{detail.shop_price}}-{{detail.market_price}}</text>
-          <text>库存2343件</text>
-          <text>请选择 尺码</text>
-          <icon class="iconfont icon-guanbi1" bindtap='goIsShow'></icon>
-        </view> 
+        <view class="content">
+          <image src="{{detail.goods_thumb}}"></image>
+          <view class="footer-shop-right">
+            <text>￥{{detail.shop_price}}-{{detail.market_price}}</text>
+            <text>库存2343件</text>
+            <text>请选择 尺码</text>
+            <icon class="iconfont icon-guanbi1" bindtap='goIsShow'></icon>
+          </view> 
+        </view>
         <view class="size">尺码</view>
         <view class='list'>
           <text wx:for="{{size}}" wx:key="{{index}}" data-size="{{index}}" class="{{curSize===index ? 'active':''}}" bindtap="selectSize">{{item}}</text>
@@ -245,6 +247,16 @@
         <view class='size'>颜色</view>
         <view class="list">
           <text wx:for="{{color}}" wx:key="{{index}}" data-color="{{index}}" class="{{curColor===index ? 'active':''}}" bindtap="selectColor">{{item}}</text>
+        </view>
+        <view class="number">
+          <text>数量</text>
+          <view class='number1'>
+            <!-- 商品-1 -->
+            <view class='remove' bindtap="cutBack">-</view>
+            <input bindinput="bindKeyInput" value="{{count}}" disabled="true" />
+            <!-- 商品+1 -->
+            <view class='add' bindtap="add">+</view>
+          </view>
         </view>
         <view class="btn" bindtap="goShop" data-id="{{detail.goods_id}}" data-dataList='{{detail}}' data-total="{{total}}">确定</view>
       </view>
@@ -256,5 +268,16 @@
   <!-- 商品详情结束 -->
   <view class='person'>
     <image src='../../image/person1.png'></image>
+    <image src='../../image/person2.png'></image>
+    <image src='../../image/person3.png'></image>
+    <image src='../../image/person4.png'></image>
+    <image src='../../image/person5.png'></image>
+    <image src='../../image/person6.png'></image>
+    <image src='../../image/person6.png'></image>
+    <image src='../../image/person6.png'></image>
+    <image src='../../image/person6.png'></image>
+    <image src='../../image/person6.png'></image>
+    <image src='../../image/person6.png'></image>
+    <image src='../../image/person7.png'></image>
   </view>
 </view>

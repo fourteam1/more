@@ -17,7 +17,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getgoods()
     wx.setNavigationBarTitle({
       title: '购物车'
     })
@@ -37,26 +36,13 @@ Page({
   },
   //获取数据
   getgoods() {
-    // let id = 1;
-    // home.getGoods(id, res => {
-    //   let goods = res.data.guessgoods;
-    //   goods.forEach( item => {
-    //     item.count = 1,
-    //     item.check = false
-    //   })
-    //   this.setData({
-    //     data:goods//猜你喜欢
-    //   })
-    //   console.log(this.data.data)
-    // })
     wx.getStorage({
       key: 'cart',
       success: (res) => {
         this.setData({
           data: res.data
         })
-        console.log(res.data)
-      },
+      }
     })
   },
   //当前选中的商品
@@ -65,18 +51,35 @@ Page({
     let list = this.data.data;
     list[index].check = !list[index].check;
     this.filter(list)
+    wx.getStorage({
+      key: 'cart',
+      success: function(res) {
+        res.data[index].check = list[index].check;
+        wx.setStorage({
+          key: 'cart',
+          data:res.data
+        })
+      }
+    })
+
     this.setData({
       data: list
     })
   },
   // All全部选中
   All(e) {
+    let index = e.currentTarget.dataset.index;
     let check = !this.data.check;
     let list = this.data.data;
     list.forEach(item => {
       item.check = check;
     })
     this.filter(list)
+    wx.setStorage({
+      key: 'cart',
+      data: list
+    })
+
     this.setData({
       data: list
     })
@@ -111,6 +114,16 @@ Page({
     this.setData({
       data: list
     })
+    wx.getStorage({
+      key: 'cart',
+      success: (res) => {
+        res.data[index].count = list[index].count
+        wx.setStorage({
+          key: 'cart',
+          data: res.data
+        })
+      }
+    })
   },
   //商品-1
   cutBack(e){
@@ -123,6 +136,16 @@ Page({
     this.setData({
       data: list
     })
+    wx.getStorage({
+      key: 'cart',
+      success: (res) => {
+        res.data[index].count = list[index].count
+        wx.setStorage({
+          key: 'cart',
+          data: res.data
+        })
+      }
+    })
   },
   // 删除当前商品
   remove(e){
@@ -132,6 +155,12 @@ Page({
       success: res => {
         if(res.confirm){
           console.log(res.confirm)
+          wx.showToast({
+            title: '删除成功',
+            icon: 'success',
+            duration: 2000
+          })
+          //删除逻辑
           let index = e.currentTarget.dataset.index;
           let list = this.data.data;
           list[index].count = 0;
@@ -140,19 +169,9 @@ Page({
           this.setData({
             data: list
           })
-          wx.showToast({
-            title: '删除成功',
-            icon: 'success',
-            duration: 2000
-          })
-          wx.removeStorage({
+          wx.setStorage({
             key: 'cart',
-            success:(res)=> {
-              this.data.data.split(index,1)
-              this.setData({
-                data: this.data.data
-              })
-            }
+            data: list
           })
           if (list.length == 0) {
             this.setData({
@@ -178,6 +197,7 @@ Page({
     this.setData({
       newData: this.data.newData
     })
+    console.log(this.data.newData)
     let TotalCost = this.data.TotalCost;
     let data = this.data.data;
     let list = {
@@ -185,7 +205,13 @@ Page({
       TotalCost
     }
     wx.navigateTo({
-      url: '../order/order?dataList='+JSON.stringify(this.data.newData)
+      url:'../order/order'
     })
+  },
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow(){
+    this.getgoods()
   }
 })

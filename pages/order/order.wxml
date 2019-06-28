@@ -21,7 +21,7 @@
         <text class='goods_name'>{{item.goods_name}}</text>
         <text class='short_name'>{{item.goods_name}}</text>
         <view class='count'>
-          <text class='Piece'>共{{item.count}}件</text>
+          <text class='Pirce'>共{{item.count}}件</text>
           <text class='unitPrice'>￥{{item.shop_price}}</text>
         </view>
       </view>
