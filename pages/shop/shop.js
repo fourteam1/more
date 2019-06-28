@@ -197,6 +197,7 @@ Page({
     this.setData({
       newData: this.data.newData
     })
+    console.log(this.data.newData)
     let TotalCost = this.data.TotalCost;
     let data = this.data.data;
     let list = {
@@ -204,7 +205,7 @@ Page({
       TotalCost
     }
     wx.navigateTo({
-      url:'../order/order?index=1'
+      url:'../order/order'
     })
   },
   /**
