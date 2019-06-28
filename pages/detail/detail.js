@@ -16,7 +16,8 @@ Page({
     curSize: '',
     curColor: '',
     curIndex: '',
-    dataList: []
+    dataList: [],
+    count: 1
   },
 
   /**
@@ -60,7 +61,8 @@ Page({
   isShow(e) {
     this.setData({
       show: !this.data.show,
-      curIndex: e.currentTarget.dataset.index
+      curIndex: e.currentTarget.dataset.index,
+      detail: this.data.detail
     })
     wx.setStorage({
       key: 'goods',
@@ -84,20 +86,20 @@ Page({
     //当前的颜色
     let curc = this.data.color[this.data.curColor]
     if(Number(this.data.curIndex)){
+      //点击单独购买
       if(curs && curc){
-        console.log(e)
         let goodsId = e.currentTarget.dataset.id;
         let goods = this.data.detail;
         goods.check = false;
-        goods.count = 1;
-        let count = this.data.detail.count;
+        goods.count = this.data.count;
+        let count = goods.count;
         //获取购物车里的缓存
         let arr = wx.getStorageSync('cart') || [];
         if(arr.length > 0){
           for(var i in arr){
             //判断id是否一致
             if(arr[i].goods_id == goodsId){
-              arr[i].count = arr[i].count+1;
+              arr[i].count = arr[i].count+this.data.count;
               try{
                 wx.setStorageSync('cart',arr)
               }catch(err){
@@ -110,7 +112,7 @@ Page({
                 duration: 3000
               });
               wx.switchTab({
-                url: '../shop/shop'
+                url: '../shop/shop?index=1'
               })
               return;
             }
@@ -120,14 +122,14 @@ Page({
           arr.push(goods)
         }
         try{
-          wx, wx.setStorageSync('cart',arr)
+          wx.setStorageSync('cart',arr)
           wx.showToast({
             title: '加入购物车成功',
             icon: 'success',
             duration: 3000
           });
           wx.switchTab({
-            url: '../shop/shop'
+            url: '../shop/shop?index=1'
           })
           return;
         }catch(err){
@@ -138,16 +140,39 @@ Page({
       this.setData({
         dataList: []
       })
+      //点击发起拼单
       if (curs && curc) {
-        this.data.dataList.push(this.data.detail)
-        this.data.dataList.forEach(item=>{
-          item.count = 1;
+        let dataList = this.data.dataList;
+        dataList.push(this.data.detail)
+        dataList.forEach( item => {
+          item.count = this.data.count
+        })
+        wx.setStorage({
+          key: 'shoplist',
+          data: dataList
         })
         wx.navigateTo({
-          url: '../order/order?dataList='+JSON.stringify(this.data.dataList)
+          url: '../order/order?index=0'
         })
-        console.log(this.data.dataList)
+        console.log(dataList)
       }
     }
+  },
+  //商品+1
+  add() {
+    this.data.count++;
+    this.setData({
+      count: this.data.count
+    })
+  },
+  //商品-1
+  cutBack() {
+    this.data.count--;
+    if (this.data.count<=1){
+      this.data.count = 1;
+    }
+    this.setData({
+      count: this.data.count
+    })
   }
 })

@@ -30,31 +30,6 @@ Page({
       })
     }, 4000)
   },
-  scroll(e){
-    if(e.detail.scrollTop >= 300){
-      this.setData({
-        setNav: "#278c58"
-      })
-    }else{
-      this.setData({
-        setNav: ""
-      })
-    }
-  },
-  //跳到详情
-  goDetail(e) {
-    let id = e.currentTarget.dataset.id
-    this.data.ranking.forEach(item=>{
-      item.count = 0
-    })
-    this.data.guessgoods.forEach(item => {
-      item.count = 0
-    })
-    console.log(this.data.ranking[0].count)
-    wx.navigateTo({
-      url: `../detail/detail?id=${id}`
-    })
-  },
   //获取数据
   getgoods() {
     let id = 1;
@@ -66,6 +41,31 @@ Page({
         recommend: res.data.recommend//公共商品
       })
     })
+  },
+  //跳到详情
+  goDetail(e) {
+    let id = e.currentTarget.dataset.id
+    this.data.ranking.forEach(item=>{
+      item.count = 0
+    })
+    this.data.guessgoods.forEach(item => {
+      item.count = 0
+    })
+    wx.navigateTo({
+      url: `../detail/detail?id=${id}`
+    })
+  },
+  //滚动事件
+  scroll(e) {
+    if (e.detail.scrollTop >= 300) {
+      this.setData({
+        setNav: "#278c58"
+      })
+    } else {
+      this.setData({
+        setNav: ""
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

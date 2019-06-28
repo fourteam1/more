@@ -11,19 +11,48 @@ Page({
     name: '',
     radio: '1',
     list: [],
+    count: 1
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let order = JSON.parse(options.dataList)
-    this.setData({
-      list: order
-    })
+    if(options.index=='1'){
+      //购物车
+      let lists = this.data.list;
+      let _this = this;
+      wx.getStorage({
+        key: 'cart',
+        success: function (res) {
+          lists = res.data.filter(item => {
+            return item.check
+          })
+          _this.setData({
+            list: lists
+          })
+          _this.total();
+        }
+      })
+    }else{
+      //发起拼单
+      let lists = this.data.list;
+      let _this = this;
+      wx.getStorage({
+        key: 'shoplist',
+        success: function (res) {
+          lists = res.data
+          _this.setData({
+            list: lists
+          })
+          _this.total();
+        }
+      })
+
+    }
     wx.setNavigationBarTitle({
       title: '确认订单'
     })
-    this.total();
+   
   },
   //计算总价
   total(){
@@ -39,7 +68,7 @@ Page({
       radio: event.detail
     });
   },
-  onClick(event) {
+  onClick(event) {  
     const { name } = event.currentTarget.dataset;
     this.setData({
       radio: name
@@ -50,6 +79,10 @@ Page({
     this.setData({
       show: !this.data.show
     })
+    this.data.list.forEach(item => {
+      item.check = false
+    })
+    wx.setStorageSync('cart', this.data.list)
   },
   // 模态框
   onClose() {
@@ -60,7 +93,6 @@ Page({
   // 获取用户信息
   onGotUserInfo: function (e) {
     // console.log(e.detail.errMsg)
-    console.log(e.detail.userInfo)
     this.setData({
       name: e.detail.userInfo.nickName
     })

@@ -87,7 +87,7 @@
   float: right;
   margin-right: 25rpx;
 }
-.Piece {
+.Pirce {
   font-size: 26rpx;
   color: #999;
   margin-right: 25rpx;

@@ -72,6 +72,7 @@ VantComponent({
             this.triggerInput(value);
         },
         onChange(type) {
+            console.log(type)
             if (this.data[`${type}Disabled`]) {
                 this.$emit('overlimit', type);
                 return;
