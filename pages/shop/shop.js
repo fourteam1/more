@@ -163,7 +163,6 @@ Page({
           //删除逻辑
           let index = e.currentTarget.dataset.index;
           let list = this.data.data;
-          list[index].count = 0;
           list.splice(index, 1);
           this.filter(list)
           this.setData({
@@ -197,7 +196,6 @@ Page({
     this.setData({
       newData: this.data.newData
     })
-    console.log(this.data.newData)
     let TotalCost = this.data.TotalCost;
     let data = this.data.data;
     let list = {
@@ -205,7 +203,7 @@ Page({
       TotalCost
     }
     wx.navigateTo({
-      url:'../order/order'
+      url:'../order/order?index=1'
     })
   },
   /**

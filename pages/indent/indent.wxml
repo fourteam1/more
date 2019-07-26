@@ -1,29 +1,56 @@
-<!--pages/indent/indent.wxml-->
-<view class='wrap'>
-  <view class='list'>
-    <view class='indent'>
-      <text>订单编号:9876543211025666</text>
-      <text>交易完成</text>
+<!--pages/ding/ding.wxml-->
+<view class='ding'>
+  <view class='top'>
+    <text>订单编号:98765406516434</text>
+    <text class='over'>交易完成</text>
+  </view>
+  <view class='ding-list'>
+    <view class='lists'>
+         <view class='list-top'>
+          <image src=''></image>
+         <view class='listReight'>
+            <view class='txt'>
+              <view class='theme'>ngaoj你发哦为放假啊sf;awhj</view>
+              <view class='theme-bottom'>天然乳胶</view>
+            </view>
+             <view class='pri'>
+              <view class='pris'>￥299.0</view>
+              <view class='nums'>X1</view>
+            </view>
+          </view> 
+        </view> 
+        <view class='allPrice'>
+            共计<text>1</text>件商品 合计:<text>￥299.0</text>(含运费￥0.00)
+        </view>  
+        <view class='delAndre'>
+          <text class='recommend' bindtap="after">评价</text>
+          <text class='del'>删除</text>
+          <text class='refund' bindtap='gotoRefund'>申请退款</text>
+        </view>       
     </view>
-    <view class='news'>
-      <image src='../../image/1.png'></image>
-      <view class='news-box'>
-        <text class='name'>POKLEN乳胶枕头泰国原装进口</text>
-        <text class='name'>颈椎天然橡胶枕</text>
-        <text class='composition'>天然乳胶</text>
-      </view>
-      <view class='price-box'>
-        <text class='price'>￥299.0</text>
-        <text class='count'>x1</text>
-      </view>
-    </view>
-    <view class='total'>
-      共计1件商品，合计<text>￥299.0</text>（含运费￥0.00）
-    </view>
-    <view class='operate'>
-      <text class='remove'>删除</text>
-      <text class='speak'>评价</text>
+    <view class='lists'>
+        <view class='tops'></view>
+         <view class='list-top'>
+          <image src=''></image>
+         <view class='listReight'>
+            <view class='txt'>
+              <view class='theme'>ngaoj你发哦为放假啊sf;awhj</view>
+              <view class='theme-bottom'>天然乳胶</view>
+            </view>
+             <view class='pri'>
+              <view class='pris'>￥299.0</view>
+              <view class='nums'>X1</view>
+              <view class='dai'>待支付</view>
+            </view>
+          </view> 
+        </view> 
+        <view class='allPrice'>
+            共计<text>1</text>件商品 合计:<text>￥299.0</text>(含运费￥0.00)
+        </view>  
+        <view class='delAndre'>
+          <text class='removeList'>取消订单</text>
+           <text class='goPay'>去支付</text>
+        </view>       
     </view>
   </view>
 </view>
-

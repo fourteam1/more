@@ -79,10 +79,6 @@ Page({
     this.setData({
       show: !this.data.show
     })
-    this.data.list.forEach(item => {
-      item.check = false
-    })
-    wx.setStorageSync('cart', this.data.list)
   },
   // 模态框
   onClose() {

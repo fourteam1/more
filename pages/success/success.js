@@ -1,4 +1,4 @@
-// pages/refund/refund.js
+// pages/success/success.js
 Page({
 
   /**
@@ -13,15 +13,7 @@ Page({
    */
   onLoad: function (options) {
     wx.setNavigationBarTitle({
-      title: "退款/售后"
-    })
-
-  },
-
-  // 评价页面
-  after() {
-    wx.navigateTo({
-      url: '../After/After'
+      title: '我要评价'
     })
   },
 
