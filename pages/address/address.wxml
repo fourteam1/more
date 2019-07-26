@@ -73,8 +73,10 @@
         <button type='button' bindtap="save">保存</button>
       </view>
     </view>
-    <van-area class="vanArea" wx:if="{{ popup }}" item-height="50" area-list="{{ areaList }}" bindcancel="cancel"  columns-num="3" bindconfirm="confirm"/>
   </van-popup>
   <!-- 模态框结束 -->
+  <van-popup show="{{ shows }}" position="bottom" overlay="{{ false }}">
+    <van-area class="vanArea" item-height="50" area-list="{{ areaList }}" bindcancel="cancel"  columns-num="3" bindconfirm="confirm"/>
+  </van-popup>
   <van-dialog id="van-dialog" bindtap="confirm" bindtap="cancel"/>
 </view>

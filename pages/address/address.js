@@ -31,7 +31,7 @@ Page({
     // 模态框
     show: false,
     // 获取地址
-    popup: false,
+    shows: false,
     areaList: {},
     name: "",
     tel: "",
@@ -92,13 +92,13 @@ Page({
       province1: e.detail.values[0].name,
       province2: e.detail.values[1].name,
       city: e.detail.values[2].name,
-      popup: false
+      shows: false
     })
   },
   // 点击取消
   cancel(e) {
     this.setData({
-      popup: false,
+      shows: false,
     })
   },
   // 添加新的收获地址
@@ -117,12 +117,12 @@ Page({
       Topping: false
     };
     console.log(currentIndex)
-    if (currentIndex >= 0) {
+    if(currentIndex >= 0){
       list[currentIndex] = obj;
       this.setData({
         currentIndex: -1
       })
-    } else {
+    }else{
       list.push(obj);
       console.log(list)
     }
@@ -133,9 +133,10 @@ Page({
   },
   //获取地址模态框
   auto() {
-    let popup = !this.data.popup;
+    console.log(this.data.shows)
+    let shows = !this.data.shows;
     this.setData({
-      popup: popup
+      shows: shows
     })
   },
 
@@ -188,10 +189,10 @@ Page({
     let index = el.currentTarget.dataset.index;
     let list = this.data.data;
     // console.log(list[index].check)
-    list.forEach((item, indexs) => {
-      if (list[index] == list[indexs]) {
+    list.forEach((item,indexs) => {
+      if (list[index] == list[indexs]){
         list[indexs].check = !list[indexs].check;
-      } else {
+      }else{
         list[indexs].check = false;
       }
     })
@@ -207,7 +208,7 @@ Page({
     }).then(() => {
       // on confirm删除
       console.log(111)
-      list.splice(index, 1);
+      list.splice(index,1);
       this.setData({
         data: list
       })
