@@ -96,9 +96,13 @@
 }
 .mine .content .indent .list .list_item view{
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .mine .content .indent .list .list_item view icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 40rpx;
   height:78rpx;
 }

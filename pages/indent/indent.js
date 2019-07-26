@@ -22,7 +22,18 @@ Page({
       backgroundColor: '#ffffff',
     })
   },
-
+  // 跳转评价页面
+  after() {
+    wx.navigateTo({
+      url: '../After/After'
+    })
+  },
+  //申请退款
+  gotoRefund() {
+    wx.navigateTo({
+      url: '../applyRefund/applyRefund'
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
